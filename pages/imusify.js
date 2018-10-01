@@ -5,6 +5,8 @@ import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import FeaturedCard from '../components/FeaturedCard';
 
+import ImusifyIllustrations from '../static/images/case-studies/imusify/imusify-illustrations.svg';
+
 class Gamedex extends React.Component {
   componentDidMount() {
     AOS.init();
@@ -56,10 +58,7 @@ class Gamedex extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/imusify/imusify-illustrations.svg"
-              alt=""
-            />
+            <ImusifyIllustrations />
           </figure>
           <h4
             className="small"

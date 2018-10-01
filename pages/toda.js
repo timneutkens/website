@@ -4,6 +4,11 @@ import GaWrapper from '../components/GaWrapper';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import FeaturedCard from '../components/FeaturedCard';
+import TodaBrandingConcepts from '../static/images/case-studies/toda/toda-branding-concepts.svg';
+import TodaBrandingPalette from '../static/images/case-studies/toda/toda-branding-palette.svg';
+import TodaBrandingFont from '../static/images/case-studies/toda/toda-branding-font.svg';
+import TodaBrandingProcess from '../static/images/case-studies/toda/toda-branding-process.svg';
+import TodaBrandingLogoTypo from '../static/images/case-studies/toda/toda-branding-logotypo.svg';
 
 class Toda extends React.Component {
   componentDidMount() {
@@ -29,10 +34,7 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-concepts.svg"
-              alt=""
-            />
+            <TodaBrandingConcepts />
           </figure>
           <figure
             className="smallfigure"
@@ -42,10 +44,7 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-palette.svg"
-              alt=""
-            />
+            <TodaBrandingPalette />
           </figure>
           <figure
             data-aos="fade-up"
@@ -54,10 +53,7 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-font.svg"
-              alt=""
-            />
+            <TodaBrandingFont />
           </figure>
           <p
             data-aos="fade-up"
@@ -81,10 +77,7 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-process.svg"
-              alt=""
-            />
+            <TodaBrandingProcess />
           </figure>
           <h4
             className="small"
@@ -141,7 +134,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-illustration.svg"
+              src="/static/images/case-studies/toda/toda-branding-nodes.svg"
               alt=""
             />
           </figure>
@@ -163,7 +156,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-illustration2.svg"
+              src="/static/images/case-studies/toda/toda-branding-illustration.svg"
               alt=""
             />
           </figure>

@@ -4,6 +4,10 @@ import GaWrapper from '../components/GaWrapper';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import FeaturedCard from '../components/FeaturedCard';
+import LemmonetBrandingConcepts from '../static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg';
+import LemmonetBrandingPalette from '../static/images/case-studies/lemmonet/lemmonet-branding-palette.svg';
+import LemmonetBrandingFont from '../static/images/case-studies/lemmonet/lemmonet-branding-font.svg';
+import LemmonetLogo from '../static/images/case-studies/lemmonet/lemmonet-logo.svg';
 
 class Lemmonet extends React.Component {
   componentDidMount() {
@@ -29,10 +33,7 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg"
-              alt=""
-            />
+            <LemmonetBrandingConcepts />
           </figure>
           <figure
             className="smallfigure"
@@ -42,10 +43,7 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-palette.svg"
-              alt=""
-            />
+            <LemmonetBrandingPalette />
           </figure>
           <figure
             data-aos="fade-up"
@@ -54,10 +52,7 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-font.svg"
-              alt=""
-            />
+            <LemmonetBrandingFont />
           </figure>
           <p
             data-aos="fade-up"
@@ -87,7 +82,7 @@ class Lemmonet extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-logo-evolution.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-brand-evolution.svg"
               alt=""
             />
           </figure>
@@ -109,10 +104,7 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <img
-              src="/static/images/case-studies/lemmonet/lemmonet-logo.svg"
-              alt=""
-            />
+            <LemmonetLogo />
           </figure>
           <h4
             className="small"
