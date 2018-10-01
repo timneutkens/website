@@ -30,11 +30,6 @@ const Footer = () => (
           <a className="link">Contact</a>
         </Link>
       </li>
-      <li>
-        <Link activeClassName="active" href="/side-projects" prefetch>
-          <a className="link">Side projects</a>
-        </Link>
-      </li>
     </ul>
     <ul className="social">
       <li>
