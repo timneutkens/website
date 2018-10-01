@@ -5,8 +5,6 @@ import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import FeaturedCard from '../components/FeaturedCard';
 
-import ImusifyIllustrations from '../static/images/case-studies/imusify/';
-
 class Gamedex extends React.Component {
   componentDidMount() {
     AOS.init();
