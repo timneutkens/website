@@ -1,9 +1,9 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import Contact from '../components/Contact';
-import FeaturedCard from '../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../components/GaWrapper";
+import Layout from "../components/Layout";
+import Contact from "../components/Contact";
+import FeaturedCard from "../components/FeaturedCard";
 
 class Gamedex extends React.Component {
   componentDidMount() {
@@ -13,7 +13,7 @@ class Gamedex extends React.Component {
     return (
       <Layout>
         <div className="wrapper">
-          <h4>Responsive Website</h4>
+          <h4>NEXTJS WEBSITE</h4>
           <h1>Cut the middleman</h1>
           <p className="small">
             imusify wanted a new website to hype about their ICO. Brand
@@ -167,6 +167,8 @@ class Gamedex extends React.Component {
           h1 {
             margin-top: 0.2em;
             margin-bottom: 0;
+            align-self: center;
+            text-align: center;
           }
           h2.small {
             margin-top: 2em;

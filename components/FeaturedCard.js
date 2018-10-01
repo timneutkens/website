@@ -1,7 +1,7 @@
-import React from 'react';
-import FeaturedImage from '../components/FeaturedImage';
-import FeaturedDescription from '../components/FeaturedDescription';
-import Link from 'next/link';
+import React from "react";
+import FeaturedImage from "../components/FeaturedImage";
+import FeaturedDescription from "../components/FeaturedDescription";
+import Link from "next/link";
 
 const FeaturedCard = props => (
   <div
@@ -11,7 +11,7 @@ const FeaturedCard = props => (
     data-aos-duration="600"
     data-aos-easing="ease-in-out"
     className={
-      props.inverted ? 'featured__wrapper inverted' : 'featured__wrapper'
+      props.inverted ? "featured__wrapper inverted" : "featured__wrapper"
     }
   >
     <div className="image">
@@ -32,7 +32,7 @@ const FeaturedCard = props => (
       />
       <Link href={props.link}>
         <a className="button">
-          {props.callToAction}{' '}
+          {props.callToAction}{" "}
           <svg width="20" height="16" version="1">
             <path
               fill="#FFF"
@@ -52,11 +52,11 @@ const FeaturedCard = props => (
       .featured__wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 'image' 'description';
+        grid-template-areas: "image" "description";
         align-items: center;
         grid-column-gap: 8em;
         width: 100%;
-        margin-bottom: 5em;
+        margin-bottom: 4em;
       }
 
       .image {
@@ -90,15 +90,15 @@ const FeaturedCard = props => (
       @media (min-width: 600px) {
         .featured__wrapper {
           grid-template-columns: 1fr 1fr;
-          grid-template-areas: 'image description';
-          margin-bottom: 2rem;
+          grid-template-areas: "image description";
+          margin-bottom: 4rem;
         }
 
         .featured__wrapper:first-of-type {
           padding-top: ${props.paddingTop ? props.paddingTop : 0};
         }
         .featured__wrapper.inverted {
-          grid-template-areas: 'description image';
+          grid-template-areas: "description image";
         }
 
         .button {

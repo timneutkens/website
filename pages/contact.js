@@ -1,11 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
-import GaWrapper from '../components/GaWrapper';
-import Nav from '../components/Nav';
-import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
+import React from "react";
+import Head from "next/head";
+import GaWrapper from "../components/GaWrapper";
+import Nav from "../components/Nav";
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 
-const title = 'basement.studio | Contact';
+const title = "basement.studio | Contact";
 
 const Contact = () => (
   <main>
@@ -14,7 +14,7 @@ const Contact = () => (
     </Head>
     <Nav />
     <header>
-      <h1>Let's Chat.</h1>
+      <h1>Let's chat.</h1>
       <h3>
         We spend a lot of time behind our computers and always welcome the
         opportunity to discuss your upcoming project and meet new faces.
@@ -28,7 +28,7 @@ const Contact = () => (
     <section>
       <ContactForm />
       <div className="find-us">
-        <h3>Where to Find Us</h3>
+        <h3>Where to find us</h3>
         <div className="our-address">
           <h4>Our address:</h4>
           <p>Basement, Mar del Plata, Argentina.</p>
@@ -69,7 +69,7 @@ const Contact = () => (
           grid-column-gap: 4.5em;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr auto;
-          grid-template-areas: 'header header' 'subheader paragraph' 'form form';
+          grid-template-areas: "header header" "subheader paragraph" "form form";
         }
 
         section {
@@ -88,6 +88,7 @@ const Contact = () => (
 
         h3 {
           grid-area: subheader;
+          letter-spacing: -0.05em;
         }
 
         p {

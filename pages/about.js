@@ -1,12 +1,12 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import TwoColumnsLayout from '../components/TwoColumnsLayout';
-import Team from '../components/Team';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-import ThreeColumnsLayout from '../components/ThreeColumnsLayout';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../components/GaWrapper";
+import Layout from "../components/Layout";
+import TwoColumnsLayout from "../components/TwoColumnsLayout";
+import Team from "../components/Team";
+import Header from "../components/Header";
+import Contact from "../components/Contact";
+import ThreeColumnsLayout from "../components/ThreeColumnsLayout";
 
 class Blog extends React.Component {
   componentDidMount() {
@@ -30,7 +30,7 @@ class Blog extends React.Component {
         </figure>
 
         <TwoColumnsLayout
-          title="About Us"
+          title="About us"
           paragraph="We get involved with your product as if it were our own. The passion we invest in the things we love is beyond measure. And if your brand is chosen as a client, you can bet we're loving it. You will be impressed by how many ideas we can throw against the wall in an hour. Our workflow is not standard, and neither are we -- or the brands we help create."
         />
 
@@ -66,7 +66,7 @@ class Blog extends React.Component {
           .elgif:before,
           .elgif:after {
             position: absolute;
-            content: '';
+            content: "";
             width: 100%;
             height: 100%;
             display: block;
@@ -75,7 +75,7 @@ class Blog extends React.Component {
           }
 
           .elgif:before {
-            background: url('/static/images/patterns/microperforations.svg');
+            background: url("/static/images/patterns/microperforations.svg");
             border-left: 3px solid var(--color-primary);
             border-bottom: 5px solid var(--color-primary);
             z-index: 2;
@@ -84,7 +84,7 @@ class Blog extends React.Component {
           }
 
           .elgif:after {
-            background: url('/static/images/patterns/slash.svg');
+            background: url("/static/images/patterns/slash.svg");
             z-index: 1;
             top: 25px;
             right: 23px;

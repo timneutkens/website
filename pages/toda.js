@@ -1,9 +1,9 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import Contact from '../components/Contact';
-import FeaturedCard from '../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../components/GaWrapper";
+import Layout from "../components/Layout";
+import Contact from "../components/Contact";
+import FeaturedCard from "../components/FeaturedCard";
 
 class Toda extends React.Component {
   componentDidMount() {
@@ -187,10 +187,10 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             The content used in the website wasn't static, we used a new CMS
-            called{' '}
+            called{" "}
             <a className="link" href="https://www.sanity.io/">
               Sanity
-            </a>{' '}
+            </a>{" "}
             that you should definitely check out, allowing customizations on the
             fly. And a really easy to use dashboard for both, us developing and
             the marketing team adding content.
@@ -266,7 +266,8 @@ class Toda extends React.Component {
           h1 {
             margin-top: 0.2em;
             margin-bottom: 0;
-            align-self: flex-start;
+            align-self: center;
+            text-align: center;
           }
           h2.small {
             margin-top: 2em;

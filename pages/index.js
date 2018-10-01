@@ -1,10 +1,10 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import FeaturedCard from '../components/FeaturedCard';
-import Contact from '../components/Contact';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../components/GaWrapper";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import FeaturedCard from "../components/FeaturedCard";
+import Contact from "../components/Contact";
 
 class Index extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class Index extends React.Component {
           backgroundimg="/static/images/device1.png"
           foregroundimg="/static/images/device2.png"
           foreMaxWidth="30%"
-          paddingTop="12em"
+          paddingTop="6em"
           callToAction="READ MORE"
           link="/gamedex"
           subhead="NEXTjs WEBSITE"
