@@ -9,6 +9,7 @@ class Toda extends React.Component {
   componentDidMount() {
     AOS.init();
   }
+
   render() {
     return (
       <Layout>
