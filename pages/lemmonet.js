@@ -4,10 +4,6 @@ import GaWrapper from '../components/GaWrapper';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import FeaturedCard from '../components/FeaturedCard';
-import LemmonetBrandingConcepts from '../static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg';
-import LemmonetBrandingPalette from '../static/images/case-studies/lemmonet/lemmonet-branding-palette.svg';
-import LemmonetBrandingFont from '../static/images/case-studies/lemmonet/lemmonet-branding-font.svg';
-import LemmonetLogo from '../static/images/case-studies/lemmonet/lemmonet-logo.svg';
 
 class Lemmonet extends React.Component {
   componentDidMount() {
@@ -33,7 +29,10 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <LemmonetBrandingConcepts />
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg"
+              alt=""
+            />
           </figure>
           <figure
             className="smallfigure"
@@ -43,7 +42,10 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <LemmonetBrandingPalette />
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-palette.svg"
+              alt=""
+            />
           </figure>
           <figure
             data-aos="fade-up"
@@ -52,7 +54,10 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <LemmonetBrandingFont />
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-font.svg"
+              alt=""
+            />
           </figure>
           <p
             data-aos="fade-up"
@@ -104,7 +109,10 @@ class Lemmonet extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <LemmonetLogo />
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-logo.svg"
+              alt=""
+            />
           </figure>
           <h4
             className="small"
