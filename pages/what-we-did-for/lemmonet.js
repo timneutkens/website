@@ -1,26 +1,25 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import Contact from "../components/Contact";
-import FeaturedCard from "../components/FeaturedCard";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../../components/GaWrapper';
+import Layout from '../../components/Layout';
+import Contact from '../../components/Contact';
+import FeaturedCard from '../../components/FeaturedCard';
 
-class Toda extends React.Component {
+class Lemmonet extends React.Component {
   componentDidMount() {
     AOS.init();
   }
-
   render() {
     return (
       <Layout>
         <div className="wrapper">
           <h4>Branding + Website</h4>
-          <h1>How to make an internet protocol sexy</h1>
+          <h1>Not only a pretty face</h1>
           <p className="small">
-            TODA Network is the next evolution of TCP/IP for value transfer over
-            the communication layer and below the operating system. They
-            contacted us to redesign their website in order to get all the
-            blockchain-community's attention.
+            Lemmonet got in touch with us to refresh and create a new brand
+            universe. They wanted to communicate a sense of technology, blendend
+            with their characteristic maturity gained after more than 10 years
+            of experience.
           </p>
           <figure
             className="smallfigure"
@@ -31,7 +30,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-concepts.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg"
               alt=""
             />
           </figure>
@@ -44,7 +43,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-palette.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-palette.svg"
               alt=""
             />
           </figure>
@@ -56,7 +55,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-font.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-branding-font.svg"
               alt=""
             />
           </figure>
@@ -67,12 +66,17 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            They had a basic branding, and some color ideas, but the logo and
-            palette wasn't polished enough. We used gradients to resemble
-            movement, progression. A block square to give the idea of stability
-            and security, but it's hollow meaning it can be filled with
-            whichever content. Given the users the posibility to build anything
-            upon it. Meaningful, right?
+            Every pretty thing in the universe has a name, so we name our
+            colors. Period. Lemmonet Yellow is the primary and base color.
+            Represents sensitivity, it's optimistic, and favors academic and
+            analytical thinking, also it's related to wisdom and logic driven
+            decision. The secondary color is Deep Purple. It's often associated
+            with royalty, or value (as in poker chips), and bravery. As support
+            colors we've chosen Pretty silver, which should be used for
+            backgrounds, it represents maturity, and experience. And for the
+            fonts I present to you our quite black. Associated with
+            prestigiousness, sophistication, and usually industry leaders use
+            black as main color.
           </p>
           <figure
             className="smallfigure"
@@ -83,7 +87,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-process.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-brand-evolution.svg"
               alt=""
             />
           </figure>
@@ -106,7 +110,7 @@ class Toda extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/toda/toda-branding-logotypo.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-logo.svg"
               alt=""
             />
           </figure>
@@ -128,74 +132,20 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            Once again we express complex ideas with simple illustrations. Toda
-            being a descentralized ledgerless protocol made us really squeeze
-            our powers of simplification. First we needed to understand the
-            product, then we could start working on a brand system that really
-            made sense.
+            Simple, Clear, Serious, it does not only sends a message, it makes a
+            statement. The logotype also tells a story, the L and M merge means
+            how they've from the bottom, they've been through ups and downs, the
+            double M's, but they're getting to the top, the E and T merge. Also
+            it resembles to a Line chart that goes from the bottom to the top,
+            and there's a hint to an arrow pointing up (like Lemmonet's clients
+            sales and growth). Also some letters are joint when others are not.
+            That's a wink to the analog and digital eras. Represents the
+            coming-of-age era. The experience, and the adaptation to
+            technologies. Last but not least, the accent of the last stop. the
+            dot. Their freckle. It's their playful side, creative side, the part
+            of them that breaks the mold and represents humanity.
           </p>
           <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-nodes.svg"
-              alt=""
-            />
-          </figure>
-          <h4
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
-            Nodes illustration
-          </h4>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
-            <img
-              src="/static/images/case-studies/toda/toda-branding-illustration.svg"
-              alt=""
-            />
-          </figure>
-          <h4
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
-            Protocol concept
-          </h4>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
-            The content used in the website wasn't static, we used a new CMS
-            called{" "}
-            <a className="link" href="https://www.sanity.io/">
-              Sanity
-            </a>{" "}
-            that you should definitely check out, allowing customizations on the
-            fly. And a really easy to use dashboard for both, us developing and
-            the marketing team adding content.
-          </p>
-          <div
             className="full-width"
             data-aos="fade-up"
             data-aos-offset="50"
@@ -203,13 +153,11 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <figure className="partyoverhere">
-              <img
-                src="/static/images/case-studies/toda/toda-devices.png"
-                alt=""
-              />
-            </figure>
-          </div>
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-presentation.png"
+              alt=""
+            />
+          </figure>
           <p
             data-aos="fade-up"
             data-aos-offset="50"
@@ -217,9 +165,35 @@ class Toda extends React.Component {
             data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            Suddenly we were eager to use the protocol, it looks like something
-            else, not just a cold set of rules for a machine, but a product that
-            engage users, and allows developers to build upon.
+            Nowadays, brands are no longer static, dynamism is part of the DNA
+            of every startup, Here we show how the brand should be used in
+            marketing announcements, advertising, and general communications.
+          </p>
+          <figure
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="/static/images/case-studies/lemmonet/lemmonet-responsive.png"
+              alt=""
+            />
+          </figure>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+          >
+            Finally, once all the brand guidelines were built, we had a strong
+            foundation to build the website layout. Several wireframes and
+            iterations where thrown to a browser. Terabytes of Sketch files
+            after we nailed it. A website that transmitted all the values from
+            the branding, using the new color scheme and fonts. Custom
+            illustrations where a nice detail that Jose is really proud of.
           </p>
           <figure>
             <img
@@ -228,7 +202,7 @@ class Toda extends React.Component {
               data-aos-delay="200"
               data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              src="/static/images/case-studies/toda/toda-big-screen.svg"
+              src="/static/images/case-studies/lemmonet/lemmonet-website.png"
               alt=""
             />
           </figure>
@@ -266,8 +240,6 @@ class Toda extends React.Component {
           h1 {
             margin-top: 0.2em;
             margin-bottom: 0;
-            align-self: center;
-            text-align: center;
           }
           h2.small {
             margin-top: 2em;
@@ -303,26 +275,10 @@ class Toda extends React.Component {
             margin-bottom: 4em;
           }
 
-          .partyoverhere {
-            width: 70%;
-            transform: translateY(-10%);
-            margin: 0 auto;
-          }
-
-          .full-width {
-            margin: 1.5em 0;
-            background-color: #37a8f4;
-            max-height: 500px;
-          }
-
           @media (min-width: 900px) {
             .full-width {
-              margin: 3.5em 0;
               margin-left: calc(((100vw - 920px) / 2) * -1);
               margin-right: calc(((100vw - 920px) / 2) * -1);
-            }
-            .partyoverhere {
-              width: 45%;
             }
           }
         `}</style>
@@ -331,4 +287,4 @@ class Toda extends React.Component {
   }
 }
 
-export default GaWrapper(Toda);
+export default GaWrapper(Lemmonet);

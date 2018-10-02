@@ -71,24 +71,6 @@ const Contact = () => (
         text-align: center;
       }
 
-      .button {
-        display: inline-block;
-        font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 1.5em 2em;
-        border: 1px solid rgb(256, 256, 256);
-        box-shadow: -5px 5px 0 0 var(--color-secondary);
-        background: var(--color-primary);
-        color: var(--color-secondary);
-        transition: all 200ms ease;
-      }
-
-      .button:hover {
-        box-shadow: 10px -10px 0 0 var(--color-secondary);
-        transform: translate(-5px, 5px);
-      }
-
       @media (min-width: 600px) {
         section {
           margin-top: 7em;

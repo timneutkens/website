@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "basement-grotesque";
-  src: url("/static/fonts/basement-grotesqueRegular.woff2") format("woff2"),
-    url("/static/fonts/basement-grotesqueRegular.woff") format("woff");
+  font-family: 'basement-grotesque';
+  src: url('/static/fonts/basement-grotesqueRegular.woff2') format('woff2'),
+    url('/static/fonts/basement-grotesqueRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto Mono";
-  src: url("/static/fonts/RobotoMono-Regular.woff2") format("woff2"),
-    url("/static/fonts/RobotoMono-Regular.woff") format("woff");
+  font-family: 'Roboto Mono';
+  src: url('/static/fonts/RobotoMono-Regular.woff2') format('woff2'),
+    url('/static/fonts/RobotoMono-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto Mono";
-  src: url("/static/fonts/RobotoMono-Light.woff2") format("woff2"),
-    url("/static/fonts/RobotoMono-Light.woff") format("woff");
+  font-family: 'Roboto Mono';
+  src: url('/static/fonts/RobotoMono-Light.woff2') format('woff2'),
+    url('/static/fonts/RobotoMono-Light.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -32,8 +32,8 @@
   --color-primary: #000;
   --color-secondary: #fff;
   --color-tertiary: #bdbdbd;
-  --font-primary: "basement-grotesque", sans-serif;
-  --font-secondary: "Roboto Mono", monospace;
+  --font-primary: 'basement-grotesque', sans-serif;
+  --font-secondary: 'Roboto Mono', monospace;
 }
 
 html {
@@ -161,6 +161,26 @@ path {
   background: var(--color-secondary);
 }
 
+.button {
+  display: inline-block;
+  font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5em 5em;
+  border: 1px solid rgb(256, 256, 256);
+  box-shadow: -5px 5px 0 0 var(--color-secondary);
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  transition: all 200ms ease;
+  width: 100%;
+}
+
+.button:hover {
+  box-shadow: 10px -10px 0 0 var(--color-secondary);
+  transform: translate(-5px, 5px);
+}
+
 *::-moz-selection {
   color: var(--color-primary);
   background-color: rgba(255, 255, 255, 0.99);
@@ -203,5 +223,8 @@ input:focus {
   main {
     max-width: 86.1vw;
     margin: 4.17vw auto;
+  }
+  .button {
+    width: auto;
   }
 }

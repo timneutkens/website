@@ -1,9 +1,9 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import Contact from "../components/Contact";
-import FeaturedCard from "../components/FeaturedCard";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../../components/GaWrapper';
+import Layout from '../../components/Layout';
+import Contact from '../../components/Contact';
+import FeaturedCard from '../../components/FeaturedCard';
 
 class Gamedex extends React.Component {
   componentDidMount() {

@@ -87,25 +87,6 @@ export default class Error extends React.Component {
             padding: 0 1.5em;
           }
 
-          .button {
-            display: inline-block;
-            font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 1em 3em;
-            border: 1px solid rgb(256, 256, 256);
-            background: var(--color-primary);
-            color: var(--color-secondary);
-            transition: all 200ms ease;
-            float: right;
-            margin-bottom: 1.5em;
-          }
-
-          .button:hover {
-            box-shadow: 10px -10px 0 0 var(--color-secondary);
-            transform: translate(-5px, 5px);
-          }
-
           @media (min-width: 800px) {
             .content-box {
               position: absolute;

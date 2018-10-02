@@ -1,10 +1,10 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import FeaturedCard from "../components/FeaturedCard";
-import Contact from "../components/Contact";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../components/GaWrapper';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import FeaturedCard from '../components/FeaturedCard';
+import Contact from '../components/Contact';
 
 class Blog extends React.Component {
   componentDidMount() {
@@ -23,7 +23,7 @@ Have fun."
           foregroundimg="/static/images/device2.png"
           foreMaxWidth="30%"
           paddingTop="2em"
-          link="/gamedex"
+          link="what-we-did-for/gamedex"
           subhead="NEXTjs WEBSITE"
           callToAction="READ MORE"
           title="They were cool, we made them mean"
@@ -35,7 +35,7 @@ Have fun."
           foreMaxWidth="80%"
           backMaxWidth="60%"
           inverted
-          link="/toda"
+          link="what-we-did-for/toda"
           subhead="BRANDING & WEBSITE"
           callToAction="READ MORE"
           title="How to make an internet protocol sexy"
@@ -48,7 +48,7 @@ Have fun."
           backgroundimg="/static/images/device6.png"
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
-          link="/imusify"
+          link="what-we-did-for/imusify"
           subhead="NEXTjs WEBSITE"
           callToAction="READ MORE"
           title="Cut the middleman"
@@ -60,7 +60,7 @@ Have fun."
           foreMaxWidth="65%"
           backMaxWidth="80%"
           inverted
-          link="/lemmonet"
+          link="what-we-did-for/lemmonet"
           subhead="BRANDING & WEBSITE"
           callToAction="READ MORE"
           title="Not only a pretty face"
