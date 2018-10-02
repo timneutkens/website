@@ -150,7 +150,7 @@ class Gamedex extends React.Component {
           foreMaxWidth="30%"
           paddingTop="12em"
           callToAction="READ MORE"
-          link="/gamedex"
+          link="/what-we-did-for/gamedex"
           subhead="NEXTjs WEBSITE"
           title="They were cool, we made them mean"
           description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."

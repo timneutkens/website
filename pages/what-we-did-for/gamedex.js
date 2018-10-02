@@ -155,7 +155,7 @@ class Gamedex extends React.Component {
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
           callToAction="LEARN MORE"
-          link="/imusify"
+          link="/what-we-did-for/imusify"
           subhead="NEXTjs WEBSITE"
           title="Cut the middleman"
           description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."

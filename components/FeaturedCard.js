@@ -16,7 +16,7 @@ const FeaturedCard = props => (
   >
     <div className="image">
       <FeaturedImage
-        linkTo="#"
+        linkTo={props.link}
         backgroundimg={props.backgroundimg}
         foregroundimg={props.foregroundimg}
         foreMaxWidth={props.foreMaxWidth}
