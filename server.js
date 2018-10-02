@@ -3,6 +3,7 @@ const next = require('next');
 const bodyParser = require('body-parser');
 const SparkPost = require('sparkpost');
 const dev = process.env.NODE_ENV !== 'production';
+
 if (!dev) {
   require('dotenv').config();
 }

@@ -1,4 +1,7 @@
 {
   "name": "basement",
-  "alias": "basement.studio"
+  "alias": "basement.studio",
+  "env": {
+    "sparkpostapikey": "sparkpostapikey"
+  }
 }
