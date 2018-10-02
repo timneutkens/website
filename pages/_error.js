@@ -22,7 +22,7 @@ export default class Error extends React.Component {
                 How did you find the basement, pal? <br /> go home!
               </p>
               <a className="button" href="/index">
-                M'kay{' '}
+                M'kay
               </a>
             </div>
           </div>
@@ -69,6 +69,8 @@ export default class Error extends React.Component {
             position: absolute;
             left: 50%;
             top: 50%;
+            padding: 0;
+            padding-bottom: 2em;
             transform: translate(-50%, -50%);
             width: 90vw;
             border-style: solid;
@@ -98,6 +100,9 @@ export default class Error extends React.Component {
               border-width: 1px;
               border-color: var(--color-secondary);
               background-color: rgba(0, 0, 0, 0.8);
+            }
+            .button {
+              float: right;
             }
           }
         `}</style>
