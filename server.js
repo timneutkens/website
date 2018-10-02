@@ -2,6 +2,7 @@ const express = require('express');
 const next = require('next');
 const bodyParser = require('body-parser');
 const SparkPost = require('sparkpost');
+require('dotenv').config();
 
 const dev = process.env.NODE_ENV !== 'production';
 const mailer = new SparkPost(process.env.sparkpostApiKey);
