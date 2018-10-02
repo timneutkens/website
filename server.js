@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const SparkPost = require('sparkpost');
 
 const dev = process.env.NODE_ENV !== 'production';
-const mailer = new SparkPost('8011aabd6bc20855582982d1c49dff5632326dd5');
+const mailer = new SparkPost(process.env.sparkpostApiKey);
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
