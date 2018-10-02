@@ -24,6 +24,12 @@ export default class MyDocument extends Document {
           <meta name="robots" content="index,follow" />
           <meta name="googlebot" content="index,follow" />
           <meta name="google" content="notranslate" />
+          <meta property="fb:app_id" content="797529547108208" />
+          <meta
+            name="keywords"
+            content="basement, studio, UX, UI, userexperience, webdesign, webdeveloper, design, codedesign, code, hashtag, development website, websitedevelopment, webservices"
+          />
+          <meta name="author" content="basement.studio" />
           <meta
             name="description"
             content="We're a brand creators, we're code hypebeasts, we inhale your story and exhale digital experiences."
