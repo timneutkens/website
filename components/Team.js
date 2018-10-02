@@ -180,7 +180,7 @@ const Team = () => (
       thumbnail="Jose.jpg"
       name="Jose Rago"
       instagram="http://instagram.com/ragojose"
-      linkedin="www.linkedin.com/in/jose-francisco-rago"
+      linkedin="http://www.linkedin.com/in/jose-francisco-rago"
       twitter="http://twitter.com/ragojose"
       position="Co-Founder & Product Designer"
       description="As a passionate designer and pixel-perfect enthusiast, I'm always focused on solving user experience problems and improving design processes for clients and internal teams. I'm constantly with my finger on the pulse of the latest technology to create innovative products"
