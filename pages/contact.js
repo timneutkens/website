@@ -14,18 +14,44 @@ const Contact = () => (
     </Head>
     <Nav />
     <header>
-      <h1>Let's chat.</h1>
-      <h3>
+      <h1
+        data-aos="fade-right"
+        data-aos-offset="50"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
+      >
+        Let's chat.
+      </h1>
+      <h3
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out-quad"
+      >
         We spend a lot of time behind our computers and always welcome the
         opportunity to discuss your upcoming project and meet new faces.
       </h3>
-      <p>
+      <p
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out-quad"
+      >
         Get in touch using the form below, shoot us an email, reach out on
         social media, heck – send a carrier pigeon. Regardless of how, we’d
         love to hear from you.
       </p>
     </header>
-    <section>
+    <section
+      data-aos="fade-up"
+      data-aos-offset="50"
+      data-aos-delay="600"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out-quad"
+    >
       <ContactForm />
       <div className="find-us">
         <h3>Where to find us</h3>
@@ -48,7 +74,7 @@ const Contact = () => (
         grid-template-columns: 1fr;
         align-items: center;
         animation-delay: 400ms;
-        margin-top: 7em;
+        margin-top: 2.5em;
       }
 
       section {
@@ -78,7 +104,7 @@ const Contact = () => (
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr auto;
           animation-delay: 800ms;
-          margin-top: 7em;
+          margin-top: 2em;
           margin-bottom: 0;
         }
 
@@ -88,7 +114,7 @@ const Contact = () => (
 
         h3 {
           grid-area: subheader;
-          letter-spacing: -0.05em;
+          letter-spacing: -0.075em;
         }
 
         p {

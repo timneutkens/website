@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Milestone = props => (
   <div
@@ -28,9 +28,6 @@ const Milestone = props => (
       }
       h3 {
         margin: 0;
-      }
-      h6 {
-        margin-top: 0;
       }
     `}</style>
   </div>

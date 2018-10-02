@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from '../static/basement-logo-new.svg';
-import Link from './Link';
+import React from "react";
+import Logo from "../static/basement-logo-new.svg";
+import Link from "./Link";
 
 const Footer = () => (
   <footer>
@@ -8,7 +8,7 @@ const Footer = () => (
       <Logo />
     </i>
     <p className="suffix">
-      Enough about us,{' '}
+      Enough about us,{" "}
       <a className="link" href="/contact">
         tell us about you
       </a>
@@ -63,7 +63,7 @@ const Footer = () => (
       footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 'logo' 'suffix' 'navigation' 'social' 'copyright';
+        grid-template-areas: "logo" "suffix" "navigation" "social" "copyright";
         padding: 4.17vw 0;
         color: var(--color-tertiary);
         letter-spacing: -0.5;
@@ -104,7 +104,7 @@ const Footer = () => (
         display: block;
         margin-bottom: 2.7em;
         margin-top: 1em;
-        width: 40%;
+        width: 60%;
         grid-area: logo;
       }
 
@@ -115,10 +115,18 @@ const Footer = () => (
       @media all and (min-width: 600px) {
         footer {
           grid-template-columns: 2fr 1fr 1fr;
-          grid-template-areas: 'logo . .' 'suffix navigation social' 'copyright . .';
+          grid-template-areas: "logo . ." "suffix navigation social" "copyright . .";
         }
         p:first-child {
           padding-left: 0;
+        }
+
+        .logo {
+          display: block;
+          margin-bottom: 2.7em;
+          margin-top: 1em;
+          width: 40%;
+          grid-area: logo;
         }
 
         span:last-child {

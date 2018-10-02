@@ -1,6 +1,6 @@
-import Formsy from 'formsy-react';
-import React from 'react';
-import Input from '../components/Input';
+import Formsy from "formsy-react";
+import React from "react";
+import Input from "../components/Input";
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -19,19 +19,19 @@ class ContactForm extends React.Component {
   }
 
   submit(model, resetForm) {
-    fetch('/api/contact', {
-      method: 'post',
+    fetch("/api/contact", {
+      method: "post",
       headers: {
-        Accept: 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(model)
     }).then(res => {
       if (res.status === 200) {
-        console.log('sent!');
+        alert("Thanks, we'll be in touch soon.");
         resetForm();
       } else {
-        console.log('not sent!', res);
+        console.log("not sent!", res);
       }
     });
   }
@@ -73,12 +73,12 @@ class ContactForm extends React.Component {
         />
         <button
           className={
-            this.state.canSubmit ? 'submit' : 'submit submit--disabled'
+            this.state.canSubmit ? "submit" : "submit submit--disabled"
           }
           type="submit"
           disabled={!this.state.canSubmit}
         >
-          CONTACT US{' '}
+          CONTACT US{" "}
         </button>
         <style jsx global>{`
           .form__wrapper {
