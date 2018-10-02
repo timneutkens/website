@@ -1,5 +1,5 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-import React from 'react';
+import Document, { Head, Main, NextScript } from "next/document";
+import React from "react";
 
 export default class MyDocument extends Document {
   constructor(props) {
@@ -24,7 +24,6 @@ export default class MyDocument extends Document {
           <meta name="robots" content="index,follow" />
           <meta name="googlebot" content="index,follow" />
           <meta name="google" content="notranslate" />
-          <meta property="fb:app_id" content="797529547108208" />
           <meta
             name="keywords"
             content="basement, studio, UX, UI, userexperience, webdesign, webdeveloper, design, codedesign, code, hashtag, development website, websitedevelopment, webservices"
