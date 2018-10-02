@@ -1,13 +1,15 @@
-import Formsy from "formsy-react";
-import React from "react";
-import Input from "../components/Input";
+import Formsy from 'formsy-react';
+import React from 'react';
+import Input from '../components/Input';
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.disableButton = this.disableButton.bind(this);
     this.enableButton = this.enableButton.bind(this);
-    this.state = { canSubmit: false };
+    this.submit = this.submit.bind(this);
+    this.state = { canSubmit: false, honeypot: null };
+    this.pleaseDont = React.createRef();
   }
 
   disableButton() {
@@ -18,22 +20,28 @@ class ContactForm extends React.Component {
     this.setState({ canSubmit: true });
   }
 
+  componentDidMount() {
+    this.setState({ honeypot: document.getElementById('please-dont') });
+  }
+
   submit(model, resetForm) {
-    fetch("/api/contact", {
-      method: "post",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(model)
-    }).then(res => {
-      if (res.status === 200) {
-        alert("Thanks, we'll be in touch soon.");
-        resetForm();
-      } else {
-        console.log("not sent!", res);
-      }
-    });
+    if (!this.state.honeypot.checked) {
+      fetch('/api/contact', {
+        method: 'post',
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(model)
+      }).then(res => {
+        if (res.status === 200) {
+          alert("Thanks, we'll be in touch soon.");
+          resetForm();
+        } else {
+          console.log('not sent!', res);
+        }
+      });
+    }
   }
 
   render() {
@@ -71,14 +79,23 @@ class ContactForm extends React.Component {
           validationError="We know you have something to say!"
           required
         />
+        <input
+          refs={this.pleaseDont}
+          type="checkbox"
+          id="please-dont"
+          value="1"
+          style={{ display: 'none !important' }}
+          tabIndex="-1"
+          autoComplete="off"
+        />
         <button
           className={
-            this.state.canSubmit ? "submit" : "submit submit--disabled"
+            this.state.canSubmit ? 'submit' : 'submit submit--disabled'
           }
           type="submit"
           disabled={!this.state.canSubmit}
         >
-          CONTACT US{" "}
+          CONTACT US{' '}
         </button>
         <style jsx global>{`
           .form__wrapper {
