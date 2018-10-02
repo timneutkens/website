@@ -1,11 +1,13 @@
-const express = require("express");
-const next = require("next");
-const bodyParser = require("body-parser");
-const SparkPost = require("sparkpost");
-require("dotenv").config();
+const express = require('express');
+const next = require('next');
+const bodyParser = require('body-parser');
+const SparkPost = require('sparkpost');
+const dev = process.env.NODE_ENV !== 'production';
+if (!dev) {
+  require('dotenv').config();
+}
 
-const dev = process.env.NODE_ENV !== "production";
-const mailer = new SparkPost(process.env.sparkpostApiKey);
+const mailer = new SparkPost(process.env.sparkpostapikey);
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
@@ -14,8 +16,8 @@ app.prepare().then(() => {
 
   server.use(bodyParser.json());
 
-  server.post("/api/contact", (req, res) => {
-    const { email = "", name = "", message = "" } = req.body;
+  server.post('/api/contact', (req, res) => {
+    const { email = '', name = '', message = '' } = req.body;
 
     mailer.transmissions
       .send({
@@ -23,26 +25,26 @@ app.prepare().then(() => {
           sandbox: false
         },
         content: {
-          from: { name: "Website", email: "info@basement.studio" },
+          from: { name: 'Website', email: 'info@basement.studio' },
           reply_to: email,
           subject: `New message from ${name}`,
           html: `<html><body><h1>A new mail was sent from the website's contact form</h1><h3>Sender: ${name}</h3><h3>Reply to: ${email}</h3><h2>Content: <br> ${message}</h2></body></html>`
         },
-        recipients: [{ address: "info@basement.studio" }]
+        recipients: [{ address: 'info@basement.studio' }]
       })
       .then(data => {
-        res.send("success");
+        res.send('success');
       })
       .catch(err => {
         console.log(err);
-        res.send("bad");
+        res.send('bad');
       });
   });
 
-  server.get("*", (req, res) => handle(req, res));
+  server.get('*', (req, res) => handle(req, res));
 
   server.listen(3000, err => {
     if (err) throw err;
-    console.log("> Read on http://localhost:3000");
+    console.log('> Read on http://localhost:3000');
   });
 });
