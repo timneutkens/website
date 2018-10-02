@@ -80,13 +80,11 @@ class ContactForm extends React.Component {
           required
         />
         <input
-          refs={this.pleaseDont}
           type="checkbox"
           id="please-dont"
           value="1"
-          style={{ display: 'none !important' }}
           tabIndex="-1"
-          autoComplete="off"
+          autoComplete="nope"
         />
         <button
           className={
@@ -146,6 +144,10 @@ class ContactForm extends React.Component {
 
           .submit {
             margin: 0;
+          }
+
+          #please-dont {
+            display: none;
           }
 
           @media all and (min-width: 800px) {
