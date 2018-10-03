@@ -7,7 +7,7 @@ import FeaturedCard from "../../components/FeaturedCard";
 
 class Toda extends React.Component {
   componentDidMount() {
-    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
+    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
   }
 
   render() {
@@ -224,26 +224,32 @@ class Toda extends React.Component {
             margin-bottom: 4em;
           }
 
-          .partyoverhere {
-            width: 70%;
-            transform: translateY(-10%);
-            margin: 0 auto;
-          }
-
           .full-width {
-            margin: 1.5em 0;
+            margin: 0;
             background-color: #37a8f4;
             max-height: 500px;
           }
 
+          .partyoverhere {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            transform: translateY(-10%);
+            margin: 0 auto;
+          }
+          .partyoverhere img {
+            max-width: 70%;
+          }
           @media (min-width: 900px) {
             .full-width {
-              margin: 3.5em 0;
+              margin: 3rem 0;
               margin-left: calc(((100vw - 920px) / 2) * -1);
               margin-right: calc(((100vw - 920px) / 2) * -1);
             }
-            .partyoverhere {
-              width: 45%;
+
+            .partyoverhere img {
+              max-width: 40%;
             }
           }
         `}</style>

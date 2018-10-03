@@ -5,9 +5,9 @@ import Layout from "../../components/Layout";
 import Contact from "../../components/Contact";
 import FeaturedCard from "../../components/FeaturedCard";
 
-class Gamedex extends React.Component {
+class Imusify extends React.Component {
   componentDidMount() {
-    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
+    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
   }
   render() {
     return (
@@ -74,11 +74,7 @@ class Gamedex extends React.Component {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
           >
-            <figure
-              className="partyoverhere"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-            >
+            <figure className="partyoverhere">
               <img
                 src="/static/images/case-studies/imusify/imusify-ipad.png"
                 alt=""
@@ -163,26 +159,37 @@ class Gamedex extends React.Component {
             margin-bottom: 4em;
           }
 
-          .partyoverhere {
-            width: 80%;
-            transform: translateY(-10%);
-            margin: 0 auto;
-          }
-
           .full-width {
-            margin: 1.5em 0;
+            margin: 0;
             background-color: #ea3f4f;
             max-height: 500px;
           }
 
+          .partyoverhere {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            transform: translateY(-10%);
+            margin: 0 auto;
+          }
+          .partyoverhere img {
+            max-width: 90%;
+          }
           @media (min-width: 900px) {
             .full-width {
-              margin: 3.5em 0;
+              margin: 3rem 0;
               margin-left: calc(((100vw - 920px) / 2) * -1);
               margin-right: calc(((100vw - 920px) / 2) * -1);
             }
-            .partyoverhere {
-              width: 60%;
+
+            .partyoverhere img {
+              max-width: 60%;
+            }
+          }
+          @media (min-width: 1800px) {
+            .partyoverhere img {
+              max-width: 50%;
             }
           }
         `}</style>
@@ -191,4 +198,4 @@ class Gamedex extends React.Component {
   }
 }
 
-export default GaWrapper(Gamedex);
+export default GaWrapper(Imusify);

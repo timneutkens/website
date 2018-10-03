@@ -7,7 +7,7 @@ import FeaturedCard from "../../components/FeaturedCard";
 
 class Gamedex extends React.Component {
   componentDidMount() {
-    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
+    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
   }
   render() {
     return (
@@ -74,11 +74,7 @@ class Gamedex extends React.Component {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
           >
-            <figure
-              className="partyoverhere"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-            >
+            <figure className="partyoverhere">
               <img
                 src="/static/images/case-studies/gamedex/gamedex-devices.png"
                 alt=""
@@ -164,18 +160,39 @@ class Gamedex extends React.Component {
           figure.smallfigure {
             margin-bottom: 4em;
           }
+
           .full-width {
-            margin: 5em 0;
+            margin: 0;
             background-color: #050c3b;
             max-height: 500px;
-            margin-left: calc(((100vw - 920px) / 2) * -1);
-            margin-right: calc(((100vw - 920px) / 2) * -1);
           }
 
           .partyoverhere {
-            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             transform: translateY(-10%);
             margin: 0 auto;
+          }
+          .partyoverhere img {
+            max-width: 90%;
+          }
+          @media (min-width: 900px) {
+            .full-width {
+              margin: 3rem 0;
+              margin-left: calc(((100vw - 920px) / 2) * -1);
+              margin-right: calc(((100vw - 920px) / 2) * -1);
+            }
+
+            .partyoverhere img {
+              max-width: 60%;
+            }
+          }
+          @media (min-width: 1800px) {
+            .partyoverhere img {
+              max-width: 50%;
+            }
           }
         `}</style>
       </Layout>

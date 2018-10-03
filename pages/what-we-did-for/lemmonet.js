@@ -7,7 +7,7 @@ import FeaturedCard from "../../components/FeaturedCard";
 
 class Lemmonet extends React.Component {
   componentDidMount() {
-    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
+    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
   }
   render() {
     return (
