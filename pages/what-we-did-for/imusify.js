@@ -59,7 +59,7 @@ class Gamedex extends React.Component {
             data-aos-easing="ease-in-out"
           >
             <img
-              src="/static/images/case-studies/imusify/imusify-devices.svg"
+              src="/static/images/case-studies/imusify/imusify-devices.png"
               alt=""
             />
           </figure>
