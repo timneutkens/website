@@ -1,13 +1,13 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../../components/GaWrapper';
-import Layout from '../../components/Layout';
-import Contact from '../../components/Contact';
-import FeaturedCard from '../../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../../components/GaWrapper";
+import Layout from "../../components/Layout";
+import Contact from "../../components/Contact";
+import FeaturedCard from "../../components/FeaturedCard";
 
 class Gamedex extends React.Component {
   componentDidMount() {
-    AOS.init();
+    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
   }
   render() {
     return (
@@ -20,26 +20,14 @@ class Gamedex extends React.Component {
             materials needed a refresh, and after a couple of revisions, we
             agreed on the general aesthetics for the brand.
           </p>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/imusify/imusify-bigscreen.png"
               alt=""
             />
           </figure>
 
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             On most blockchain related startups, the solution behind the product
             is usually a little complex for simple peasants, We usually draw
             some sketches to translate those concepts into simple to understand
@@ -51,9 +39,6 @@ class Gamedex extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -64,9 +49,6 @@ class Gamedex extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             imusify illustrations
@@ -74,9 +56,6 @@ class Gamedex extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -84,14 +63,7 @@ class Gamedex extends React.Component {
               alt=""
             />
           </figure>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             After just a couple of wireframes, the layout was agreed and we move
             onto designing the UI blocks to create a design system. Components
             can now be shared between their app and the website, allowing to
@@ -100,35 +72,25 @@ class Gamedex extends React.Component {
           <div
             className="full-width"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <figure className="partyoverhere">
+            <figure
+              className="partyoverhere"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 src="/static/images/case-studies/imusify/imusify-ipad.png"
                 alt=""
               />
             </figure>
           </div>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             The waves pattern resemble audio waves, it's a simple concept that
             unifies the brand guidelines on top of which we built their image.
           </p>
-          <figure>
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-delay="200"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
               src="/static/images/case-studies/imusify/imusify-website.png"
               alt=""
             />
@@ -136,9 +98,6 @@ class Gamedex extends React.Component {
           <h2
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Keep browsing

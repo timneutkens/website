@@ -1,7 +1,7 @@
-import React from 'react';
-import Logo from '../static/logo.svg';
-import LogoMobile from '../static/logo-m.svg';
-import Link from './Link';
+import React from "react";
+import Logo from "../static/logo.svg";
+import LogoMobile from "../static/logo-m.svg";
+import Link from "./Link";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class Nav extends React.Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions() {
@@ -24,27 +24,27 @@ class Nav extends React.Component {
 
   componentWillUnmount() {
     this.state.vpWidth;
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("resize", this.updateWindowDimensions);
   }
 
   render() {
     const logoAnimation = this.props.animate
       ? {
-          'data-aos': 'fade-down',
-          'data-aos-offset': '50',
-          'data-aos-delay': '200',
-          'data-aos-duration': '1000',
-          'data-aos-easing': 'cubic-bezier(.05, .69, .14, 1)'
+          "data-aos": "fade-down",
+          "data-aos-offset": "50",
+          "data-aos-delay": "200",
+          "data-aos-duration": "1000",
+          "data-aos-easing": "cubic-bezier(.05, .69, .14, 1)"
         }
       : {};
 
     const navAnimation = this.props.animate
       ? {
-          'data-aos': 'fade-down',
-          'data-aos-offset': '50',
-          'data-aos-delay': '500',
-          'data-aos-duration': '1000',
-          'data-aos-easing': 'cubic-bezier(.05, .69, .14, 1)'
+          "data-aos": "fade-down",
+          "data-aos-offset": "50",
+          "data-aos-delay": "500",
+          "data-aos-duration": "1000",
+          "data-aos-easing": "cubic-bezier(.05, .69, .14, 1)"
         }
       : {};
 

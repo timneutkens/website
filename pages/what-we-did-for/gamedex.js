@@ -1,13 +1,13 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../../components/GaWrapper';
-import Layout from '../../components/Layout';
-import Contact from '../../components/Contact';
-import FeaturedCard from '../../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../../components/GaWrapper";
+import Layout from "../../components/Layout";
+import Contact from "../../components/Contact";
+import FeaturedCard from "../../components/FeaturedCard";
 
 class Gamedex extends React.Component {
   componentDidMount() {
-    AOS.init();
+    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
   }
   render() {
     return (
@@ -23,39 +23,21 @@ class Gamedex extends React.Component {
             projected their spirit on the browser window, we just added a little
             glitter here and there.
           </p>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/gamedex/gamedex-big-screen.png"
               alt=""
             />
           </figure>
 
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             Assets were redrawn, Their complete color palette was revamped and
             we used neon styles (reminiscent of TRON) to create a more digital
             and gamer experience. Most of the assets are floating using
             state-of-the-art parallax effects. And some cards also tilt on hover
             tracking the mouse position.
           </p>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/gamedex/gamedex-illustration.png"
               alt=""
@@ -64,9 +46,6 @@ class Gamedex extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Gamedex illustrations
@@ -74,9 +53,6 @@ class Gamedex extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -84,14 +60,7 @@ class Gamedex extends React.Component {
               alt=""
             />
           </figure>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             Luckily for us, mainly, their brand was already really cool. They
             had brand manuals and everything was well documented. But the brand
             was lacking spirit. We gave this brand a soul by adding interactive
@@ -103,38 +72,28 @@ class Gamedex extends React.Component {
           <div
             className="full-width"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
-            <figure className="partyoverhere">
+            <figure
+              className="partyoverhere"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 src="/static/images/case-studies/gamedex/gamedex-devices.png"
                 alt=""
               />
             </figure>
           </div>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             We couldn't wait to see our work live on production. It is a nice
             experience working with Gamedex, Now that the foundations for a
             brand system is laid out we're starting to work on the product
             itself to develop a solid brand system that is recognizable
             everywhere.
           </p>
-          <figure>
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-delay="200"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
               src="/static/images/case-studies/gamedex/gamedex-website.png"
               alt=""
             />
@@ -142,9 +101,6 @@ class Gamedex extends React.Component {
           <h2
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Keep browsing

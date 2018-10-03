@@ -1,13 +1,13 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../../components/GaWrapper';
-import Layout from '../../components/Layout';
-import Contact from '../../components/Contact';
-import FeaturedCard from '../../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../../components/GaWrapper";
+import Layout from "../../components/Layout";
+import Contact from "../../components/Contact";
+import FeaturedCard from "../../components/FeaturedCard";
 
 class Toda extends React.Component {
   componentDidMount() {
-    AOS.init();
+    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
   }
 
   render() {
@@ -25,9 +25,6 @@ class Toda extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -38,9 +35,6 @@ class Toda extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -48,25 +42,13 @@ class Toda extends React.Component {
               alt=""
             />
           </figure>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/toda/toda-branding-font.svg"
               alt=""
             />
           </figure>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             They had a basic branding, and some color ideas, but the logo and
             palette wasn't polished enough. We used gradients to resemble
             movement, progression. A block square to give the idea of stability
@@ -77,9 +59,6 @@ class Toda extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -90,9 +69,6 @@ class Toda extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Branding evolution
@@ -100,9 +76,6 @@ class Toda extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -113,34 +86,18 @@ class Toda extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Wordmark
           </h4>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             Once again we express complex ideas with simple illustrations. Toda
             being a descentralized ledgerless protocol made us really squeeze
             our powers of simplification. First we needed to understand the
             product, then we could start working on a brand system that really
             made sense.
           </p>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/toda/toda-branding-nodes.svg"
               alt=""
@@ -149,20 +106,11 @@ class Toda extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Nodes illustration
           </h4>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/toda/toda-branding-illustration.svg"
               alt=""
@@ -171,26 +119,16 @@ class Toda extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Protocol concept
           </h4>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             The content used in the website wasn't static, we used a new CMS
-            called{' '}
+            called{" "}
             <a className="link" href="https://www.sanity.io/">
               Sanity
-            </a>{' '}
+            </a>{" "}
             that you should definitely check out, allowing customizations on the
             fly. And a really easy to use dashboard for both, us developing and
             the marketing team adding content.
@@ -198,9 +136,6 @@ class Toda extends React.Component {
           <div
             className="full-width"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <figure className="partyoverhere">
@@ -210,24 +145,13 @@ class Toda extends React.Component {
               />
             </figure>
           </div>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             Suddenly we were eager to use the protocol, it looks like something
             else, not just a cold set of rules for a machine, but a product that
             engage users, and allows developers to build upon.
           </p>
-          <figure>
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-delay="200"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
               src="/static/images/case-studies/toda/toda-big-screen.svg"
               alt=""
             />
@@ -235,9 +159,6 @@ class Toda extends React.Component {
           <h2
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Keep browsing

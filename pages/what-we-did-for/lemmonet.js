@@ -1,13 +1,13 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../../components/GaWrapper';
-import Layout from '../../components/Layout';
-import Contact from '../../components/Contact';
-import FeaturedCard from '../../components/FeaturedCard';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../../components/GaWrapper";
+import Layout from "../../components/Layout";
+import Contact from "../../components/Contact";
+import FeaturedCard from "../../components/FeaturedCard";
 
 class Lemmonet extends React.Component {
   componentDidMount() {
-    AOS.init();
+    AOS.init({ once: false, offset: 100, delay: 500, duration: 400 });
   }
   render() {
     return (
@@ -24,9 +24,6 @@ class Lemmonet extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -37,9 +34,6 @@ class Lemmonet extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -47,25 +41,13 @@ class Lemmonet extends React.Component {
               alt=""
             />
           </figure>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/lemmonet/lemmonet-branding-font.svg"
               alt=""
             />
           </figure>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             Every pretty thing in the universe has a name, so we name our
             colors. Period. Lemmonet Yellow is the primary and base color.
             Represents sensitivity, it's optimistic, and favors academic and
@@ -81,9 +63,6 @@ class Lemmonet extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -94,9 +73,6 @@ class Lemmonet extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Branding evolution
@@ -104,9 +80,6 @@ class Lemmonet extends React.Component {
           <figure
             className="smallfigure"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -117,21 +90,11 @@ class Lemmonet extends React.Component {
           <h4
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Wordmark
           </h4>
-          <p
-            className="small"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             Simple, Clear, Serious, it does not only sends a message, it makes a
             statement. The logotype also tells a story, the L and M merge means
             how they've from the bottom, they've been through ups and downs, the
@@ -148,9 +111,6 @@ class Lemmonet extends React.Component {
           <figure
             className="full-width"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             <img
@@ -158,36 +118,18 @@ class Lemmonet extends React.Component {
               alt=""
             />
           </figure>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             Nowadays, brands are no longer static, dynamism is part of the DNA
             of every startup, Here we show how the brand should be used in
             marketing announcements, advertising, and general communications.
           </p>
-          <figure
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
               src="/static/images/case-studies/lemmonet/lemmonet-responsive.png"
               alt=""
             />
           </figure>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-          >
+          <p data-aos="fade-up" data-aos-easing="ease-in-out">
             Finally, once all the brand guidelines were built, we had a strong
             foundation to build the website layout. Several wireframes and
             iterations where thrown to a browser. Terabytes of Sketch files
@@ -195,13 +137,8 @@ class Lemmonet extends React.Component {
             the branding, using the new color scheme and fonts. Custom
             illustrations where a nice detail that Jose is really proud of.
           </p>
-          <figure>
+          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
             <img
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-delay="200"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
               src="/static/images/case-studies/lemmonet/lemmonet-website.png"
               alt=""
             />
@@ -209,9 +146,6 @@ class Lemmonet extends React.Component {
           <h2
             className="small"
             data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
             data-aos-easing="ease-in-out"
           >
             Keep browsing
