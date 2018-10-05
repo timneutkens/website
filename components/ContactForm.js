@@ -1,6 +1,6 @@
-import Formsy from 'formsy-react';
-import React from 'react';
-import Input from '../components/Input';
+import Formsy from "formsy-react";
+import React from "react";
+import Input from "../components/Input";
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -21,16 +21,16 @@ class ContactForm extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ honeypot: document.getElementById('please-dont') });
+    this.setState({ honeypot: document.getElementById("please-dont") });
   }
 
   submit(model, resetForm) {
     if (!this.state.honeypot.checked) {
-      fetch('/api/contact', {
-        method: 'post',
+      fetch("/api/contact", {
+        method: "post",
         headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(model)
       }).then(res => {
@@ -38,7 +38,7 @@ class ContactForm extends React.Component {
           alert("Thanks, we'll be in touch soon.");
           resetForm();
         } else {
-          console.log('not sent!', res);
+          console.log("not sent!", res);
         }
       });
     }
@@ -88,12 +88,12 @@ class ContactForm extends React.Component {
         />
         <button
           className={
-            this.state.canSubmit ? 'submit' : 'submit submit--disabled'
+            this.state.canSubmit ? "button" : "button button--disabled"
           }
           type="submit"
           disabled={!this.state.canSubmit}
         >
-          CONTACT US{' '}
+          CONTACT US{" "}
         </button>
         <style jsx global>{`
           .form__wrapper {
@@ -104,30 +104,12 @@ class ContactForm extends React.Component {
           .name,
           .email,
           .message,
-          .submit {
+          .button {
             margin: 30px 0;
           }
 
-          .submit {
-            display: inline-block;
-            font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 1.5em 2em;
-            border: 1px solid rgb(256, 256, 256);
-            box-shadow: -5px 5px 0 0 var(--color-secondary);
-            background: var(--color-primary);
-            color: var(--color-secondary);
-            transition: all 200ms ease;
-          }
-
-          .submit:hover {
-            box-shadow: 10px -10px 0 0 var(--color-secondary);
-            transform: translate(-5px, 5px);
-          }
-
-          .submit--disabled,
-          .submit[disabled] {
+          .button--disabled,
+          .button[disabled] {
             pointer-events: none;
             cursor: not-allowed;
             display: inline-block;
@@ -142,7 +124,7 @@ class ContactForm extends React.Component {
             transition: all 200ms ease;
           }
 
-          .submit {
+          .button {
             margin: 0;
           }
 
