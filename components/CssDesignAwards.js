@@ -11,7 +11,7 @@ class CssDesignAwards extends React.Component {
   render() {
     return (
       <a
-        href="http://www.cssdesignawards.com/"
+        href="https://www.cssdesignawards.com/sites/basement-studio/33829/"
         target="_blank"
         data-aos="fade-up"
         data-aos-offset="-100"
