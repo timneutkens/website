@@ -17,9 +17,6 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-inline-react-svg": "^1.0.1",
     "body-parser": "^1.18.3",
     "css-mqpacker": "^7.0.0",
     "dotenv": "^6.1.0",
