@@ -1,14 +1,15 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../../components/GaWrapper";
-import Layout from "../../components/Layout";
-import Contact from "../../components/Contact";
-import FeaturedCard from "../../components/FeaturedCard";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../../components/GaWrapper';
+import Layout from '../../components/Layout';
+import Contact from '../../components/Contact';
+import FeaturedCard from '../../components/FeaturedCard';
 
 class Imusify extends React.Component {
   componentDidMount() {
     AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
   }
+
   render() {
     return (
       <Layout>

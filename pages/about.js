@@ -1,14 +1,14 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import TwoColumnsLayout from "../components/TwoColumnsLayout";
-import Team from "../components/Team";
-import Header from "../components/Header";
-import Contact from "../components/Contact";
-import ThreeColumnsLayout from "../components/ThreeColumnsLayout";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../components/GaWrapper';
+import Layout from '../components/Layout';
+import TwoColumnsLayout from '../components/TwoColumnsLayout';
+import Team from '../components/Team';
+import Header from '../components/Header';
+import Contact from '../components/Contact';
+import ThreeColumnsLayout from '../components/ThreeColumnsLayout';
 
-class Blog extends React.Component {
+class About extends React.Component {
   componentDidMount() {
     AOS.init({
       once: true
@@ -66,7 +66,7 @@ class Blog extends React.Component {
           .elgif:before,
           .elgif:after {
             position: absolute;
-            content: "";
+            content: '';
             width: 100%;
             height: 100%;
             display: block;
@@ -75,7 +75,7 @@ class Blog extends React.Component {
           }
 
           .elgif:before {
-            background: url("/static/images/patterns/microperforations.svg");
+            background: url('/static/images/patterns/microperforations.svg');
             border-left: 3px solid var(--color-primary);
             border-bottom: 5px solid var(--color-primary);
             z-index: 2;
@@ -84,7 +84,7 @@ class Blog extends React.Component {
           }
 
           .elgif:after {
-            background: url("/static/images/patterns/slash.svg");
+            background: url('/static/images/patterns/slash.svg');
             z-index: 1;
             top: 25px;
             right: 23px;
@@ -107,4 +107,4 @@ class Blog extends React.Component {
   }
 }
 
-export default GaWrapper(Blog);
+export default GaWrapper(About);

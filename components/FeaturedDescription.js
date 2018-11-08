@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class GalleryText extends React.Component {
+class FeaturedDescription extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -35,4 +35,4 @@ class GalleryText extends React.Component {
   }
 }
 
-export default GalleryText;
+export default FeaturedDescription;

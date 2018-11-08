@@ -129,8 +129,6 @@ footer {
   color: var(--color-secondary);
   -webkit-transition: color 400ms ease-in-out,
     -webkit-box-shadow 300ms ease-in-out;
-  transition: color 400ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  transition: color 400ms ease-in-out, box-shadow 300ms ease-in-out;
   transition: color 400ms ease-in-out, box-shadow 300ms ease-in-out,
     -webkit-box-shadow 300ms ease-in-out;
   text-decoration: none;
@@ -201,6 +199,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--color-secondary);
   -webkit-box-shadow: 0 0 0px 1000px var(--color-primary) inset;
+  box-shadow: 0 0 0px 1000px var(--color-primary) inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }

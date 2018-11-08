@@ -3,7 +3,7 @@ import App, { Container } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 
-export default class Basement extends App {
+class Basement extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
 
@@ -26,3 +26,5 @@ export default class Basement extends App {
     );
   }
 }
+
+export default Basement;

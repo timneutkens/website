@@ -1,28 +1,31 @@
-import React from "react";
-import AOS from "aos";
+import React from 'react';
+import AOS from 'aos';
 
 class CssDesignAwards extends React.Component {
   constructor(props) {
     super(props);
   }
+
   componentDidMount() {
     AOS.init();
   }
+
   render() {
     return (
       <a
         href="https://www.cssdesignawards.com/sites/basement-studio/33829/"
         target="_blank"
+        rel="noopener noreferrer"
         data-aos="fade-up"
         data-aos-offset="-100"
         data-aos-delay="850"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
       >
-        <div id="cssda-badge">
+        <div className="cssda-badge">
           <svg
             version="1.1"
-            id="cssda-badge-logo"
+            className="cssda-badge-logo"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             x="0px"
@@ -65,10 +68,10 @@ class CssDesignAwards extends React.Component {
          65.8,49.9"
             />
           </svg>
-          <div class="cssda-badge-content">
+          <div className="cssda-badge-content">
             <svg
               version="1.1"
-              id="cssda-badge-title"
+              className="cssda-badge-title"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               x="0px"
@@ -121,7 +124,7 @@ class CssDesignAwards extends React.Component {
             </svg>
             <svg
               version="1.1"
-              id="cssda-badge-award"
+              className="cssda-badge-award"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               x="0px"
@@ -153,7 +156,7 @@ class CssDesignAwards extends React.Component {
           </div>
         </div>
         <style jsx>{`
-          #cssda-badge {
+          .cssda-badge {
             position: fixed;
             bottom: 1vw;
             right: 2vw;
@@ -166,19 +169,19 @@ class CssDesignAwards extends React.Component {
             transition: all 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
             cursor: pointer;
           }
-          #cssda-badge:hover {
+          .cssda-badge:hover {
             -webkit-animation: bounce 0.75s linear both;
             -moz-animation: bounce 0.75s linear both;
             animation: bounce 0.75s linear both;
             background: #000;
           }
-          #cssda-badge svg {
+          .cssda-badge svg {
             position: absolute;
             width: 70px;
             height: 70px;
             fill: #000000;
           }
-          #cssda-badge:hover svg {
+          .cssda-badge:hover svg {
             fill: #fff;
           }
           .cssda-badge-content {
@@ -189,40 +192,40 @@ class CssDesignAwards extends React.Component {
             -moz-transition: all 0.12s cubic-bezier(0.615, 0.19, 0.305, 0.91);
             transition: all 0.12s cubic-bezier(0.615, 0.19, 0.305, 0.91);
           }
-          #cssda-badge:hover .cssda-badge-content {
+          .cssda-badge:hover .cssda-badge-content {
             -webkit-transform: rotate(360deg);
             -moz-transform: rotate(360deg);
             transform: rotate(360deg);
           }
-          #cssda-badge:hover #cssda-badge-logo {
+          .cssda-badge:hover .cssda-badge-logo {
             -webkit-transform: scale(1.1);
             -moz-transform: scale(1.1);
             transform: scale(1.1);
           }
           @media only screen and (max-width: 700px) {
-            #cssda-badge {
+            .cssda-badge {
               bottom: 5vw;
               width: 60px;
               height: 60px;
             }
-            #cssda-badge svg {
+            .cssda-badge svg {
               width: 60px;
               height: 60px;
             }
-            #cssda-badge-logo {
+            .cssda-badge-logo {
               -webkit-transform: scale(1.35);
               -moz-transform: scale(1.35);
               transform: scale(1.35);
             }
-            #cssda-badge:hover #cssda-badge-logo {
+            .cssda-badge:hover .cssda-badge-logo {
               -webkit-transform: scale(1.5);
               -moz-transform: scale(1.5);
               transform: scale(1.5);
             }
-            #cssda-badge-title {
+            .cssda-badge-title {
               display: none;
             }
-            #cssda-badge-award {
+            .cssda-badge-award {
               display: none;
             }
           }

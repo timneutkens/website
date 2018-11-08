@@ -86,12 +86,11 @@ class Input extends React.Component {
           }
 
           .input__label {
-            display: inline-block;
+            display: block;
             float: right;
             padding: 0 1em;
             width: 40%;
             color: #696969;
-            font-weight: bold;
             font-size: 70.25%;
             user-select: none;
             font-weight: 300;

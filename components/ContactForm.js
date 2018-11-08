@@ -5,6 +5,7 @@ import Input from '../components/Input';
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
+
     this.disableButton = this.disableButton.bind(this);
     this.enableButton = this.enableButton.bind(this);
     this.submit = this.submit.bind(this);
@@ -21,7 +22,7 @@ class ContactForm extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ honeypot: document.getElementById('please-dont') });
+    this.setState({ honeypot: document.getElementsByClassName('please-dont') });
   }
 
   submit(model, resetForm) {
@@ -80,8 +81,8 @@ class ContactForm extends React.Component {
           required
         />
         <input
+          className="please-dont"
           type="checkbox"
-          id="please-dont"
           value="1"
           tabIndex="-1"
           autoComplete="nope"
@@ -146,7 +147,7 @@ class ContactForm extends React.Component {
             margin: 0;
           }
 
-          #please-dont {
+          .please-dont {
             display: none;
           }
 

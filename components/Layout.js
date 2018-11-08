@@ -2,12 +2,20 @@ import React from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const Layout = props => (
-  <main>
-    <Nav animate={props.animate} />
-    {props.children}
-    <Footer />
-  </main>
-);
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <main>
+        <Nav animate={this.props.animate} />
+        {this.props.children}
+        <Footer />
+      </main>
+    );
+  }
+}
 
 export default Layout;

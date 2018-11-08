@@ -1,7 +1,7 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import React from "react";
+import Document, { Head, Main, NextScript } from 'next/document';
+import React from 'react';
 
-export default class MyDocument extends Document {
+class BasementDoc extends Document {
   constructor(props) {
     super(props);
   }
@@ -124,3 +124,5 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+export default BasementDoc;

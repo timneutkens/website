@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import FeaturedCard from '../components/FeaturedCard';
 import Contact from '../components/Contact';
 
-class Blog extends React.Component {
+class Work extends React.Component {
   componentDidMount() {
     AOS.init();
   }
@@ -83,4 +83,4 @@ Have fun."
   }
 }
 
-export default GaWrapper(Blog);
+export default GaWrapper(Work);
