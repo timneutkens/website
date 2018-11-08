@@ -1,10 +1,10 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import FeaturedCard from '../components/FeaturedCard';
-import Contact from '../components/Contact';
+import React from "react";
+import AOS from "aos";
+import GaWrapper from "../components/GaWrapper";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import FeaturedCard from "../components/FeaturedCard";
+import Contact from "../components/Contact";
 
 class Work extends React.Component {
   componentDidMount() {
@@ -37,7 +37,7 @@ Have fun."
           inverted
           link="what-we-did-for/toda"
           subhead="BRANDING & WEBSITE"
-          callToAction="READ MORE"
+          callToAction="KNOW MORE"
           title="How to make an internet protocol sexy"
           description="TODA Network is the next evolution of TCP/IP for value transfer over
           the communication layer and below the operating system. They
@@ -50,7 +50,7 @@ Have fun."
           foreMaxWidth="18%"
           link="what-we-did-for/imusify"
           subhead="NEXTjs WEBSITE"
-          callToAction="READ MORE"
+          callToAction="LEARN MORE"
           title="Cut the middleman"
           description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."
         />
