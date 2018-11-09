@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development PORT=3000 node server.js",
     "start": "node server.js",
-    "build": "next build && next export -o /public"
+    "build": "next build"
   },
   "postcss": {
     "plugins": {
