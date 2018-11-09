@@ -20,7 +20,6 @@ app.prepare().then(() => {
 
   server.post('/api/contact', (req, res) => {
     const { email = '', name = '', message = '' } = req.body;
-
     mailer.transmissions
       .send({
         options: {
