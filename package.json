@@ -4,9 +4,10 @@
   "repository": "/basementstudio/basementstudio.github.io",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development PORT=3000 node server.js",
-    "start": "node server.js",
-    "build": "next build"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export"
   },
   "postcss": {
     "plugins": {
