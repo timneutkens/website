@@ -2,7 +2,6 @@
   "name": "basement",
   "alias": "basement.studio",
   "version": 2,
-  "builds": [{ "src": "package.json", "use": "@now/next" }],
   "env": {
     "sparkpostapikey": "sparkpostapikey"
   }
