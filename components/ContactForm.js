@@ -71,14 +71,12 @@ class ContactForm extends React.Component {
           validationError="This is not a valid email"
           required
         />
-        <Input
-          type="textarea"
-          className="message"
-          label="Message"
-          name="message"
-          validations="isWords"
-          validationError="We know you have something to say!"
-          required
+        <textarea
+          className="input__field textarea"
+          name={this.props.name}
+          onChange={this.changeValue}
+          type={this.props.type}
+          value={this.props.getValue() || ''}
         />
         <input
           className="please-dont"
