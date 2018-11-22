@@ -21,6 +21,7 @@ class Basement extends App {
         <Head>
           <title>Our work is serious, we are not | basement.studio</title>
         </Head>
+
         <Component {...pageProps} />
       </Container>
     );
