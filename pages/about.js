@@ -26,7 +26,7 @@ class About extends React.Component {
           data-aos-easing="ease-out-quad"
           className="elgif"
         >
-          <img src="static/images/pixel.gif" alt="" />
+          <img src="/static/images/pixel.gif" alt="" />
         </figure>
 
         <TwoColumnsLayout

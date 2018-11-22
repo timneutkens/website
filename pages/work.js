@@ -1,10 +1,10 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import FeaturedCard from "../components/FeaturedCard";
-import Contact from "../components/Contact";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../components/GaWrapper';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import FeaturedCard from '../components/FeaturedCard';
+import Contact from '../components/Contact';
 
 class Work extends React.Component {
   componentDidMount() {
@@ -23,7 +23,7 @@ Have fun."
           foregroundimg="/static/images/device2.png"
           foreMaxWidth="30%"
           paddingTop="2em"
-          link="what-we-did-for/gamedex"
+          link="/what-we-did-for/gamedex"
           subhead="NEXTjs WEBSITE"
           callToAction="READ MORE"
           title="They were cool, we made them mean"
@@ -48,7 +48,7 @@ Have fun."
           backgroundimg="/static/images/device6.png"
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
-          link="what-we-did-for/imusify"
+          link="/what-we-did-for/imusify"
           subhead="NEXTjs WEBSITE"
           callToAction="LEARN MORE"
           title="Cut the middleman"
@@ -60,7 +60,7 @@ Have fun."
           foreMaxWidth="65%"
           backMaxWidth="80%"
           inverted
-          link="what-we-did-for/lemmonet"
+          link="/what-we-did-for/lemmonet"
           subhead="BRANDING & WEBSITE"
           callToAction="READ MORE"
           title="Not only a pretty face"
