@@ -85,6 +85,7 @@ class FeaturedCard extends React.Component {
             .featured__wrapper:first-of-type {
               padding-top: ${this.props.paddingTop ? this.props.paddingTop : 0};
             }
+
             .featured__wrapper.inverted {
               grid-template-areas: 'description image';
             }

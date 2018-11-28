@@ -15,7 +15,12 @@ class ThreeColumnsLayout extends React.Component {
           description="Lines of code pushed."
           suffix="Measuring programming progress by lines of code is like measuring aircraft building progress by weight, thanks Bill. (Ps. we don't count, it's an approximate)"
         />
-        <Milestone order={5} counter="1" description="Arcade in progress." />
+        <Milestone
+          order={5}
+          counter="1"
+          description="Arcade in progress."
+          suffix="We like to think of it as an eternal WIP, but you can call it done."
+        />
         <Milestone
           order={10}
           counter="14+"

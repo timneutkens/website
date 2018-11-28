@@ -23,7 +23,7 @@ class Footer extends React.Component {
         <ul className="navigation">
           <li>
             <Link activeClassName="active" href="/about" prefetch>
-              <a className="link">About us</a>
+              <a className="link">About</a>
             </Link>
           </li>
           <li>
