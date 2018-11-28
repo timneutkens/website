@@ -19,7 +19,7 @@ class ThreeColumnsLayout extends React.Component {
           order={5}
           counter="1"
           description="Arcade in progress."
-          suffix="We like to think of it as an eternal WIP, but you can call it done."
+          suffix="We like to think of it as an eternal WIP, but you can call it done. Check our instagram to see the progress :)"
         />
         <Milestone
           order={10}
