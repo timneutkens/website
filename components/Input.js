@@ -1,4 +1,3 @@
-import { withFormsy } from 'formsy-react';
 import React from 'react';
 
 class Input extends React.Component {
@@ -178,4 +177,4 @@ class Input extends React.Component {
   }
 }
 
-export default withFormsy(Input);
+export default Input;
