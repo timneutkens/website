@@ -1,110 +1,171 @@
-import Formsy from 'formsy-react';
 import React from 'react';
-import Input from '../components/Input';
+import { Formik } from 'formik';
+import Input from './Input';
 
-class ContactForm extends React.Component {
+export default class NewsletterForm extends React.Component {
   constructor(props) {
     super(props);
-
-    this.disableButton = this.disableButton.bind(this);
-    this.enableButton = this.enableButton.bind(this);
-    this.submit = this.submit.bind(this);
-    this.state = { canSubmit: false, honeypot: null };
+    this.state = { honeypot: null };
     this.pleaseDont = React.createRef();
-  }
-
-  disableButton() {
-    this.setState({ canSubmit: false });
-  }
-
-  enableButton() {
-    this.setState({ canSubmit: true });
   }
 
   componentDidMount() {
     this.setState({ honeypot: document.getElementsByClassName('please-dont') });
   }
 
-  submit(model, resetForm) {
-    if (!this.state.honeypot.checked) {
-      fetch('/api/contact', {
-        method: 'post',
-        headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(model)
-      }).then(res => {
-        if (res.status === 200) {
-          alert("Thanks, we'll be in touch soon.");
-          resetForm();
-        } else {
-          console.log('not sent!', res);
-        }
-      });
-    }
-  }
-
   render() {
     return (
-      <Formsy
-        ref="form"
-        className="form__wrapper"
-        onValidSubmit={this.submit}
-        onValid={this.enableButton}
-        onInvalid={this.disableButton}
-      >
-        <Input
-          type="text"
-          className="name"
-          label="Your name"
-          name="name"
-          required
-          validations="isWords"
-        />
-        <Input
-          type="text"
-          className="email"
-          label="Your email"
-          name="email"
-          validations="isEmail"
-          validationError="This is not a valid email"
-          required
-        />
-        <textarea
-          className="input__field textarea"
-          name={this.props.name}
-          onChange={this.changeValue}
-          type={this.props.type}
-          value={this.props.getValue() || ''}
-        />
-        <input
-          className="please-dont"
-          type="checkbox"
-          value="1"
-          tabIndex="-1"
-          autoComplete="nope"
-        />
-        <button
-          className={
-            this.state.canSubmit ? 'button' : 'button button--disabled'
-          }
-          type="submit"
-          disabled={!this.state.canSubmit}
+      <React.Fragment>
+        <Formik
+          initialValues={{ name: '', email: '', message: '' }}
+          validate={values => {
+            let errors = {};
+            if (!values.email) {
+              errors.email =
+                'Email address is required, how are we supposed to contact you?';
+            } else if (
+              !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+            ) {
+              errors.email =
+                'Email looks invalid, are you using "@" and a dot somewhere after?';
+            }
+            return errors;
+          }}
+          onSubmit={(values, { setSubmitting, resetForm }) => {
+            if (!this.state.honeypot.checked) {
+              fetch(this.props.url, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: JSON.stringify(values),
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              }).then(() => {
+                setSubmitting(false);
+                resetForm();
+                alert(
+                  'Thanks, we will get in touch soon! (this is the best method to display information after filling a form)'
+                );
+              });
+            } else {
+              alert('Bad bad bot!');
+            }
+          }}
         >
-          CONTACT US{' '}
-        </button>
+          {({
+            values,
+            errors,
+            touched,
+            handleChange,
+            handleSubmit,
+            handleBlur,
+            isSubmitting
+          }) => (
+            <form onSubmit={handleSubmit} className="gform">
+              <span className="input">
+                <input
+                  type="text"
+                  name="name"
+                  className="input__field name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name || ''}
+                />
+                <label htmlFor="email">Your name</label>
+              </span>
+              <span className="input">
+                <input
+                  type="email"
+                  name="email"
+                  className="input__field email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email || ''}
+                />
+                <label htmlFor="email">Your email</label>
+              </span>
+              <span className="input">
+                <textarea
+                  name="message"
+                  className="input__field textarea"
+                  cols="30"
+                  rows="5"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.message || ''}
+                />
+                <label htmlFor="email">'sup</label>
+              </span>
+              <input
+                className="please-dont"
+                type="checkbox"
+                value="1"
+                tabIndex="-1"
+                autoComplete="nope"
+              />
+              <div className={errors.email ? 'error' : 'error hidden'}>
+                {errors.email}
+              </div>
+              <button
+                type="submit"
+                disabled={!values.email || errors.email}
+                className="button"
+              >
+                Submit
+              </button>
+            </form>
+          )}
+        </Formik>
         <style jsx global>{`
-          .form__wrapper {
-            margin: auto;
-            margin-bottom: 3em;
+          .input {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin: 0 0 3.5em 0;
+            max-width: 100%;
+            width: calc(100% - 2em);
+            vertical-align: top;
           }
 
-          .name,
-          .email,
-          .message,
+          label {
+            pointer-events: none;
+            position: absolute;
+            top: 1.8em;
+            left: 1.2em;
+            transition: all 350ms ease;
+          }
+
+          .input__field {
+            position: relative;
+            display: block;
+            padding: 2em;
+            width: 100%;
+            border-radius: 0;
+            background: transparent;
+            color: #fff;
+            font-weight: 300;
+            font-family: var(--font-secondary);
+            font-size: 0.9rem;
+            background-color: var(--color-primary);
+            border: 2px solid #313131;
+            transition: all 0.25s;
+          }
+
+          .input__field.textarea {
+            resize: none;
+            overflow: auto;
+          }
+
+          .input__field:not([value='']):not(.textarea) + label,
+          .textarea:not(:empty) + label,
+          .input__field:focus + label {
+            transform: translateY(-100%);
+            font-size: 80%;
+            opacity: 0.6;
+          }
+
           .button {
-            margin: 30px 0;
+            cursor: pointer;
           }
 
           .button--disabled,
@@ -112,10 +173,8 @@ class ContactForm extends React.Component {
             pointer-events: none;
             cursor: not-allowed;
             display: inline-block;
-            font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
             text-decoration: none;
             text-transform: uppercase;
-            padding: 1.5em 2em;
             border: 1px solid #000;
             box-shadow: -5px 5px 0 0 #313131;
             background: #313131;
@@ -123,24 +182,29 @@ class ContactForm extends React.Component {
             transition: all 200ms ease;
           }
 
-          .button {
-            margin: 0;
+          .error {
+            margin: 0 10px;
+            transform: scaleY(1);
+            transform-origin: top center;
+            transition: transform 400ms ease-in;
+          }
+
+          .error.hidden {
+            transform: scaleY(0);
+          }
+
+          .error:not(.hidden) + .button {
+            margin-top: 2em;
+            transition: all 300ms ease-in;
+            transform: translateY(1em);
           }
 
           .please-dont {
-            display: none;
-          }
-
-          @media all and (min-width: 800px) {
-            .form__wrapper {
-              margin: 0;
-              margin-bottom: 10em;
-            }
+            opacity: 0;
+            transform: translate(-500000px);
           }
         `}</style>
-      </Formsy>
+      </React.Fragment>
     );
   }
 }
-
-export default ContactForm;

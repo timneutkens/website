@@ -3,7 +3,7 @@ import Head from 'next/head';
 import AOS from 'aos';
 import GaWrapper from '../components/GaWrapper';
 import Nav from '../components/Nav';
-import ContactForm2 from '../components/ContactForm2';
+import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
 const title = 'basement.studio | Contact';
@@ -70,7 +70,7 @@ class Contact extends React.Component {
           data-aos-duration="1000"
           data-aos-easing="ease-out-quad"
         >
-          <ContactForm2 url={SCRIPT_URL} />
+          <ContactForm url={SCRIPT_URL} />
           <div className="find-us">
             <h3>Where to find us</h3>
             <div className="our-address">
