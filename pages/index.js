@@ -1,11 +1,11 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../components/GaWrapper";
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import FeaturedCard from "../components/FeaturedCard";
-import Contact from "../components/Contact";
-import CssDesignAwards from "../components/CssDesignAwards";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../components/GaWrapper';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import FeaturedCard from '../components/FeaturedCard';
+import Contact from '../components/Contact';
+import CssDesignAwards from '../components/CssDesignAwards';
 
 class Index extends React.Component {
   constructor(props) {
@@ -25,7 +25,6 @@ class Index extends React.Component {
           shouldScroll
           title="A digital studio that builds cool experiences with awesome people."
         />
-        <CssDesignAwards />
         <h2
           data-aos="fade-right"
           data-aos-offset="50"
