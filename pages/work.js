@@ -35,7 +35,7 @@ Have fun."
           foreMaxWidth="80%"
           backMaxWidth="60%"
           inverted
-          link="what-we-did-for/toda"
+          link="/what-we-did-for/toda"
           subhead="BRANDING & WEBSITE"
           callToAction="KNOW MORE"
           title="How to make an internet protocol sexy"
