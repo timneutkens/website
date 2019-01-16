@@ -76,8 +76,7 @@ class BasementDoc extends Document {
             name="msapplication-TileColor"
             content="var(--color-primary)000"
           />
-          <meta name="theme-color" content="var(--color-secondary)fff" />
-
+          <meta name="theme-color" content="#fff" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
           <meta
