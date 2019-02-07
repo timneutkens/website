@@ -1,0 +1,11 @@
+{
+  "name": "basement-cms",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "alias": ["cms.basement.com"]
+}

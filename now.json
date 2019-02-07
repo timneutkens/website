@@ -1,15 +1,11 @@
 {
   "name": "basement",
   "version": 2,
-  "builds": [{
-    "src": "package.json",
-    "use": "@now/static-build"
-  }],
-  "alias": [
-    "basement.studio",
-    "www.basement.studio"
-  ],
-  "env": {
-    "sparkpostapikey": "sparkpostapikey"
-  }
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "routes": [
+    { "src": "/blog/(?<slug>[^/]+)$", "dest": "/blog?slug=$slug" },
+    { "src": "/sitemap.xml", "dest": "/static/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "/static/robots.txt" },
+    { "src": "/favicon.ico", "dest": "/static/favicon.ico" }
+  ]
 }

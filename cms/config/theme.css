@@ -1,0 +1,9 @@
+:root {
+  --brand-primary: #000;
+  --brand-secondary: #fff;
+  --main-navigation-background-color: #bbb;
+  --component-bg: #f5f5f5;
+  --component-border-color: #000;
+  --component-box-shadow: 0 1px 3px color(var(--black) a(50%));
+  --state-danger-color: #f8495f;
+}

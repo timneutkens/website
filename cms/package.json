@@ -1,0 +1,35 @@
+{
+  "name": "basementcms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Franco Arza <franco@basement.studio>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node index.js",
+    "test": "sanity check",
+    "now-build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^0.140.2",
+    "@sanity/block-content-to-react": "^2.0.6",
+    "@sanity/cli": "^0.140.0",
+    "@sanity/components": "^0.140.2",
+    "@sanity/core": "^0.140.0",
+    "@sanity/default-layout": "^0.140.2",
+    "@sanity/default-login": "^0.140.0",
+    "@sanity/desk-tool": "^0.140.2",
+    "express": "^4.16.4",
+    "express-history-api-fallback": "^2.2.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {}
+}
