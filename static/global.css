@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "basement-grotesque";
-  src: url("/static/fonts/basement-grotesqueRegular.woff2") format("woff2"),
-    url("/static/fonts/basement-grotesqueRegular.woff") format("woff");
+  font-family: 'basement-grotesque';
+  src: url('/static/fonts/basement-grotesqueRegular.woff2') format('woff2'),
+    url('/static/fonts/basement-grotesqueRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/static/fonts/SpaceMono-Regular.woff2") format("woff2"),
-    url("/static/fonts/SpaceMono-Regular.woff") format("woff");
+  font-family: 'Space Mono';
+  src: url('/static/fonts/SpaceMono-Regular.woff2') format('woff2'),
+    url('/static/fonts/SpaceMono-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -24,8 +24,8 @@
   --color-primary: #000;
   --color-secondary: #fff;
   --color-tertiary: #bdbdbd;
-  --font-primary: "basement-grotesque", sans-serif;
-  --font-secondary: "Space Mono", monospace;
+  --font-primary: 'basement-grotesque', sans-serif;
+  --font-secondary: 'Space Mono', monospace;
 }
 
 html {
@@ -154,7 +154,7 @@ path {
 .button {
   display: inline-block;
   font-family: var(--font-secondary);
-  font-size: calc(18px + (16 - 18) * (100vw - 400px) / (1440 - 400));
+  font-size: calc(16px + (14 - 16) * (100vw - 400px) / (1440 - 400));
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;

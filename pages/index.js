@@ -23,7 +23,7 @@ class Index extends React.Component {
       <Layout animate>
         <Header
           shouldScroll
-          title="A digital studio that builds cool experiences with awesome people."
+          title="A digital studio that builds profitable experiences with awesome people."
         />
         <h2
           data-aos="fade-right"
