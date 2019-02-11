@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o /dist",
-    "now-build": "next build && next export -o dist"
+    "build": "next build && next export -o ./dist"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.6",
