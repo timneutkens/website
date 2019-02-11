@@ -24,7 +24,7 @@ const nextConfig = {
       },
       {
         urlPattern: /^https?.*/,
-        handler: 'cacheFirst',
+        handler: 'networkFirst',
         options: {
           cacheName: 'https-calls',
           networkTimeoutSeconds: 15,
