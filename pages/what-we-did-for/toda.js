@@ -1,9 +1,9 @@
-import React from "react";
-import AOS from "aos";
-import GaWrapper from "../../components/GaWrapper";
-import Layout from "../../components/Layout";
-import Contact from "../../components/Contact";
-import FeaturedCard from "../../components/FeaturedCard";
+import React from 'react';
+import AOS from 'aos';
+import GaWrapper from '../../components/GaWrapper';
+import Layout from '../../components/Layout';
+import Contact from '../../components/Contact';
+import FeaturedCard from '../../components/FeaturedCard';
 
 class Toda extends React.Component {
   componentDidMount() {
@@ -125,10 +125,10 @@ class Toda extends React.Component {
           </h4>
           <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
             The content used in the website wasn't static, we used a new CMS
-            called{" "}
+            called{' '}
             <a className="link" href="https://www.sanity.io/">
               Sanity
-            </a>{" "}
+            </a>{' '}
             that you should definitely check out, allowing customizations on the
             fly. And a really easy to use dashboard for both, us developing and
             the marketing team adding content.
@@ -174,6 +174,7 @@ class Toda extends React.Component {
           subhead="NEXTjs WEBSITE"
           title="They were cool, we made them mean"
           description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
+          alt="Gamedex"
         />
         <Contact />
         <style jsx>{`

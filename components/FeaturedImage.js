@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ParallaxDown from './ParallaxDown';
 import ParallaxUp from './ParallaxUp';
 
-class FeaturedCard extends React.Component {
+class FeaturedImage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,7 +12,7 @@ class FeaturedCard extends React.Component {
     const largeSrcsetJPG = `${this.props.largeCaption}.jpg`;
 
     return (
-      <a href={this.props.linkTo} aria-label={this.props.alt}>
+      <a href={this.props.linkTo} className="test" aria-label={this.props.alt}>
         <div className="container">
           <figure
             className="background"
@@ -106,16 +106,16 @@ class FeaturedCard extends React.Component {
   }
 }
 
-FeaturedCard.defaultProps = {
+FeaturedImage.defaultProps = {
   smallCaption: '',
   mediumCaption: '',
   largeCaption: ''
 };
 
-FeaturedCard.propTypes = {
+FeaturedImage.propTypes = {
   smallCaption: PropTypes.string,
   mediumCaption: PropTypes.string,
   largeCaption: PropTypes.string
 };
 
-export default FeaturedCard;
+export default FeaturedImage;

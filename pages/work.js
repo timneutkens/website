@@ -28,6 +28,7 @@ Have fun."
           callToAction="READ MORE"
           title="They were cool, we made them mean"
           description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
+          alt="Gamedex"
         />
         <FeaturedCard
           backgroundimg="/static/images/device4.png"
@@ -43,6 +44,7 @@ Have fun."
           the communication layer and below the operating system. They
           contacted us to redesign their website in order to get all the
           blockchain-community's attention."
+          alt="TODA"
         />
         <FeaturedCard
           backgroundimg="/static/images/device6.png"
@@ -53,6 +55,7 @@ Have fun."
           callToAction="LEARN MORE"
           title="Cut the middleman"
           description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."
+          alt="imusify"
         />
         <FeaturedCard
           backgroundimg="/static/images/device8.png"
@@ -68,6 +71,7 @@ Have fun."
           universe. They wanted to communicate a sense of technology, blendend
           with their characteristic maturity gained after more than 10 years
           of experience."
+          alt="Lemmonet"
         />
 
         <style jsx>{`

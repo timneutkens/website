@@ -110,6 +110,7 @@ class Imusify extends React.Component {
           subhead="NEXTjs WEBSITE"
           title="They were cool, we made them mean"
           description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
+          alt="Gamedex"
         />
         <Contact />
         <style jsx>{`
