@@ -12,7 +12,7 @@ class FeaturedCard extends React.Component {
     const largeSrcsetJPG = `${this.props.largeCaption}.jpg`;
 
     return (
-      <a href={this.props.linkTo}>
+      <a href={this.props.linkTo} aria-label={this.props.alt}>
         <div className="container">
           <figure
             className="background"
