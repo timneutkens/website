@@ -106,7 +106,7 @@ class Gamedex extends React.Component {
           backgroundimg="/static/images/device6.png"
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
-          callToAction="LEARN MORE"
+          callToAction="LET'S SEE"
           link="/what-we-did-for/imusify"
           subhead="NEXTjs WEBSITE"
           title="Cut the middleman"
