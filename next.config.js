@@ -5,6 +5,7 @@ const { promisify } = require('util');
 const copyFile = promisify(fs.copyFile);
 
 module.exports = {
+  target: "serverless",
   exportPathMap: async function(defaultPathMap, { dev, dir, outDir }) {
     if (dev) {
       return defaultPathMap;
