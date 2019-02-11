@@ -52,7 +52,7 @@ class Nav extends React.Component {
       <nav>
         <figure className="home" {...logoAnimation}>
           <Link href="/">
-            <a className="logo">
+            <a className="logo" aria-label="basement">
               {this.state.vpWidth < 800 ? <LogoMobile /> : <Logo />}
             </a>
           </Link>

@@ -1,8 +1,19 @@
 {
   "name": "basement",
   "version": 2,
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "static/*", "use": "@now/static" }
+  ],
   "routes": [
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
     { "src": "/blog/(?<slug>[^/]+)$", "dest": "/blog?slug=$slug" },
     { "src": "/sitemap.xml", "dest": "/static/sitemap.xml" },
     { "src": "/robots.txt", "dest": "/static/robots.txt" },

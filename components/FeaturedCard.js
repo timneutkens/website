@@ -39,7 +39,7 @@ class FeaturedCard extends React.Component {
             description={this.props.description}
           />
           <Link href={this.props.link}>
-            <a className="button">
+            <a className="button" aria-label={this.props.alt}>
               {this.props.callToAction}{' '}
               <svg width="20" height="16" version="1">
                 <path
