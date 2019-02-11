@@ -71,7 +71,7 @@ class Index extends React.Component {
           subhead="NEXTjs WEBSITE"
           title="Cut the middleman"
           description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."
-          alt="Imusify"
+          alt="imusify"
         />
         <Contact />
         <style jsx>{`
