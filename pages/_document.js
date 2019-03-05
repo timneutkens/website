@@ -45,10 +45,10 @@ class BasementDoc extends Document {
           <meta name="ICBM" content="-38, -57.55" />
           <meta name="geo.position" content="-38;-57.55" />
           <meta name="geo.region" content="AR[01]" />
-
+          <link rel="stylesheet" href="/static/aos.css" />
+          <link rel="stylesheet" href="/static/global.css" />
           <meta name="google-site-verification" content="" />
-          <link rel="stylesheet" href="./static/aos.css" />
-          <link rel="stylesheet" href="./static/global.css" />
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
