@@ -49,8 +49,10 @@ class FeaturedImage extends React.Component {
           .container {
             position: relative;
             padding-top: 100px;
-            height: 100vw;
-            max-height: 700px;
+            display: flex;
+            align-items: center;
+            min-height: 35vw;
+            max-height: 50vw;
           }
 
           .background,
