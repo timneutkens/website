@@ -49,8 +49,10 @@ class FeaturedImage extends React.Component {
           .container {
             position: relative;
             padding-top: 100px;
-            height: 100vw;
-            max-height: 700px;
+            display: flex;
+            align-items: center;
+            min-height: 40vw;
+            max-height: 50vw;
           }
 
           .background,
@@ -83,7 +85,11 @@ class FeaturedImage extends React.Component {
             object-fit: contain;
             width: 100%;
           }
-
+          @media all and (max-width: 600px){
+            .container{
+              min-height: 120vw;
+            }
+          }
           @media all and (min-width: 600px) {
             a {
               grid-template-columns: 1fr 1fr;
