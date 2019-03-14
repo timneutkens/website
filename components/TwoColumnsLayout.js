@@ -1,19 +1,19 @@
-import React from 'react';
-import Link from './Link';
+import React from 'react'
+import Link from './Link'
 
 class TwoColumnsLayout extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
-  render() {
+  render () {
     return (
       <section
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-out-quad"
-        data-aos-once="true"
+        data-aos='fade-up'
+        data-aos-offset='50'
+        data-aos-delay='200'
+        data-aos-duration='1000'
+        data-aos-easing='ease-out-quad'
+        data-aos-once='true'
       >
         <h3>{this.props.title}</h3>
         <p>{this.props.paragraph}</p>
@@ -32,8 +32,8 @@ class TwoColumnsLayout extends React.Component {
           }
         `}</style>
       </section>
-    );
+    )
   }
 }
 
-export default TwoColumnsLayout;
+export default TwoColumnsLayout

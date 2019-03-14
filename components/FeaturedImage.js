@@ -1,38 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ParallaxDown from './ParallaxDown';
-import ParallaxUp from './ParallaxUp';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ParallaxDown from './ParallaxDown'
+import ParallaxUp from './ParallaxUp'
 
 class FeaturedImage extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
-    const largeSrcsetJPG = `${this.props.largeCaption}.jpg`;
+  render () {
+    const largeSrcsetJPG = `${this.props.largeCaption}.jpg`
 
     return (
-      <a href={this.props.linkTo} className="test" aria-label={this.props.alt}>
-        <div className="container">
+      <a href={this.props.linkTo} className='test' aria-label={this.props.alt}>
+        <div className='container'>
           <figure
-            className="background"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="100"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
+            className='background'
+            data-aos='fade-up'
+            data-aos-offset='50'
+            data-aos-delay='100'
+            data-aos-duration='500'
+            data-aos-easing='ease-in-out'
           >
             <ParallaxDown>
               <img src={this.props.backgroundimg} alt={this.props.alt} />
             </ParallaxDown>
           </figure>
           <figure
-            className="foreground"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
+            className='foreground'
+            data-aos='fade-up'
+            data-aos-offset='50'
+            data-aos-delay='200'
+            data-aos-duration='600'
+            data-aos-easing='ease-in-out'
           >
             <ParallaxUp>
               <img src={this.props.foregroundimg} alt={this.props.alt} />
@@ -65,15 +65,15 @@ class FeaturedImage extends React.Component {
           .background {
             left: 0;
             width: ${this.props.backMaxWidth
-              ? this.props.backMaxWidth
-              : '100%'};
+        ? this.props.backMaxWidth
+        : '100%'};
           }
 
           .foreground {
             right: 0;
             width: ${this.props.foreMaxWidth
-              ? this.props.foreMaxWidth
-              : '100%'};
+        ? this.props.foreMaxWidth
+        : '100%'};
           }
 
           a:hover h3,
@@ -108,7 +108,7 @@ class FeaturedImage extends React.Component {
           }
         `}</style>
       </a>
-    );
+    )
   }
 }
 
@@ -116,12 +116,12 @@ FeaturedImage.defaultProps = {
   smallCaption: '',
   mediumCaption: '',
   largeCaption: ''
-};
+}
 
 FeaturedImage.propTypes = {
   smallCaption: PropTypes.string,
   mediumCaption: PropTypes.string,
   largeCaption: PropTypes.string
-};
+}
 
-export default FeaturedImage;
+export default FeaturedImage

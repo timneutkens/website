@@ -1,28 +1,28 @@
-import React from 'react';
-import FeaturedImage from '../components/FeaturedImage';
-import FeaturedDescription from '../components/FeaturedDescription';
-import Link from 'next/link';
+import React from 'react'
+import FeaturedImage from '../components/FeaturedImage'
+import FeaturedDescription from '../components/FeaturedDescription'
+import Link from 'next/link'
 
 class FeaturedCard extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <div
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="200"
-        data-aos-duration="600"
-        data-aos-easing="ease-in-out"
+        data-aos='fade-up'
+        data-aos-offset='50'
+        data-aos-delay='200'
+        data-aos-duration='600'
+        data-aos-easing='ease-in-out'
         className={
           this.props.inverted
             ? 'featured__wrapper inverted'
             : 'featured__wrapper'
         }
       >
-        <div className="image">
+        <div className='image'>
           <FeaturedImage
             linkTo={this.props.link}
             backgroundimg={this.props.backgroundimg}
@@ -32,21 +32,21 @@ class FeaturedCard extends React.Component {
             alt={this.props.alt}
           />
         </div>
-        <div className="description">
+        <div className='description'>
           <FeaturedDescription
             subhead={this.props.subhead}
             title={this.props.title}
             description={this.props.description}
           />
           <Link href={this.props.link}>
-            <a className="button" aria-label={this.props.alt}>
+            <a className='button' aria-label={this.props.alt}>
               {this.props.callToAction}{' '}
-              <svg width="20" height="16" version="1">
+              <svg width='20' height='16' version='1'>
                 <path
-                  fill="#FFF"
-                  fillRule="nonzero"
-                  stroke="#000"
-                  d="M16 7l-5-5 1-1 8 7-8 7-1-1 5-5H1V7h15z"
+                  fill='#FFF'
+                  fillRule='nonzero'
+                  stroke='#000'
+                  d='M16 7l-5-5 1-1 8 7-8 7-1-1 5-5H1V7h15z'
                 />
               </svg>
             </a>
@@ -96,8 +96,8 @@ class FeaturedCard extends React.Component {
           }
         `}</style>
       </div>
-    );
+    )
   }
 }
 
-export default FeaturedCard;
+export default FeaturedCard

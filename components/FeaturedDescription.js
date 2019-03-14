@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class FeaturedDescription extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <React.Fragment>
         <h4>{this.props.subhead}</h4>
@@ -31,8 +31,8 @@ class FeaturedDescription extends React.Component {
           }
         `}</style>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default FeaturedDescription;
+export default FeaturedDescription

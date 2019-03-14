@@ -1,25 +1,25 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 class Contact extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <section>
-        <div className="content">
+        <div className='content'>
           <h3>Have a project in mind?</h3>
-          <Link href="/contact">
-            <a className="button">
+          <Link href='/contact'>
+            <a className='button'>
               Tell us about it{' '}
-              <svg width="20" height="16" version="1">
+              <svg width='20' height='16' version='1'>
                 <path
-                  fill="#FFF"
-                  fillRule="nonzero"
-                  stroke="#000"
-                  d="M16 7l-5-5 1-1 8 7-8 7-1-1 5-5H1V7h15z"
+                  fill='#FFF'
+                  fillRule='nonzero'
+                  stroke='#000'
+                  d='M16 7l-5-5 1-1 8 7-8 7-1-1 5-5H1V7h15z'
                 />
               </svg>
             </a>
@@ -94,8 +94,8 @@ class Contact extends React.Component {
           }
         `}</style>
       </section>
-    );
+    )
   }
 }
 
-export default Contact;
+export default Contact

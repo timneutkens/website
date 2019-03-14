@@ -1,21 +1,21 @@
-import React from 'react';
-import Nav from './Nav';
-import ScrollDownButton from './ScrollDownButton';
+import React from 'react'
+import Nav from './Nav'
+import ScrollDownButton from './ScrollDownButton'
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <header>
         <h1
-          data-aos="fade-right"
-          data-aos-offset="50"
+          data-aos='fade-right'
+          data-aos-offset='50'
           data-aos-delay={this.props.shouldScroll ? 800 : 100}
-          data-aos-duration="1000"
-          data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
+          data-aos-duration='1000'
+          data-aos-easing='cubic-bezier(.05, .69, .14, 1)'
         >
           {this.props.title}
         </h1>
@@ -37,8 +37,8 @@ class Header extends React.Component {
           @media all and (min-width: 600px) {
             header {
               height: ${this.props.shouldScroll
-                ? `calc(100vh - 4.17vw - 50px)`
-                : `50vh`};
+        ? `calc(100vh - 4.17vw - 50px)`
+        : `50vh`};
             }
             h1 {
               margin-top: 0;
@@ -46,8 +46,8 @@ class Header extends React.Component {
           }
         `}</style>
       </header>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

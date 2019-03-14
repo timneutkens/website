@@ -1,23 +1,23 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 class JoinUs extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <React.Fragment>
-        <Link href="/contact">
+        <Link href='/contact'>
           <a
-            className="wrapper"
-            data-aos="fade-up"
-            data-aos-offset="100"
+            className='wrapper'
+            data-aos='fade-up'
+            data-aos-offset='100'
             data-aos-delay={`${this.props.order}00`}
-            data-aos-duration="1000"
-            data-aos-easing="ease-out-quad"
-            data-aos-once="true"
+            data-aos-duration='1000'
+            data-aos-easing='ease-out-quad'
+            data-aos-once='true'
           >
             <figure>
               <img
@@ -49,8 +49,8 @@ class JoinUs extends React.Component {
           }
         `}</style>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default JoinUs;
+export default JoinUs

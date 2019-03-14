@@ -1,68 +1,68 @@
-import React from 'react';
-import Link from './Link';
-import LogoGlitched from './LogoGlitched';
+import React from 'react'
+import Link from './Link'
+import LogoGlitched from './LogoGlitched'
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <footer>
-        <i className="logo">
+        <i className='logo'>
           <LogoGlitched />
         </i>
-        <p className="suffix">
+        <p className='suffix'>
           Enough about us,{' '}
-          <a className="link" href="/contact">
+          <a className='link' href='/contact'>
             tell us about you
           </a>
           . We are at the basement.
         </p>
-        <ul className="navigation">
+        <ul className='navigation'>
           <li>
-            <Link activeClassName="active" href="/about" prefetch>
-              <a className="link">About</a>
+            <Link activeClassName='active' href='/about' prefetch>
+              <a className='link'>About</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/work" prefetch>
-              <a className="link">Work</a>
+            <Link activeClassName='active' href='/work' prefetch>
+              <a className='link'>Work</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/contact" prefetch>
-              <a className="link">Contact</a>
+            <Link activeClassName='active' href='/contact' prefetch>
+              <a className='link'>Contact</a>
             </Link>
           </li>
         </ul>
-        <ul className="social">
+        <ul className='social'>
           <li>
-            <a className="link" href="https://instagram.com/basementdotstudio">
+            <a className='link' href='https://instagram.com/basementdotstudio'>
               Instagram
             </a>
           </li>
           <li>
-            <a className="link" href="https://twitter.com/basementdot">
+            <a className='link' href='https://twitter.com/basementdot'>
               Twitter
             </a>
           </li>
           <li>
             <a
-              className="link"
-              href="https://www.linkedin.com/company/basementstudio/"
+              className='link'
+              href='https://www.linkedin.com/company/basementstudio/'
             >
               Linkedin
             </a>
           </li>
           <li>
-            <a className="link" href="https://angel.co/basemendotstudio">
+            <a className='link' href='https://angel.co/basemendotstudio'>
               Angellist
             </a>
           </li>
         </ul>
-        <p className="copyright">
+        <p className='copyright'>
           basement.studio {new Date().getFullYear()} &copy; all rights reserved.
         </p>
         <style jsx>{`
@@ -141,8 +141,8 @@ class Footer extends React.Component {
           }
         `}</style>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 
 class Milestone extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
       <div
-        className="wrapper"
-        data-aos="fade-up"
-        data-aos-offset="50"
+        className='wrapper'
+        data-aos='fade-up'
+        data-aos-offset='50'
         data-aos-delay={`${this.props.order}00`}
-        data-aos-duration="1000"
-        data-aos-easing="ease-out-quad"
-        data-aos-once="true"
+        data-aos-duration='1000'
+        data-aos-easing='ease-out-quad'
+        data-aos-once='true'
       >
         <h5>{this.props.counter}</h5>
         <h3>{this.props.description}</h3>
@@ -36,8 +36,8 @@ class Milestone extends React.Component {
           }
         `}</style>
       </div>
-    );
+    )
   }
 }
 
-export default Milestone;
+export default Milestone

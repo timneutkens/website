@@ -1,43 +1,43 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import TwoColumnsLayout from '../components/TwoColumnsLayout';
-import Team from '../components/Team';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-import ThreeColumnsLayout from '../components/ThreeColumnsLayout';
+import React from 'react'
+import AOS from 'aos'
+import GaWrapper from '../components/GaWrapper'
+import Layout from '../components/Layout'
+import TwoColumnsLayout from '../components/TwoColumnsLayout'
+import Team from '../components/Team'
+import Header from '../components/Header'
+import Contact from '../components/Contact'
+import ThreeColumnsLayout from '../components/ThreeColumnsLayout'
 
 class About extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     AOS.init({
       once: true
-    });
+    })
   }
-  render() {
+  render () {
     return (
       <Layout>
-        <Header characters="13ch" title="Our work is serious, we are not." />
+        <Header characters='13ch' title='Our work is serious, we are not.' />
         <figure
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-quad"
-          className="elgif"
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-delay='200'
+          data-aos-duration='1000'
+          data-aos-easing='ease-out-quad'
+          className='elgif'
         >
-          <img src="/static/images/pixel.gif" alt="" />
+          <img src='/static/images/pixel.gif' alt='' />
         </figure>
 
         <TwoColumnsLayout
-          title="About us"
+          title='About us'
           paragraph="We get involved with your product as if it were our own. The passion we invest in the things we love is beyond measure. And if your brand is chosen as a client, you can bet we're loving it. You will be impressed by how many ideas we can throw against the wall in an hour. Our workflow is not standard, and neither are we -- or the brands we help create."
         />
 
         <Team />
 
         <TwoColumnsLayout
-          title="What we believe in"
+          title='What we believe in'
           paragraph="We believe in the power of great ideas. We believe in reaching real people — getting actual humans (who are busy, distracted, and not interested in ads) excited about brands, products and services. Every day we try to be a little bit smarter than we were yesterday. If you like your agencies vague and arrogant, sorry! We get excited by old-fashioned stuff like 'hard work', 'kindness' and 'collaboration'. We don't try to get work out of the way, we love what we do, and we want to do it all day, everyday, so why shouldn't we give the best we can, each time?"
         />
 
@@ -103,8 +103,8 @@ class About extends React.Component {
           }
         `}</style>
       </Layout>
-    );
+    )
   }
 }
 
-export default GaWrapper(About);
+export default GaWrapper(About)

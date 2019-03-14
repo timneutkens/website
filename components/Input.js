@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 
 class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.changeValue = this.changeValue.bind(this);
+  constructor (props) {
+    super(props)
+    this.changeValue = this.changeValue.bind(this)
   }
 
-  changeValue(event) {
-    this.props.setValue(event.currentTarget.value);
+  changeValue (event) {
+    this.props.setValue(event.currentTarget.value)
   }
 
-  render() {
-    const errorMessage = this.props.getErrorMessage();
+  render () {
+    const errorMessage = this.props.getErrorMessage()
 
     return (
       <span className={this.props.getValue() ? 'input input--filled' : 'input'}>
         {this.props.type === 'textarea' ? (
           <textarea
-            className="input__field textarea"
+            className='input__field textarea'
             name={this.props.name}
             onChange={this.changeValue}
             type={this.props.type}
@@ -25,7 +25,7 @@ class Input extends React.Component {
           />
         ) : (
           <input
-            className="input__field"
+            className='input__field'
             name={this.props.name}
             onChange={this.changeValue}
             type={this.props.type}
@@ -33,15 +33,15 @@ class Input extends React.Component {
           />
         )}
 
-        <label className="input__label" htmlFor={this.props.name}>
+        <label className='input__label' htmlFor={this.props.name}>
           <span
-            className="input__label-content"
+            className='input__label-content'
             data-content={this.props.label}
           >
             {this.props.label}
           </span>
         </label>
-        {errorMessage && <span className="input__error">{errorMessage}</span>}
+        {errorMessage && <span className='input__error'>{errorMessage}</span>}
         <style jsx>{`
           .input {
             position: relative;
@@ -173,8 +173,8 @@ class Input extends React.Component {
           }
         `}</style>
       </span>
-    );
+    )
   }
 }
 
-export default Input;
+export default Input

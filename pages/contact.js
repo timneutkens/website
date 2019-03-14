@@ -1,30 +1,30 @@
-import React from 'react';
-import Head from 'next/head';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Nav from '../components/Nav';
-import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
+import React from 'react'
+import Head from 'next/head'
+import AOS from 'aos'
+import GaWrapper from '../components/GaWrapper'
+import Nav from '../components/Nav'
+import ContactForm from '../components/ContactForm'
+import Footer from '../components/Footer'
 
-const title = 'basement.studio | Contact';
+const title = 'basement.studio | Contact'
 
 const TEST_URL =
-  'https://script.google.com/macros/s/AKfycbzBrBAxiBrkCfA-k1DxaUOJ5pgXFmOT0tN6M6xybtk036reiGQ/exec';
+  'https://script.google.com/macros/s/AKfycbzBrBAxiBrkCfA-k1DxaUOJ5pgXFmOT0tN6M6xybtk036reiGQ/exec'
 const SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbxYIubdHuV_ce8lqOVou_DW9-KD-DGzY2DkuaL7kl80jOypIdtl/exec';
+  'https://script.google.com/macros/s/AKfycbxYIubdHuV_ce8lqOVou_DW9-KD-DGzY2DkuaL7kl80jOypIdtl/exec'
 
 class Contact extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     AOS.init({
       once: true
-    });
+    })
   }
 
-  render() {
+  render () {
     return (
       <main>
         <Head>
@@ -33,30 +33,30 @@ class Contact extends React.Component {
         <Nav />
         <header>
           <h1
-            data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
+            data-aos='fade-right'
+            data-aos-offset='50'
+            data-aos-delay='100'
+            data-aos-duration='1000'
+            data-aos-easing='cubic-bezier(.05, .69, .14, 1)'
           >
             Let's chat.
           </h1>
           <h3
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out-quad"
+            data-aos='fade-up'
+            data-aos-offset='50'
+            data-aos-delay='200'
+            data-aos-duration='1000'
+            data-aos-easing='ease-out-quad'
           >
             We spend a lot of time behind our computers and always welcome the
             opportunity to discuss your upcoming project and meet new faces.
           </h3>
           <p
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out-quad"
+            data-aos='fade-up'
+            data-aos-offset='50'
+            data-aos-delay='400'
+            data-aos-duration='1000'
+            data-aos-easing='ease-out-quad'
           >
             Get in touch using the form below, shoot us an email, reach out on
             social media, heck – send a carrier pigeon. Regardless of how,
@@ -64,22 +64,22 @@ class Contact extends React.Component {
           </p>
         </header>
         <section
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-delay="600"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-quad"
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-delay='600'
+          data-aos-duration='1000'
+          data-aos-easing='ease-out-quad'
         >
           <ContactForm url={SCRIPT_URL} />
-          <div className="find-us">
+          <div className='find-us'>
             <h3>Where to find us</h3>
-            <div className="our-address">
+            <div className='our-address'>
               <h4>Our address:</h4>
               <p>Basement, Mar del Plata, Argentina.</p>
             </div>
-            <div className="our-email">
+            <div className='our-email'>
               <h4>Email address:</h4>
-              <a className="link" href="mailto:info@basement.studio">
+              <a className='link' href='mailto:info@basement.studio'>
                 info@basement.studio
               </a>
             </div>
@@ -152,8 +152,8 @@ class Contact extends React.Component {
           }
         `}</style>
       </main>
-    );
+    )
   }
 }
 
-export default GaWrapper(Contact);
+export default GaWrapper(Contact)

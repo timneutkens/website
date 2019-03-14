@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class VerticalCard extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     return (
-      <div className="vertical-card">
+      <div className='vertical-card'>
         <img src={this.props.thumbnail} alt={this.props.thumbnailText} />
         <h3>{this.props.name}</h3>
         <h4>{this.props.position}</h4>
@@ -47,7 +47,7 @@ class VerticalCard extends React.Component {
           }
         `}</style>
       </div>
-    );
+    )
   }
 }
 
@@ -56,13 +56,13 @@ VerticalCard.defaultProps = {
   position: '',
   name: '',
   description: ''
-};
+}
 
 VerticalCard.propTypes = {
   alt: PropTypes.string,
   positions: PropTypes.string,
   name: PropTypes.string,
   description: PropTypes.string
-};
+}
 
-export default VerticalCard;
+export default VerticalCard
