@@ -17,7 +17,7 @@ class About extends React.Component {
   render() {
     return (
       <Layout>
-        <Header characters="13ch" title="Our work is serious, we are not." />
+        <Header characters="13ch" title="Nuestro trabajo es serio, nosotros no." />
         <figure
           data-aos="fade-up"
           data-aos-offset="50"
@@ -30,15 +30,15 @@ class About extends React.Component {
         </figure>
 
         <TwoColumnsLayout
-          title="About us"
-          paragraph="We get involved with your product as if it were our own. The passion we invest in the things we love is beyond measure. And if your brand is chosen as a client, you can bet we're loving it. You will be impressed by how many ideas we can throw against the wall in an hour. Our workflow is not standard, and neither are we -- or the brands we help create."
+          title="Sobre nosotros"
+          paragraph="Nos involucramos con su producto como si fuera nuestro. La pasión que invertimos en las cosas que amamos está más allá de toda medida. Y si su marca es elegida como cliente, puede apostar que la elegimos porque nos encanta. Quedará impresionado por la cantidad de ideas que podemos lanzar contra la pared en una hora. Nuestro flujo de trabajo no es estándar, y tampoco lo somos nosotros, o las marcas que ayudamos a crear."
         />
 
         <Team />
 
         <TwoColumnsLayout
-          title="What we believe in"
-          paragraph="We believe in the power of great ideas. We believe in reaching real people â€” getting actual humans (who are busy, distracted, and not interested in ads) excited about brands, products and services. Every day we try to be a little bit smarter than we were yesterday. If you like your agencies vague and arrogant, sorry! We get excited by old-fashioned stuff like 'hard work', 'kindness' and 'collaboration'. We don't try to get work out of the way, we love what we do, and we want to do it all day, everyday, so why shouldn't we give the best we can, each time?"
+          title="En que creemos"
+          paragraph="Creemos en el poder de las grandes ideas. Creemos en hacer que a personas reales (que están ocupados, distraídos y nunca interesados en los anuncios) se entusiasmen con las marcas, productos y servicios. Todos los días intentamos ser un poco más inteligentes que ayer. Si estas buscando una agencia vaga y arrogante, Thank u, Next! Nosotros nos emocionamos con cosas pasadas de moda como 'trabajo duro', 'amabilidad' y 'colaboración'. No tratamos de sacarnos el trabajo de encima, amamos lo que hacemos y queremos hacerlo todo el día, todos los días, así que ¿por qué no debemos dar lo mejor que podamos, cada vez?"
         />
 
         <ThreeColumnsLayout />

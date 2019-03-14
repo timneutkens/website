@@ -23,7 +23,7 @@ class Index extends React.Component {
       <Layout animate>
         <Header
           shouldScroll
-          title="A digital studio that builds profitable experiences with awesome people."
+          title="Un estudio digital que construye experiencias rentables con gente increible."
         />
         <h2
           data-aos="fade-right"
@@ -39,11 +39,11 @@ class Index extends React.Component {
           foregroundimg="/static/images/device2.png"
           foreMaxWidth="30%"
           paddingTop="6em"
-          callToAction="READ MORE"
-          link="what-we-did-for/gamedex"
+          callToAction="LEER MAS"
+          link="lo-que-hicimos-para/gamedex"
           subhead="NEXTjs WEBSITE"
-          title="They were cool, we made them mean"
-          description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
+          title="Ellos eran cool, nosotros los hicimos malotes."
+          description="La tecnologia del Blockchain revoluciona la industria de los coleccionables haciendo imposible la falsificacion y copiado de articulos. Transferencias instantaneas y tarjetas de edicion limitada cuya rareza es probable. La proxima generacion de criaturas de fantasia, mascotas digitales, y tarjetas de deportes esta llegando."
           alt="Gamedex"
         />
         <FeaturedCard
@@ -51,26 +51,23 @@ class Index extends React.Component {
           foregroundimg="/static/images/device3.png"
           foreMaxWidth="80%"
           backMaxWidth="60%"
-          callToAction="KNOW MORE"
+          callToAction="SABER MAS"
           inverted
-          link="what-we-did-for/toda"
+          link="lo-que-hicimos-para/toda"
           subhead="BRANDING & WEBSITE"
-          title="How to make an internet protocol sexy"
-          description="TODA Network is the next evolution of TCP/IP for value transfer over
-          the communication layer and below the operating system. They
-          contacted us to redesign their website in order to get all the
-          blockchain-community's attention."
+          title="Como hacer un protocolo de internet parecer sexy"
+          description="TODA Network es la próxima evolución de TCP/IP para la transferencia de valor a través de la capa de comunicación y debajo del sistema operativo. Ellos nos contactaron para rediseñar su sitio web con el fin de obtener toda los atención de la comunidad blockchain."
           alt="TODA"
         />
         <FeaturedCard
           backgroundimg="/static/images/device6.png"
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
-          callToAction="LET'S SEE"
-          link="what-we-did-for/imusify"
+          callToAction="A VER!"
+          link="lo-que-hicimos-para/imusify"
           subhead="NEXTjs WEBSITE"
-          title="Cut the middleman"
-          description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."
+          title="Saca gente del medio"
+          description="imusify se puso en contacto con basement.studio para crear un sitio web interactivo para promocionar y encontrar inversores en su oferta inicial de moneda y también mejorar la interfaz y experiencia de usuario en su revolucionaria plataforma criptográfica para escuchar y compartir música."
           alt="imusify"
         />
         <Contact />

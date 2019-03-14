@@ -22,12 +22,12 @@ Have fun."
           backgroundimg="/static/images/device1.png"
           foregroundimg="/static/images/device2.png"
           foreMaxWidth="30%"
-          paddingTop="2em"
-          link="/what-we-did-for/gamedex"
+          paddingTop="6em"
+          callToAction="LEER MAS"
+          link="lo-que-hicimos-para/gamedex"
           subhead="NEXTjs WEBSITE"
-          callToAction="READ MORE"
-          title="They were cool, we made them mean"
-          description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
+          title="Ellos eran cool, nosotros los hicimos malotes."
+          description="La tecnologia del Blockchain revoluciona la industria de los coleccionables haciendo imposible la falsificacion y copiado de articulos. Transferencias instantaneas y tarjetas de edicion limitada cuya rareza es probable. La proxima generacion de criaturas de fantasia, mascotas digitales, y tarjetas de deportes esta llegando."
           alt="Gamedex"
         />
         <FeaturedCard
@@ -35,26 +35,23 @@ Have fun."
           foregroundimg="/static/images/device3.png"
           foreMaxWidth="80%"
           backMaxWidth="60%"
+          callToAction="SABER MAS"
           inverted
-          link="/what-we-did-for/toda"
+          link="lo-que-hicimos-para/toda"
           subhead="BRANDING & WEBSITE"
-          callToAction="KNOW MORE"
-          title="How to make an internet protocol sexy"
-          description="TODA Network is the next evolution of TCP/IP for value transfer over
-          the communication layer and below the operating system. They
-          contacted us to redesign their website in order to get all the
-          blockchain-community's attention."
+          title="Como hacer un protocolo de internet parecer sexy"
+          description="TODA Network es la próxima evolución de TCP/IP para la transferencia de valor a través de la capa de comunicación y debajo del sistema operativo. Ellos nos contactaron para rediseñar su sitio web con el fin de obtener toda los atención de la comunidad blockchain."
           alt="TODA"
         />
         <FeaturedCard
           backgroundimg="/static/images/device6.png"
           foregroundimg="/static/images/device7.png"
           foreMaxWidth="18%"
-          link="/what-we-did-for/imusify"
+          callToAction="A VER!"
+          link="lo-que-hicimos-para/imusify"
           subhead="NEXTjs WEBSITE"
-          callToAction="LEMME CHECK"
-          title="Cut the middleman"
-          description="imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music."
+          title="Saca gente del medio"
+          description="imusify se puso en contacto con basement.studio para crear un sitio web interactivo para promocionar y encontrar inversores en su oferta inicial de moneda y también mejorar la interfaz y experiencia de usuario en su revolucionaria plataforma criptográfica para escuchar y compartir música."
           alt="imusify"
         />
         <FeaturedCard
@@ -63,14 +60,11 @@ Have fun."
           foreMaxWidth="65%"
           backMaxWidth="80%"
           inverted
-          link="/what-we-did-for/lemmonet"
+          link="lo-que-hicimos-para/lemmonet"
           subhead="BRANDING & WEBSITE"
-          callToAction="READ MORE"
-          title="Not only a pretty face"
-          description="Lemmonet got in touch with us to refresh and create a new brand
-          universe. They wanted to communicate a sense of technology, blendend
-          with their characteristic maturity gained after more than 10 years
-          of experience."
+          callToAction="LEER MAS"
+          title="No solo una cara bonita"
+          description="Lemmonet se puso en contacto con nosotros para actualizar su marca y crear un ecosistema para generar identidad entre sus productos. Buscamos comunicar un sentido de tecnología, y destacar su madurez característica ganada después de más de 10 años de experiencia."
           alt="Lemmonet"
         />
 

@@ -2,7 +2,6 @@ import React from 'react';
 import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
 import Helmet from 'react-helmet';
-import { format } from 'date-fns';
 import client from '../client';
 import Header from '../components/Header';
 import Footer from '../components/Footer';

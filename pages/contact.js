@@ -39,7 +39,7 @@ class Contact extends React.Component {
             data-aos-duration="1000"
             data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
           >
-            Let's chat.
+            Charlemos.
           </h1>
           <h3
             data-aos="fade-up"
@@ -48,8 +48,8 @@ class Contact extends React.Component {
             data-aos-duration="1000"
             data-aos-easing="ease-out-quad"
           >
-            We spend a lot of time behind our computers and always welcome the
-            opportunity to discuss your upcoming project and meet new faces.
+            Pasamos mucho tiempo atras de nuestros monitores, y siempre es bienvenida la oportunidad
+            para debatir sobre tu proyecto y conocer caras nuevas.
           </h3>
           <p
             data-aos="fade-up"
@@ -58,9 +58,8 @@ class Contact extends React.Component {
             data-aos-duration="1000"
             data-aos-easing="ease-out-quad"
           >
-            Get in touch using the form below, shoot us an email, reach out on
-            social media, heck – send a carrier pigeon. Regardless of how,
-            we’d love to hear from you.
+            Contactanos usando el formulario de abajo, manda un mail, contactanos por las redes sociales,
+            Fue, manda una paloma mensajera, no importa el c�mo, queremos escuchar tus ideas.
           </p>
         </header>
         <section
@@ -72,13 +71,13 @@ class Contact extends React.Component {
         >
           <ContactForm url={SCRIPT_URL} />
           <div className="find-us">
-            <h3>Where to find us</h3>
+            <h3>Donde estamos</h3>
             <div className="our-address">
-              <h4>Our address:</h4>
-              <p>Basement, Mar del Plata, Argentina.</p>
+              <h4>Nuestra direccion:</h4>
+              <p>Sotano, Mar del Plata, Argentina.</p>
             </div>
             <div className="our-email">
-              <h4>Email address:</h4>
+              <h4>Email:</h4>
               <a className="link" href="mailto:info@basement.studio">
                 info@basement.studio
               </a>

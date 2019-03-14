@@ -31,11 +31,11 @@ class BasementDoc extends Document {
           <meta name="author" content="basement.studio" />
           <meta
             name="description"
-            content="We're a brand creators, we're code hypebeasts, we inhale your story and exhale digital experiences."
+            content="Somos creadores de marcas, usamos las mejores herramientas de trabajo, inhalamos tu historia y exhalamos experiencias digitales."
           />
           <meta
             name="subject"
-            content="This is our institutional website, to know more contact us."
+            content="Este es nuestro website institucional, para saber mas contactanos."
           />
           <link rel="canonical" href="https://basement.studio" />
           <meta name="referrer" content="no-referrer" />
@@ -52,24 +52,24 @@ class BasementDoc extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="./static/icon/apple-touch-icon.png"
+            href="/static/icon/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./static/icon/favicon-32x32.png"
+            href="/static/icon/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="./static/icon/favicon-16x16.png"
+            href="/static/icon/favicon-16x16.png"
           />
-          <link rel="manifest" href="./static/icon/site.webmanifest" />
+          <link rel="manifest" href="/static/icon/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="./static/icon/safari-pinned-tab.svg"
+            href="/static/icon/safari-pinned-tab.svg"
             color="var(--color-primary)"
           />
           <meta name="msapplication-TileColor" content="var(--color-primary)" />
@@ -82,14 +82,14 @@ class BasementDoc extends Document {
           />
           <meta
             property="og:description"
-            content="We're a brand creators, we're code hypebeasts, we inhale your story and exhale digital experiences."
+            content="Somos creadores de marcas, usamos las mejores herramientas de trabajo, inhalamos tu historia y exhalamos experiencias digitales."
           />
           <meta property="og:url" content="https://basement.studio" />
           <meta
             property="og:site_name"
-            content="We research, we design, and we code | basement.studio"
+            content="Investigamos, Diseñamos, Programamos | basement.studio"
           />
-          <meta property="og:image" content="./static/og-image.png" />
+          <meta property="og:image" content="/static/og-image.png" />
           <meta
             property="og:image:secure_url"
             content="https://basement.studio/static/og-image.png"
@@ -98,11 +98,11 @@ class BasementDoc extends Document {
           <meta name="twitter:card" content="summary" />
           <meta
             name="twitter:description"
-            content="We're a brand creators, we're code hypebeasts, we inhale your story and exhale digital experiences."
+            content="Somos creadores de marcas, usamos las mejores herramientas de trabajo, inhalamos tu historia y exhalamos experiencias digitales."
           />
           <meta
             name="twitter:title"
-            content="Our work is serious, we are not | basement.studio"
+            content="Nuestro trabajo es serio, nosotros no. | basement.studio"
           />
           <meta name="twitter:site" content="@basementdot" />
           <meta
