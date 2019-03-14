@@ -52,24 +52,24 @@ class BasementDoc extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="./static/icon/apple-touch-icon.png"
+            href="/static/icon/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./static/icon/favicon-32x32.png"
+            href="/static/icon/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="./static/icon/favicon-16x16.png"
+            href="/static/icon/favicon-16x16.png"
           />
-          <link rel="manifest" href="./static/icon/site.webmanifest" />
+          <link rel="manifest" href="/static/icon/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="./static/icon/safari-pinned-tab.svg"
+            href="/static/icon/safari-pinned-tab.svg"
             color="var(--color-primary)"
           />
           <meta name="msapplication-TileColor" content="var(--color-primary)" />
@@ -89,7 +89,7 @@ class BasementDoc extends Document {
             property="og:site_name"
             content="We research, we design, and we code | basement.studio"
           />
-          <meta property="og:image" content="./static/og-image.png" />
+          <meta property="og:image" content="/static/og-image.png" />
           <meta
             property="og:image:secure_url"
             content="https://basement.studio/static/og-image.png"
