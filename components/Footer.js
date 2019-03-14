@@ -63,7 +63,7 @@ class Footer extends React.Component {
           </li>
         </ul>
         <p className="copyright">
-          basement.studio {new Date().getFullYear()} &copy; todos los derechos reservados.
+          basement.studio LLC {new Date().getFullYear()} todos los derechos reservados.
         </p>
         <style jsx>{`
           footer {
