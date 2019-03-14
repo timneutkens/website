@@ -19,7 +19,7 @@ class Basement extends App {
     return (
       <Container>
         <Head>
-          <title>Our work is serious, we are not | basement.studio</title>
+          <title>Nuestro trabajo es serio, nosotros no | basement.studio</title>
         </Head>
 
         <Component {...pageProps} />

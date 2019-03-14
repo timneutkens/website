@@ -14,8 +14,8 @@ class Work extends React.Component {
     return (
       <Layout>
         <Header
-          title='Work hard. Be smart.
-Have fun.'
+          title='Trabajá duro. Sé inteligente.
+Divertite.'
           centered
         />
         <FeaturedCard
