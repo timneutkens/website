@@ -31,14 +31,14 @@ class About extends React.Component {
 
         <TwoColumnsLayout
           title="Sobre nosotros"
-          paragraph="Nos involucramos con su producto como si fuera nuestro. La pasión que invertimos en las cosas que amamos está más allá de toda medida. Y si su marca es elegida como cliente, puede apostar que la elegimos porque nos encanta. Quedará impresionado por la cantidad de ideas que podemos lanzar contra la pared en una hora. Nuestro flujo de trabajo no es estándar, y tampoco lo somos nosotros, o las marcas que ayudamos a crear."
+          paragraph="Nos involucramos con su producto como si fuera nuestro. La pasiÃ³n que invertimos en las cosas que amamos estÃ¡ mÃ¡s allÃ¡ de toda medida. Y si su marca es elegida como cliente, puede apostar que la elegimos porque nos encanta. QuedarÃ¡ impresionado por la cantidad de ideas que podemos lanzar contra la pared en una hora. Nuestro flujo de trabajo no es estÃ¡ndar, y tampoco lo somos nosotros, o las marcas que ayudamos a crear."
         />
 
         <Team />
 
         <TwoColumnsLayout
           title="En que creemos"
-          paragraph="Creemos en el poder de las grandes ideas. Creemos en hacer que a personas reales (que están ocupados, distraídos y nunca interesados en los anuncios) se entusiasmen con las marcas, productos y servicios. Todos los días intentamos ser un poco más inteligentes que ayer. Si estas buscando una agencia vaga y arrogante, Thank u, Next! Nosotros nos emocionamos con cosas pasadas de moda como 'trabajo duro', 'amabilidad' y 'colaboración'. No tratamos de sacarnos el trabajo de encima, amamos lo que hacemos y queremos hacerlo todo el día, todos los días, así que ¿por qué no debemos dar lo mejor que podamos, cada vez?"
+          paragraph="Creemos en el poder de las grandes ideas. Creemos en hacer que a personas reales (que estÃ¡n ocupados, distraÃ­dos y nunca interesados en los anuncios) se entusiasmen con las marcas, productos y servicios. Todos los dÃ­as intentamos ser un poco mÃ¡s inteligentes que ayer. Si estas buscando una agencia vaga y arrogante, Thank u, Next! Nosotros nos emocionamos con cosas pasadas de moda como 'trabajo duro', 'amabilidad' y 'colaboraciÃ³n'. No tratamos de sacarnos el trabajo de encima, amamos lo que hacemos y queremos hacerlo todo el dÃ­a, todos los dÃ­as, asÃ­ que Â¿por quÃ© no debemos dar lo mejor que podamos, cada vez?"
         />
 
         <ThreeColumnsLayout />

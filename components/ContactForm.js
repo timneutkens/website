@@ -22,12 +22,12 @@ export default class NewsletterForm extends React.Component {
             let errors = {};
             if (!values.email) {
               errors.email =
-                'Email address is required, how are we supposed to contact you?';
+                'El email es requerido, como te contactamos sino maestro?';
             } else if (
               !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
               errors.email =
-                'Email looks invalid, are you using "@" and a dot somewhere after?';
+                'Ese email esta turbio, estas usando un "@" y un punto con mas texto despues?';
             }
             return errors;
           }}
@@ -44,11 +44,11 @@ export default class NewsletterForm extends React.Component {
                 setSubmitting(false);
                 resetForm();
                 alert(
-                  'Thanks, we will get in touch soon! (this is the best method to display information after filling a form)'
+                  'Gracias! te vamos a contactar pronto (JA! esta es la mejor manera de mostrar un alert)'
                 );
               });
             } else {
-              alert('Bad bad bot!');
+              alert('MALO BOT MALO!');
             }
           }}
         >
@@ -71,7 +71,7 @@ export default class NewsletterForm extends React.Component {
                   onBlur={handleBlur}
                   value={values.name || ''}
                 />
-                <label htmlFor="email">Your name</label>
+                <label htmlFor="email">Tu nombre</label>
               </span>
               <span className="input">
                 <input
@@ -82,7 +82,7 @@ export default class NewsletterForm extends React.Component {
                   onBlur={handleBlur}
                   value={values.email || ''}
                 />
-                <label htmlFor="email">Your email</label>
+                <label htmlFor="email">Tu email</label>
               </span>
               <span className="input">
                 <textarea
@@ -94,7 +94,7 @@ export default class NewsletterForm extends React.Component {
                   onBlur={handleBlur}
                   value={values.message || ''}
                 />
-                <label htmlFor="email">'sup</label>
+                <label htmlFor="email">Que onda?</label>
               </span>
               <input
                 className="please-dont"
@@ -111,7 +111,7 @@ export default class NewsletterForm extends React.Component {
                 disabled={!values.email || errors.email}
                 className="button"
               >
-                Submit
+                Mandar!
               </button>
             </form>
           )}

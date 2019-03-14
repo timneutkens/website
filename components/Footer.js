@@ -14,26 +14,26 @@ class Footer extends React.Component {
           <LogoGlitched />
         </i>
         <p className="suffix">
-          Enough about us,{' '}
+          Suficiente sobre nosotros,{' '}
           <a className="link" href="/contact">
-            tell us about you
+            contanos de vos.
           </a>
-          . We are at the basement.
+          . Estamos en el sotano.
         </p>
         <ul className="navigation">
           <li>
-            <Link activeClassName="active" href="/about" prefetch>
-              <a className="link">About</a>
+            <Link activeClassName="active" href="/sobre-nosotros" prefetch>
+              <a className="link">Sobre nosotros</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/work" prefetch>
-              <a className="link">Work</a>
+            <Link activeClassName="active" href="/trabajos" prefetch>
+              <a className="link">Trabajos</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/contact" prefetch>
-              <a className="link">Contact</a>
+            <Link activeClassName="active" href="/contacto" prefetch>
+              <a className="link">Contacto</a>
             </Link>
           </li>
         </ul>
@@ -63,7 +63,7 @@ class Footer extends React.Component {
           </li>
         </ul>
         <p className="copyright">
-          basement.studio {new Date().getFullYear()} &copy; all rights reserved.
+          basement.studio {new Date().getFullYear()} &copy; todos los derechos reservados.
         </p>
         <style jsx>{`
           footer {

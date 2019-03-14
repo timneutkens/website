@@ -17,8 +17,8 @@ class Team extends React.Component {
           instagram="http://instagram.com/ragojose"
           linkedin="http://www.linkedin.com/in/jose-francisco-rago"
           twitter="http://twitter.com/ragojose"
-          position="Co-Founder & Product Designer"
-          description="As a passionate designer and pixel-perfect enthusiast, I'm always focused on solving user experience problems and improving design processes for clients and internal teams. I'm constantly with my finger on the pulse of the latest technology to create innovative products"
+          position="Co-Fundador & Diseñador de producto"
+          description="Como diseñador apasionado y entusiasta de los píxeles perfectos, siempre estoy enfocado en resolver los problemas de experiencia del usuario y mejorar los procesos de diseño para los clientes y los equipos internos. Estoy constantemente con el dedo en el pulso de la última tecnología para crear productos innovadores"
         />
         <TeamMember
           order={5}
@@ -27,8 +27,8 @@ class Team extends React.Component {
           instagram="https://www.instagram.com/francoarz/"
           linkedin="https://www.linkedin.com/in/francoarza/"
           twitter="http://twitter.com/arzafran"
-          position="Co-Founder & Fullstack Developer"
-          description="Former philosophy student, Full time programmer for five years (and counting) and web leader at basement.studio. Likes to gaze into the abyss, and into the horizon, because that's a cool thing to do on a profile picture. Always trying new stuff someone mentioned on reddit"
+          position="Co-Fundador & Desarrollador fullstack"
+          description="Ex estudiante de filosofía, programador a tiempo completo durante cinco años (y contando) y líder web en basement.studio. Me gusta mirar hacia el abismo y hacia el horizonte, porque eso es algo pillo para hacer en una foto de perfil. Siempre intentando cosas nuevas que alguien mencionó en reddit."
         />
         <JoinUs order={10} thumbnail="join-us.svg" />
         <style jsx>{`

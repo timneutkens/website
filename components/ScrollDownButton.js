@@ -23,7 +23,7 @@ class ScrollDownButton extends React.Component {
           data-aos-duration="1000"
           data-aos-easing="ease-out-quad"
         >
-          Get Down
+          Bajar
         </h4>
         <button onClick={this.scrollALittle} type="button" aria-hidden="true">
           <svg

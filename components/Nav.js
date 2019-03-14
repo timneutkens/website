@@ -59,18 +59,18 @@ class Nav extends React.Component {
         </figure>
         <ul {...navAnimation}>
           <li>
-            <Link activeClassName="active" href="/about" prefetch>
-              <a className="navigation-item">About</a>
+            <Link activeClassName="active" href="/sobre-nosotros" prefetch>
+              <a className="navigation-item">Sobre nosotros</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/work" prefetch>
-              <a className="navigation-item">Work</a>
+            <Link activeClassName="active" href="/trabajos" prefetch>
+              <a className="navigation-item">Trabajos</a>
             </Link>
           </li>
           <li>
-            <Link activeClassName="active" href="/contact" prefetch>
-              <a className="navigation-item">Contact</a>
+            <Link activeClassName="active" href="/contacto" prefetch>
+              <a className="navigation-item">Contacto</a>
             </Link>
           </li>
         </ul>

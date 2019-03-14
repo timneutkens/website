@@ -10,10 +10,10 @@ class Contact extends React.Component {
     return (
       <section>
         <div className="content">
-          <h3>Have a project in mind?</h3>
-          <Link href="/contact">
+          <h3>Tenes un proyecto en la cabeza?</h3>
+          <Link href="/contacto">
             <a className="button">
-              Tell us about it{' '}
+              Contanos mas{' '}
               <svg width="20" height="16" version="1">
                 <path
                   fill="#FFF"

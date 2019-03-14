@@ -24,6 +24,7 @@ class Index extends React.Component {
         <Header
           shouldScroll
           title="Un estudio digital que construye experiencias rentables con gente increible."
+          characters="20ch"
         />
         <h2
           data-aos="fade-right"
@@ -32,7 +33,7 @@ class Index extends React.Component {
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
-          Our recent projects
+          Nuestros trabajos recientes
         </h2>
         <FeaturedCard
           backgroundimg="/static/images/device1.png"

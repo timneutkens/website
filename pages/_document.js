@@ -78,7 +78,7 @@ class BasementDoc extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Our work is serious, we are not | basement.studio"
+            content="Nuestro trabajo es serio, nosotros no. | basement.studio"
           />
           <meta
             property="og:description"
