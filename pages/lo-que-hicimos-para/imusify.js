@@ -15,11 +15,9 @@ class Imusify extends React.Component {
       <Layout>
         <div className='wrapper'>
           <h4>NEXTJS WEBSITE</h4>
-          <h1>Cut the middleman</h1>
+          <h1>Sacá gente del medio</h1>
           <p className='small'>
-            imusify wanted a new website to hype about their ICO. Brand
-            materials needed a refresh, and after a couple of revisions, we
-            agreed on the general aesthetics for the brand.
+            Imusify quería un nuevo sitio web para promocionar su ICO. Los materiales de la marca necesitaban una actualización, y después de un par de revisiones, Acordó la estética general de la marca.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -29,13 +27,7 @@ class Imusify extends React.Component {
           </figure>
 
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            On most blockchain related startups, the solution behind the product
-            is usually a little complex for simple peasants, We usually draw
-            some sketches to translate those concepts into simple to understand
-            illustrations. Concepts as distributed ledger, or the current stages
-            to publish a record, for example, can be easily recognized at a
-            glance. We merge the concepts with the brand system to create
-            engaging illustrations.
+            En la mayoría de las startups relacionadas con blockchain, la solución detrás del producto es usualmente un poco compleja para gente a pie, usualmente dibujamos algunos bocetos para traducir esos conceptos en ilustraciones simples de entender.
           </p>
           <figure
             className='smallfigure'
@@ -52,7 +44,7 @@ class Imusify extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            imusify illustrations
+            Ilustraciones de imusify
           </h4>
           <figure
             className='smallfigure'
@@ -65,10 +57,7 @@ class Imusify extends React.Component {
             />
           </figure>
           <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
-            After just a couple of wireframes, the layout was agreed and we move
-            onto designing the UI blocks to create a design system. Components
-            can now be shared between their app and the website, allowing to
-            display information in real time on the web.
+          Después de solo un par de wireframes, el diseño fue acordado y empezamos a trabajar en el sistema de diseño baseado en Componentes. Componentes que ahora se pueden compartir entre su aplicación y el sitio web, lo que permite Mostrar información en tiempo real en la web. Reutilizando toneladas de código.
           </p>
           <div
             className='full-width'
@@ -83,8 +72,7 @@ class Imusify extends React.Component {
             </figure>
           </div>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            The waves pattern resemble audio waves, it's a simple concept that
-            unifies the brand guidelines on top of which we built their image.
+            El patrón de olas alude a las ondas de sonido. Es un concepto simple que unifica las guias de la marca sobre las que construimos su imagen.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -97,19 +85,19 @@ class Imusify extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Keep browsing
+            Seguir mirando
           </h2>
         </div>
         <FeaturedCard
           backgroundimg='/static/images/device1.png'
           foregroundimg='/static/images/device2.png'
           foreMaxWidth='30%'
-          paddingTop='12em'
-          callToAction='READ MORE'
-          link='/what-we-did-for/gamedex'
+          paddingTop='6em'
+          callToAction='LEER MAS'
+          link='lo-que-hicimos-para/gamedex'
           subhead='NEXTjs WEBSITE'
-          title='They were cool, we made them mean'
-          description='Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon.'
+          title='Ellos eran cool, nosotros los hicimos malotes.'
+          description='La tecnologia del Blockchain revoluciona la industria de los coleccionables haciendo imposible la falsificacion y copiado de articulos. Transferencias instantaneas y tarjetas de edicion limitada cuya rareza es probable. La proxima generacion de criaturas de fantasia, mascotas digitales, y tarjetas de deportes esta llegando.'
           alt='Gamedex'
         />
         <Contact />

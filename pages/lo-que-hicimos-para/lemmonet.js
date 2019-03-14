@@ -15,12 +15,9 @@ class Lemmonet extends React.Component {
       <Layout>
         <div className='wrapper'>
           <h4>Branding + Website</h4>
-          <h1>Not only a pretty face</h1>
+          <h1>No solo una cara bonita</h1>
           <p className='small'>
-            Lemmonet got in touch with us to refresh and create a new brand
-            universe. They wanted to communicate a sense of technology, blendend
-            with their characteristic maturity gained after more than 10 years
-            of experience.
+            Lemmonet se puso en contacto con nosotros para actualizar y crear una nueva marca. Querían comunicar un sentido de tecnología, y mezclarlo con su madurez característica ganada después de más de 10 años de experiencia.
           </p>
           <figure
             className='smallfigure'
@@ -49,17 +46,7 @@ class Lemmonet extends React.Component {
             />
           </figure>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Every pretty thing in the universe has a name, so we name our
-            colors. Period. Lemmonet Yellow is the primary and base color.
-            Represents sensitivity, it's optimistic, and favors academic and
-            analytical thinking, also it's related to wisdom and logic driven
-            decision. The secondary color is Deep Purple. It's often associated
-            with royalty, or value (as in poker chips), and bravery. As support
-            colors we've chosen Pretty silver, which should be used for
-            backgrounds, it represents maturity, and experience. And for the
-            fonts I present to you our quite black. Associated with
-            prestigiousness, sophistication, and usually industry leaders use
-            black as main color.
+            Cada cosa bonita en el universo tiene un nombre, por eso damos nombre a nuestro colores. Lemmonet Yellow es el color primario y básico. Representa sensibilidad, es optimista, y favorece el pensamiento analítico, también está relacionado con la sabiduría y la lógica. El color secundario es Deep Purple. Es a menudo asociado con la realeza, o el valor (como en las fichas de póquer), y la valentía. Como soporte los colores que hemos elegido son Pretty Silver, que debería usarse para fondos, representa madurez y experiencia. Y para las tipografías les presento a nuestro Quite Black. Asociado con el prestigio y la sofisticación,usualmente los líderes de la industria usan negro como color principal.
           </p>
           <figure
             className='smallfigure'
@@ -76,7 +63,7 @@ class Lemmonet extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Branding evolution
+            Evolución de la marca
           </h4>
           <figure
             className='smallfigure'
@@ -93,21 +80,10 @@ class Lemmonet extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Wordmark
+            Isotipo
           </h4>
           <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Simple, Clear, Serious, it does not only sends a message, it makes a
-            statement. The logotype also tells a story, the L and M merge means
-            how they've from the bottom, they've been through ups and downs, the
-            double M's, but they're getting to the top, the E and T merge. Also
-            it resembles to a Line chart that goes from the bottom to the top,
-            and there's a hint to an arrow pointing up (like Lemmonet's clients
-            sales and growth). Also some letters are joint when others are not.
-            That's a wink to the analog and digital eras. Represents the
-            coming-of-age era. The experience, and the adaptation to
-            technologies. Last but not least, the accent of the last stop. the
-            dot. Their freckle. It's their playful side, creative side, the part
-            of them that breaks the mold and represents humanity.
+          Simple, claro, serio, no solo envía un mensaje, hace un declaración. El logotipo también cuenta una historia, las letras L y M se fusionan. Hechos desde abajo, han pasado por altibajos, la Doble M, pero están llegando a la cima, la E y la T se fusionan. también se asemeja a un gráfico de líneas que va de abajo hacia arriba, y hay un indicio de una flecha que apunta hacia arriba (como los clientes de Lemmonet ventas y crecimiento). También algunas letras son conjuntas cuando otras no lo son. Eso es un guiño a las épocas analógicas y digitales. Representa el etapa de la mayoría de edad. La experiencia, y la adaptación a tecnologías. Por último, pero no menos importante, el acento del final. El punto. Su peca. Es su lado lúdico, su lado creativo, rompe el molde y representa a la humanidad.
           </p>
           <figure
             className='full-width'
@@ -120,9 +96,7 @@ class Lemmonet extends React.Component {
             />
           </figure>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Nowadays, brands are no longer static, dynamism is part of the DNA
-            of every startup, Here we show how the brand should be used in
-            marketing announcements, advertising, and general communications.
+          Hoy en día, las marcas ya no son estáticas, el dinamismo es parte del ADN de cada startup, aquí mostramos cómo debe usarse la marca en Anuncios de marketing, publicidad y comunicaciones en general.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -131,12 +105,7 @@ class Lemmonet extends React.Component {
             />
           </figure>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Finally, once all the brand guidelines were built, we had a strong
-            foundation to build the website layout. Several wireframes and
-            iterations where thrown to a browser. Terabytes of Sketch files
-            after we nailed it. A website that transmitted all the values from
-            the branding, using the new color scheme and fonts. Custom
-            illustrations where a nice detail that Jose is really proud of.
+            Finalmente, una vez que se construyeron todas las partes de la marca, tuvimos una base sólida para construir el diseño del sitio web. Varios wireframes e iteraciones fueron probadas. Terabytes de archivos en Sketch hasta que la pegamos. Un sitio web que transmite todos los valores de La marca, utilizando el nuevo esquema de color y fuentes. Ilustraciones personalizaadas agregando un bonito detalle del que José está realmente orgulloso.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -149,19 +118,19 @@ class Lemmonet extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Keep browsing
+            Seguir mirando
           </h2>
         </div>
         <FeaturedCard
           backgroundimg='/static/images/device1.png'
           foregroundimg='/static/images/device2.png'
           foreMaxWidth='30%'
-          paddingTop='12em'
-          callToAction='READ MORE'
-          link='/what-we-did-for/gamedex'
+          paddingTop='6em'
+          callToAction='LEER MAS'
+          link='lo-que-hicimos-para/gamedex'
           subhead='NEXTjs WEBSITE'
-          title='They were cool, we made them mean'
-          description='Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon.'
+          title='Ellos eran cool, nosotros los hicimos malotes.'
+          description='La tecnologia del Blockchain revoluciona la industria de los coleccionables haciendo imposible la falsificacion y copiado de articulos. Transferencias instantaneas y tarjetas de edicion limitada cuya rareza es probable. La proxima generacion de criaturas de fantasia, mascotas digitales, y tarjetas de deportes esta llegando.'
           alt='Gamedex'
         />
         <Contact />

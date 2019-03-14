@@ -15,12 +15,9 @@ class Toda extends React.Component {
       <Layout>
         <div className='wrapper'>
           <h4>Branding + Website</h4>
-          <h1>How to make an internet protocol sexy</h1>
+          <h1>Como hacer sexy a un protocolo de internet</h1>
           <p className='small'>
-            TODA Network is the next evolution of TCP/IP for value transfer over
-            the communication layer and below the operating system. They
-            contacted us to redesign their website in order to get all the
-            blockchain-community's attention.
+            TODA Network es la próxima evolución de TCP/IP para la transferencia de valor a través de la capa de comunicación y debajo del sistema operativo. Ellos nos contactaron para rediseñar su sitio web con el fin de obtener toda los atención de la comunidad blockchain.
           </p>
           <figure
             className='smallfigure'
@@ -49,12 +46,7 @@ class Toda extends React.Component {
             />
           </figure>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            They had a basic branding, and some color ideas, but the logo and
-            palette wasn't polished enough. We used gradients to resemble
-            movement, progression. A block square to give the idea of stability
-            and security, but it's hollow meaning it can be filled with
-            whichever content. Given the users the posibility to build anything
-            upon it. Meaningful, right?
+            Tenían una marca básica, y algunas ideas de colores, pero el logotipo y la paleta no estaban lo suficientemente pulidos. Utilizamos gradientes para dar idea de movimiento, progresión. Un bloque cuadrado para representar estabilidad y seguridad, pero hueco, lo que significa que puede ser llenado con cualquiera sea el contenido. Dando a los usuarios la posibilidad de construir cualquier cosa sobre ello. Significativo, ¿verdad?
           </p>
           <figure
             className='smallfigure'
@@ -71,7 +63,7 @@ class Toda extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Branding evolution
+            Evolución de la marca
           </h4>
           <figure
             className='smallfigure'
@@ -88,14 +80,10 @@ class Toda extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Wordmark
+            Isologotipo
           </h4>
           <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Once again we express complex ideas with simple illustrations. Toda
-            being a descentralized ledgerless protocol made us really squeeze
-            our powers of simplification. First we needed to understand the
-            product, then we could start working on a brand system that really
-            made sense.
+            Una vez más expresamos ideas complejas con ilustraciones simples. TODA y el hecho de ser un protocolo descentralizado sin contabilidad nos hizo realmente exprimir nuestros poderes de simplificación. Primero necesitábamos entender el producto, recién entonces podríamos comenzar a trabajar en un sistema de marca que realmente tuviera sentido.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -108,7 +96,7 @@ class Toda extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Nodes illustration
+            Ilustración de nodos
           </h4>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -121,17 +109,14 @@ class Toda extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Protocol concept
+            Concepto de protocolo
           </h4>
           <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
-            The content used in the website wasn't static, we used a new CMS
-            called{' '}
+            El contenido del website no era estatico, usamos un CMS bastante nuevo llamado{' '}
             <a className='link' href='https://www.sanity.io/'>
               Sanity
             </a>{' '}
-            that you should definitely check out, allowing customizations on the
-            fly. And a really easy to use dashboard for both, us developing and
-            the marketing team adding content.
+            que deberían checkear. permite customizaciones al vuelo, y tiene un dashboard realmente simple para ambos, nosotros desarrolladores y el equipo de marketing agregando contenido.
           </p>
           <div
             className='full-width'
@@ -146,9 +131,7 @@ class Toda extends React.Component {
             </figure>
           </div>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Suddenly we were eager to use the protocol, it looks like something
-            else, not just a cold set of rules for a machine, but a product that
-            engage users, and allows developers to build upon.
+          De repente estábamos ansiosos por usar el protocolo, parece algo más, no solo un conjunto de reglas frías para una máquina, sino un producto que atrae a los usuarios, y permite a los desarrolladores construir sobre él.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -161,19 +144,19 @@ class Toda extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Keep browsing
+            Seguir mirando
           </h2>
         </div>
         <FeaturedCard
           backgroundimg='/static/images/device1.png'
           foregroundimg='/static/images/device2.png'
           foreMaxWidth='30%'
-          paddingTop='12em'
-          callToAction='READ MORE'
-          link='/what-we-did-for/gamedex'
+          paddingTop='6em'
+          callToAction='LEER MAS'
+          link='lo-que-hicimos-para/gamedex'
           subhead='NEXTjs WEBSITE'
-          title='They were cool, we made them mean'
-          description='Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon.'
+          title='Ellos eran cool, nosotros los hicimos malotes.'
+          description='La tecnologia del Blockchain revoluciona la industria de los coleccionables haciendo imposible la falsificacion y copiado de articulos. Transferencias instantaneas y tarjetas de edicion limitada cuya rareza es probable. La proxima generacion de criaturas de fantasia, mascotas digitales, y tarjetas de deportes esta llegando.'
           alt='Gamedex'
         />
         <Contact />

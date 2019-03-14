@@ -15,13 +15,11 @@ class Gamedex extends React.Component {
         <div className='wrapper'>
           <h4>NEXTJS WEBSITE</h4>
           <h1>
-            They were cool, <br />
-            we made them mean.
+            Eran copados, <br />
+            los hicimos malotes.
           </h1>
           <p className='small'>
-            Gamedex wanted a darker, faster, better, stronger website that
-            projected their spirit on the browser window, we just added a little
-            glitter here and there.
+          Gamedex quería un sitio web más oscuro, más rápido, que proyectara su espíritu en la ventana del navegador, terminamos añadiendo un poco de brillantina aquí y allá.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -31,11 +29,7 @@ class Gamedex extends React.Component {
           </figure>
 
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Assets were redrawn, Their complete color palette was revamped and
-            we used neon styles (reminiscent of TRON) to create a more digital
-            and gamer experience. Most of the assets are floating using
-            state-of-the-art parallax effects. And some cards also tilt on hover
-            tracking the mouse position.
+          Las ilustraciones fueron redibujadas, su paleta de colores fue renovada completamente y utilizamos estilos de neón (que recuerdan a TRON) para crear un formato más digital y gamer. La mayoría de los items están flotando usando Efectos de parallax de última generación, imposible que se traqueteen, Y algunas cartas también se inclinan al pasar el ratón. Boom!
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -48,7 +42,7 @@ class Gamedex extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Gamedex illustrations
+            Ilustraciones de Gamedex
           </h4>
           <figure
             className='smallfigure'
@@ -61,13 +55,7 @@ class Gamedex extends React.Component {
             />
           </figure>
           <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
-            Luckily for us, mainly, their brand was already really cool. They
-            had brand manuals and everything was well documented. But the brand
-            was lacking spirit. We gave this brand a soul by adding interactive
-            pieces, fade effects as you scroll (that doesn't take forever
-            rendering a blank page that generates a what-am-I-doing-here
-            feeling). Darker colors, Neon everywhere, It screams games and
-            cards.
+          Por suerte para nosotros, su marca ya era realmente genial. Ellos tenían manuales de marca y todo estaba bien documentado. Pero la marca carecía de espíritu. Les dimos un alma mediante la adición de piezas interactivas, los efectos de desvanecimiento a medida que se navega la pagina agregan sensación de actividad y movimiento que permiten vislumbrar una plataforma jovial detras de la marca tan agresiva.
           </p>
           <div
             className='full-width'
@@ -82,11 +70,7 @@ class Gamedex extends React.Component {
             </figure>
           </div>
           <p data-aos='fade-up' data-aos-easing='ease-in-out'>
-            We couldn't wait to see our work live on production. It is a nice
-            experience working with Gamedex, Now that the foundations for a
-            brand system is laid out we're starting to work on the product
-            itself to develop a solid brand system that is recognizable
-            everywhere.
+          No podíamos esperar a ver nuestro trabajo en vivo en producción. Es una bonita experiencia trabajandar con Gamedex, ahora que las bases para un sistema de marca está diseñado, estamos empezando a trabajar en el producto. Se desarrolla un sistema de marca sólida y reconocible. En todos lados.
           </p>
           <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
@@ -99,18 +83,18 @@ class Gamedex extends React.Component {
             data-aos='fade-up'
             data-aos-easing='ease-in-out'
           >
-            Keep browsing
+            Seguir Mirando
           </h2>
         </div>
         <FeaturedCard
           backgroundimg='/static/images/device6.png'
           foregroundimg='/static/images/device7.png'
           foreMaxWidth='18%'
-          callToAction="LET'S SEE"
-          link='/what-we-did-for/imusify'
+          callToAction='A VER!'
+          link='lo-que-hicimos-para/imusify'
           subhead='NEXTjs WEBSITE'
-          title='Cut the middleman'
-          description='imusify got in touch with basement.studio to build an interactive responsive website to promote and find investors in their brand new ICO and also their revolutionary crypto platform to listen and share music.'
+          title='Saca gente del medio'
+          description='imusify se puso en contacto con basement.studio para crear un sitio web interactivo para promocionar y encontrar inversores en su oferta inicial de moneda y también mejorar la interfaz y experiencia de usuario en su revolucionaria plataforma criptográfica para escuchar y compartir música.'
           alt='imusify'
         />
         <Contact />

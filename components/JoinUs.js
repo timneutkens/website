@@ -2,14 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 
 class JoinUs extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <React.Fragment>
-        <Link href='/contact'>
+        <Link href='/contacto'>
           <a
             className='wrapper'
             data-aos='fade-up'

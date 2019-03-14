@@ -3,10 +3,6 @@ import Link from './Link'
 import LogoGlitched from './LogoGlitched'
 
 class Footer extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <footer>
@@ -15,7 +11,7 @@ class Footer extends React.Component {
         </i>
         <p className='suffix'>
           Suficiente sobre nosotros,{' '}
-          <a className='link' href='/contact'>
+          <a className='link' href='/contacto'>
             contanos de vos.
           </a>
           . Estamos en el sotano.
