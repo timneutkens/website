@@ -1,35 +1,35 @@
-import React from 'react';
-import { Formik } from 'formik';
-import Input from './Input';
+import React from 'react'
+import { Formik } from 'formik'
+import Input from './Input'
 
 export default class NewsletterForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { honeypot: null };
-    this.pleaseDont = React.createRef();
+  constructor (props) {
+    super(props)
+    this.state = { honeypot: null }
+    this.pleaseDont = React.createRef()
   }
 
-  componentDidMount() {
-    this.setState({ honeypot: document.getElementsByClassName('please-dont') });
+  componentDidMount () {
+    this.setState({ honeypot: document.getElementsByClassName('please-dont') })
   }
 
-  render() {
+  render () {
     return (
       <React.Fragment>
         <Formik
           initialValues={{ name: '', email: '', message: '' }}
           validate={values => {
-            let errors = {};
+            let errors = {}
             if (!values.email) {
               errors.email =
-                'El email es requerido, como te contactamos sino maestro?';
+                'El email es requerido, como te contactamos sino maestro?'
             } else if (
               !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
               errors.email =
-                'Ese email esta turbio, estas usando un "@" y un punto con mas texto despues?';
+                'Ese email esta turbio, estas usando un "@" y un punto con mas texto despues?'
             }
-            return errors;
+            return errors
           }}
           onSubmit={(values, { setSubmitting, resetForm }) => {
             if (!this.state.honeypot.checked) {
@@ -41,14 +41,14 @@ export default class NewsletterForm extends React.Component {
                   'Content-Type': 'application/json'
                 }
               }).then(() => {
-                setSubmitting(false);
-                resetForm();
+                setSubmitting(false)
+                resetForm()
                 alert(
                   'Gracias! te vamos a contactar pronto (JA! esta es la mejor manera de mostrar un alert)'
-                );
-              });
+                )
+              })
             } else {
-              alert('MALO BOT MALO!');
+              alert('MALO BOT MALO!')
             }
           }}
         >
@@ -61,55 +61,55 @@ export default class NewsletterForm extends React.Component {
             handleBlur,
             isSubmitting
           }) => (
-            <form onSubmit={handleSubmit} className="gform">
-              <span className="input">
+            <form onSubmit={handleSubmit} className='gform'>
+              <span className='input'>
                 <input
-                  type="text"
-                  name="name"
-                  className="input__field name"
+                  type='text'
+                  name='name'
+                  className='input__field name'
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.name || ''}
                 />
-                <label htmlFor="email">Tu nombre</label>
+                <label htmlFor='email'>Tu nombre</label>
               </span>
-              <span className="input">
+              <span className='input'>
                 <input
-                  type="email"
-                  name="email"
-                  className="input__field email"
+                  type='email'
+                  name='email'
+                  className='input__field email'
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email || ''}
                 />
-                <label htmlFor="email">Tu email</label>
+                <label htmlFor='email'>Tu email</label>
               </span>
-              <span className="input">
+              <span className='input'>
                 <textarea
-                  name="message"
-                  className="input__field textarea"
-                  cols="30"
-                  rows="5"
+                  name='message'
+                  className='input__field textarea'
+                  cols='30'
+                  rows='5'
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.message || ''}
                 />
-                <label htmlFor="email">Que onda?</label>
+                <label htmlFor='email'>Que onda?</label>
               </span>
               <input
-                className="please-dont"
-                type="checkbox"
-                value="1"
-                tabIndex="-1"
-                autoComplete="nope"
+                className='please-dont'
+                type='checkbox'
+                value='1'
+                tabIndex='-1'
+                autoComplete='nope'
               />
               <div className={errors.email ? 'error' : 'error hidden'}>
                 {errors.email}
               </div>
               <button
-                type="submit"
+                type='submit'
                 disabled={!values.email || errors.email}
-                className="button"
+                className='button'
               >
                 Mandar!
               </button>
@@ -205,6 +205,6 @@ export default class NewsletterForm extends React.Component {
           }
         `}</style>
       </React.Fragment>
-    );
+    )
   }
 }

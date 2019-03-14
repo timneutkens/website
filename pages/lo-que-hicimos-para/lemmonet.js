@@ -1,54 +1,54 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../../components/GaWrapper';
-import Layout from '../../components/Layout';
-import Contact from '../../components/Contact';
-import FeaturedCard from '../../components/FeaturedCard';
+import React from 'react'
+import AOS from 'aos'
+import GaWrapper from '../../components/GaWrapper'
+import Layout from '../../components/Layout'
+import Contact from '../../components/Contact'
+import FeaturedCard from '../../components/FeaturedCard'
 
 class Lemmonet extends React.Component {
-  componentDidMount() {
-    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 });
+  componentDidMount () {
+    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 })
   }
 
-  render() {
+  render () {
     return (
       <Layout>
-        <div className="wrapper">
+        <div className='wrapper'>
           <h4>Branding + Website</h4>
           <h1>Not only a pretty face</h1>
-          <p className="small">
+          <p className='small'>
             Lemmonet got in touch with us to refresh and create a new brand
             universe. They wanted to communicate a sense of technology, blendend
             with their characteristic maturity gained after more than 10 years
             of experience.
           </p>
           <figure
-            className="smallfigure"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='smallfigure'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-branding-concepts.svg'
+              alt=''
             />
           </figure>
           <figure
-            className="smallfigure"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='smallfigure'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-palette.svg"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-branding-palette.svg'
+              alt=''
             />
           </figure>
-          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
+          <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-branding-font.svg"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-branding-font.svg'
+              alt=''
             />
           </figure>
-          <p data-aos="fade-up" data-aos-easing="ease-in-out">
+          <p data-aos='fade-up' data-aos-easing='ease-in-out'>
             Every pretty thing in the universe has a name, so we name our
             colors. Period. Lemmonet Yellow is the primary and base color.
             Represents sensitivity, it's optimistic, and favors academic and
@@ -62,40 +62,40 @@ class Lemmonet extends React.Component {
             black as main color.
           </p>
           <figure
-            className="smallfigure"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='smallfigure'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-brand-evolution.svg"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-brand-evolution.svg'
+              alt=''
             />
           </figure>
           <h4
-            className="small"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='small'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             Branding evolution
           </h4>
           <figure
-            className="smallfigure"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='smallfigure'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-logo.svg"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-logo.svg'
+              alt=''
             />
           </figure>
           <h4
-            className="small"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='small'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             Wordmark
           </h4>
-          <p className="small" data-aos="fade-up" data-aos-easing="ease-in-out">
+          <p className='small' data-aos='fade-up' data-aos-easing='ease-in-out'>
             Simple, Clear, Serious, it does not only sends a message, it makes a
             statement. The logotype also tells a story, the L and M merge means
             how they've from the bottom, they've been through ups and downs, the
@@ -110,27 +110,27 @@ class Lemmonet extends React.Component {
             of them that breaks the mold and represents humanity.
           </p>
           <figure
-            className="full-width"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='full-width'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-presentation.png"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-presentation.png'
+              alt=''
             />
           </figure>
-          <p data-aos="fade-up" data-aos-easing="ease-in-out">
+          <p data-aos='fade-up' data-aos-easing='ease-in-out'>
             Nowadays, brands are no longer static, dynamism is part of the DNA
             of every startup, Here we show how the brand should be used in
             marketing announcements, advertising, and general communications.
           </p>
-          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
+          <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-responsive.png"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-responsive.png'
+              alt=''
             />
           </figure>
-          <p data-aos="fade-up" data-aos-easing="ease-in-out">
+          <p data-aos='fade-up' data-aos-easing='ease-in-out'>
             Finally, once all the brand guidelines were built, we had a strong
             foundation to build the website layout. Several wireframes and
             iterations where thrown to a browser. Terabytes of Sketch files
@@ -138,31 +138,31 @@ class Lemmonet extends React.Component {
             the branding, using the new color scheme and fonts. Custom
             illustrations where a nice detail that Jose is really proud of.
           </p>
-          <figure data-aos="fade-up" data-aos-easing="ease-in-out">
+          <figure data-aos='fade-up' data-aos-easing='ease-in-out'>
             <img
-              src="/static/images/case-studies/lemmonet/lemmonet-website.png"
-              alt=""
+              src='/static/images/case-studies/lemmonet/lemmonet-website.png'
+              alt=''
             />
           </figure>
           <h2
-            className="small"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
+            className='small'
+            data-aos='fade-up'
+            data-aos-easing='ease-in-out'
           >
             Keep browsing
           </h2>
         </div>
         <FeaturedCard
-          backgroundimg="/static/images/device1.png"
-          foregroundimg="/static/images/device2.png"
-          foreMaxWidth="30%"
-          paddingTop="12em"
-          callToAction="READ MORE"
-          link="/what-we-did-for/gamedex"
-          subhead="NEXTjs WEBSITE"
-          title="They were cool, we made them mean"
-          description="Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon."
-          alt="Gamedex"
+          backgroundimg='/static/images/device1.png'
+          foregroundimg='/static/images/device2.png'
+          foreMaxWidth='30%'
+          paddingTop='12em'
+          callToAction='READ MORE'
+          link='/what-we-did-for/gamedex'
+          subhead='NEXTjs WEBSITE'
+          title='They were cool, we made them mean'
+          description='Blockchain revolutionizes collectibles by making counterfeits impossible, transfers instant and limited edition cards provably rare. The next generation of fantasy creatures, digital pets, and sports cards is coming soon.'
+          alt='Gamedex'
         />
         <Contact />
         <style jsx>{`
@@ -219,8 +219,8 @@ class Lemmonet extends React.Component {
           }
         `}</style>
       </Layout>
-    );
+    )
   }
 }
 
-export default GaWrapper(Lemmonet);
+export default GaWrapper(Lemmonet)

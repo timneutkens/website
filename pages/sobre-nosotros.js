@@ -1,43 +1,43 @@
-import React from 'react';
-import AOS from 'aos';
-import GaWrapper from '../components/GaWrapper';
-import Layout from '../components/Layout';
-import TwoColumnsLayout from '../components/TwoColumnsLayout';
-import Team from '../components/Team';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-import ThreeColumnsLayout from '../components/ThreeColumnsLayout';
+import React from 'react'
+import AOS from 'aos'
+import GaWrapper from '../components/GaWrapper'
+import Layout from '../components/Layout'
+import TwoColumnsLayout from '../components/TwoColumnsLayout'
+import Team from '../components/Team'
+import Header from '../components/Header'
+import Contact from '../components/Contact'
+import ThreeColumnsLayout from '../components/ThreeColumnsLayout'
 
 class About extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     AOS.init({
       once: true
-    });
+    })
   }
-  render() {
+  render () {
     return (
       <Layout>
-        <Header characters="13ch" title="Nuestro trabajo es serio, nosotros no." />
+        <Header characters='13ch' title='Nuestro trabajo es serio, nosotros no.' />
         <figure
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-quad"
-          className="elgif"
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-delay='200'
+          data-aos-duration='1000'
+          data-aos-easing='ease-out-quad'
+          className='elgif'
         >
-          <img src="/static/images/pixel.gif" alt="" />
+          <img src='/static/images/pixel.gif' alt='' />
         </figure>
 
         <TwoColumnsLayout
-          title="Sobre nosotros"
-          paragraph="Nos involucramos con su producto como si fuera nuestro. La pasión que invertimos en las cosas que amamos está más allá de toda medida. Y si su marca es elegida como cliente, puede apostar que la elegimos porque nos encanta. Quedará impresionado por la cantidad de ideas que podemos lanzar contra la pared en una hora. Nuestro flujo de trabajo no es estándar, y tampoco lo somos nosotros, o las marcas que ayudamos a crear."
+          title='Sobre nosotros'
+          paragraph='Nos involucramos con su producto como si fuera nuestro. La pasión que invertimos en las cosas que amamos está más allá de toda medida. Y si su marca es elegida como cliente, puede apostar que la elegimos porque nos encanta. Quedará impresionado por la cantidad de ideas que podemos lanzar contra la pared en una hora. Nuestro flujo de trabajo no es estándar, y tampoco lo somos nosotros, o las marcas que ayudamos a crear.'
         />
 
         <Team />
 
         <TwoColumnsLayout
-          title="En que creemos"
+          title='En que creemos'
           paragraph="Creemos en el poder de las grandes ideas. Creemos en hacer que a personas reales (que están ocupados, distraídos y nunca interesados en los anuncios) se entusiasmen con las marcas, productos y servicios. Todos los días intentamos ser un poco más inteligentes que ayer. Si estas buscando una agencia vaga y arrogante, Thank u, Next! Nosotros nos emocionamos con cosas pasadas de moda como 'trabajo duro', 'amabilidad' y 'colaboración'. No tratamos de sacarnos el trabajo de encima, amamos lo que hacemos y queremos hacerlo todo el día, todos los días, así que ¿por qué no debemos dar lo mejor que podamos, cada vez?"
         />
 
@@ -103,8 +103,8 @@ class About extends React.Component {
           }
         `}</style>
       </Layout>
-    );
+    )
   }
 }
 
-export default GaWrapper(About);
+export default GaWrapper(About)

@@ -1,5 +1,5 @@
-import React from 'react';
-import Plx from 'react-plx';
+import React from 'react'
+import Plx from 'react-plx'
 
 // An array of parallax effects to be applied - see below for detail
 const parallaxData = [
@@ -16,15 +16,15 @@ const parallaxData = [
       }
     ]
   }
-];
+]
 
 class ParallaxDown extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
-  render() {
-    return <Plx parallaxData={parallaxData}>{this.props.children}</Plx>;
+  render () {
+    return <Plx parallaxData={parallaxData}>{this.props.children}</Plx>
   }
 }
 
-export default ParallaxDown;
+export default ParallaxDown

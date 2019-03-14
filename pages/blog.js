@@ -1,50 +1,50 @@
-import React from 'react';
-import BlockContent from '@sanity/block-content-to-react';
-import imageUrlBuilder from '@sanity/image-url';
-import Helmet from 'react-helmet';
-import client from '../client';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from 'react'
+import BlockContent from '@sanity/block-content-to-react'
+import imageUrlBuilder from '@sanity/image-url'
+import Helmet from 'react-helmet'
+import client from '../client'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
-const builder = imageUrlBuilder(client);
+const builder = imageUrlBuilder(client)
 
-function urlFor(source) {
-  return builder.image(source);
+function urlFor (source) {
+  return builder.image(source)
 }
 
 class Blog extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
     this.state = {
       data: this.props.data
-    };
+    }
   }
 
-  componentDidMount() {}
+  componentDidMount () {}
 
-  render() {
+  render () {
     return (
       <section>
         <Helmet>
           <title>{`Zero Waste | ${this.state.data.title}`}</title>
-          <meta name="description" content={this.state.data.excerpt} />
+          <meta name='description' content={this.state.data.excerpt} />
           <meta
-            property="og:title"
+            property='og:title'
             content={`Zero Waste | ${this.state.data.title}`}
           />
-          <meta property="og:description" content={this.state.data.excerpt} />
-          <meta property="og:url" content={this.state.data.url} />
-          <meta property="og:image" content={this.state.data.image} />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:description" content={this.state.data.excerpt} />
+          <meta property='og:description' content={this.state.data.excerpt} />
+          <meta property='og:url' content={this.state.data.url} />
+          <meta property='og:image' content={this.state.data.image} />
+          <meta name='twitter:card' content='summary' />
+          <meta name='twitter:description' content={this.state.data.excerpt} />
           <meta
-            name="twitter:title"
+            name='twitter:title'
             content={`Zero Waste | ${this.state.data.title}`}
           />
-          <meta name="twitter:image" content={this.state.data.image} />
-          <meta name="twitter:site" content="@basementdot" />
-          <meta name="twitter:creator" content="@basementdot" />
+          <meta name='twitter:image' content={this.state.data.image} />
+          <meta name='twitter:site' content='@basementdot' />
+          <meta name='twitter:creator' content='@basementdot' />
         </Helmet>
         <Header inner />
         {/* <Hero
@@ -67,25 +67,25 @@ class Blog extends React.Component {
             }
           }}
         /> */}
-        <article className="post">
+        <article className='post'>
           <BlockContent
             blocks={this.props.data.body}
-            className="post__content"
+            className='post__content'
             imageOptions={{ w: 800, fit: 'max' }}
             projectId={client.clientConfig.projectId}
             dataset={client.clientConfig.dataset}
           />
         </article>
 
-        <section className="author">
-          <div className="content">
+        <section className='author'>
+          <div className='content'>
             <figure>
               <img
                 src={this.props.data.authorImage}
                 alt={`${this.props.data.authorName} profile picture`}
               />
             </figure>
-            <div className="description">
+            <div className='description'>
               <p>WRITTEN BY</p>
               <p>{this.props.data.authorName}</p>
               <p>{this.props.data.authorBio}</p>
@@ -93,8 +93,8 @@ class Blog extends React.Component {
           </div>
         </section>
 
-        <section className="blog">
-          <h2 className="title">Other stories you may like:</h2>
+        <section className='blog'>
+          <h2 className='title'>Other stories you may like:</h2>
 
           {/* <div className="card__wrapper">
             {this.props.posts.slice(0, 2).map((item, i) => (
@@ -126,7 +126,7 @@ class Blog extends React.Component {
         <style jsx>{``}</style>
         <style jsx global>{``}</style>
       </section>
-    );
+    )
   }
 }
 
@@ -134,11 +134,11 @@ Blog.getInitialProps = async ({ query: { slug } }) => {
   const props = {
     data: [],
     posts: []
-  };
+  }
 
   props.data = slug
     ? await client.fetch(
-        `*[_type == "post" && slug.current == $slug][0]{
+      `*[_type == "post" && slug.current == $slug][0]{
           title,
           excerpt,
           "slug": slug.current,
@@ -151,9 +151,9 @@ Blog.getInitialProps = async ({ query: { slug } }) => {
           _updatedAt,
           "image": mainImage.asset->url
         }`,
-        { slug }
-      )
-    : {};
+      { slug }
+    )
+    : {}
 
   props.posts = await client.fetch(
     `*[_type == "post"]{
@@ -169,9 +169,9 @@ Blog.getInitialProps = async ({ query: { slug } }) => {
           _updatedAt,
           "image": mainImage.asset->url
       }`
-  );
+  )
 
-  return props;
-};
+  return props
+}
 
-export default Blog;
+export default Blog

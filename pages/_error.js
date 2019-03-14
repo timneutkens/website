@@ -1,27 +1,27 @@
-import React from 'react';
-import Nav from '../components/Nav';
+import React from 'react'
+import Nav from '../components/Nav'
 
 class Error extends React.Component {
-  static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null;
-    return { statusCode };
+  static getInitialProps ({ res, err }) {
+    const statusCode = res ? res.statusCode : err ? err.statusCode : null
+    return { statusCode }
   }
 
-  render() {
+  render () {
     return (
-      <section className="hero-wrapper">
-        <div className="hero-content">
+      <section className='hero-wrapper'>
+        <div className='hero-content'>
           <Nav />
-          <div className="content-box">
-            <div className="window">
-              <h4 className="title">Basement 404 error</h4>
+          <div className='content-box'>
+            <div className='window'>
+              <h4 className='title'>Basement 404 error</h4>
               <span>x</span>
             </div>
-            <div className="content">
+            <div className='content'>
               <p>
                 How did you find the basement, pal? <br /> go home!
               </p>
-              <a className="button" href="/index">
+              <a className='button' href='/index'>
                 M'kay
               </a>
             </div>
@@ -107,8 +107,8 @@ class Error extends React.Component {
           }
         `}</style>
       </section>
-    );
+    )
   }
 }
 
-export default Error;
+export default Error

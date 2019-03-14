@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import Router from 'next/router';
+import React, { Component } from 'react'
+import ReactGA from 'react-ga'
+import Router from 'next/router'
 
-const debug = process.env.NODE_ENV !== 'production';
+const debug = process.env.NODE_ENV !== 'production'
 
 export default WrappedComponent =>
   class GaWrapper extends Component {
-    constructor(props) {
-      super(props);
-      this.trackPageview = this.trackPageview.bind(this);
+    constructor (props) {
+      super(props)
+      this.trackPageview = this.trackPageview.bind(this)
     }
 
-    componentDidMount() {
-      this.initGa();
-      this.trackPageview();
-      Router.router.events.on('routeChangeComplete', this.trackPageview);
+    componentDidMount () {
+      this.initGa()
+      this.trackPageview()
+      Router.router.events.on('routeChangeComplete', this.trackPageview)
     }
 
-    componentWillUnmount() {
-      Router.router.events.off('routeChangeComplete', this.trackPageview);
+    componentWillUnmount () {
+      Router.router.events.off('routeChangeComplete', this.trackPageview)
     }
 
-    trackPageview(path = document.location.pathname) {
+    trackPageview (path = document.location.pathname) {
       if (path !== this.lastTrackedPath) {
-        ReactGA.pageview(path);
-        this.lastTrackedPath = path;
+        ReactGA.pageview(path)
+        this.lastTrackedPath = path
       }
     }
 
@@ -37,7 +37,7 @@ export default WrappedComponent =>
     }
     /* eslint-enable */
 
-    render() {
-      return <WrappedComponent {...this.props} />;
+    render () {
+      return <WrappedComponent {...this.props} />
     }
-  };
+  }

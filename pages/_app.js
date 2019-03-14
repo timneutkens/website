@@ -1,21 +1,21 @@
 // pages/_app.js
-import App, { Container } from 'next/app';
-import Head from 'next/head';
-import React from 'react';
+import App, { Container } from 'next/app'
+import Head from 'next/head'
+import React from 'react'
 
 class Basement extends App {
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
+  static async getInitialProps ({ Component, router, ctx }) {
+    let pageProps = {}
 
     if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
+      pageProps = await Component.getInitialProps(ctx)
     }
 
-    return { pageProps };
+    return { pageProps }
   }
 
-  render() {
-    const { Component, pageProps } = this.props;
+  render () {
+    const { Component, pageProps } = this.props
     return (
       <Container>
         <Head>
@@ -24,8 +24,8 @@ class Basement extends App {
 
         <Component {...pageProps} />
       </Container>
-    );
+    )
   }
 }
 
-export default Basement;
+export default Basement

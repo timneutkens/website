@@ -1,44 +1,44 @@
-import React from 'react';
+import React from 'react'
 
 class ScrollDownButton extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  scrollALittle() {
+  scrollALittle () {
     window.scroll({
       top: 850,
       left: 0,
       behavior: 'smooth'
-    });
+    })
   }
 
-  render() {
+  render () {
     return (
-      <span className="scroll-down">
+      <span className='scroll-down'>
         <h4
-          data-aos="fade-down"
-          data-aos-offset="50"
-          data-aos-delay="850"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-quad"
+          data-aos='fade-down'
+          data-aos-offset='50'
+          data-aos-delay='850'
+          data-aos-duration='1000'
+          data-aos-easing='ease-out-quad'
         >
           Bajar
         </h4>
-        <button onClick={this.scrollALittle} type="button" aria-hidden="true">
+        <button onClick={this.scrollALittle} type='button' aria-hidden='true'>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 27 36"
-            data-aos="fade-up"
-            data-aos-offset="50"
-            data-aos-delay="850"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out-quad"
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 27 36'
+            data-aos='fade-up'
+            data-aos-offset='50'
+            data-aos-delay='850'
+            data-aos-duration='1000'
+            data-aos-easing='ease-out-quad'
           >
             <path
-              fill="#fff"
-              fillRule="evenodd"
-              d="M24 19.8l-8.6 8.600001V.2h-4v28.200001L2.8 19.8 0 22.6 13.4 36l13.4-13.4z"
+              fill='#fff'
+              fillRule='evenodd'
+              d='M24 19.8l-8.6 8.600001V.2h-4v28.200001L2.8 19.8 0 22.6 13.4 36l13.4-13.4z'
             />
           </svg>
         </button>
@@ -93,8 +93,8 @@ class ScrollDownButton extends React.Component {
           }
         `}</style>
       </span>
-    );
+    )
   }
 }
 
-export default ScrollDownButton;
+export default ScrollDownButton
