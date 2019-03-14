@@ -75,7 +75,11 @@ This is our website's code.
 ```
 
 3 - Clone the repo to your desktop using `git clone`
+
 4 - Create a branch using `git checkout -b`
+
 5 - Do your thing
+
 6 - Ask for code reviews in a pull request and merge once everything is ok!
+
 7 - Go play some [Windjammers](https://en.wikipedia.org/wiki/Windjammers_(video_game))
