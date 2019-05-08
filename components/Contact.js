@@ -2,10 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 
 class Contact extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <section>

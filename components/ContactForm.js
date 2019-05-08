@@ -1,6 +1,5 @@
 import React from 'react'
 import { Formik } from 'formik'
-import Input from './Input'
 
 export default class NewsletterForm extends React.Component {
   constructor (props) {
@@ -55,11 +54,9 @@ export default class NewsletterForm extends React.Component {
           {({
             values,
             errors,
-            touched,
             handleChange,
             handleSubmit,
-            handleBlur,
-            isSubmitting
+            handleBlur
           }) => (
             <form onSubmit={handleSubmit} className='gform'>
               <span className='input'>
@@ -111,7 +108,7 @@ export default class NewsletterForm extends React.Component {
                 disabled={!values.email || errors.email}
                 className='button'
               >
-                Mandar!
+                  Mandar!
               </button>
             </form>
           )}

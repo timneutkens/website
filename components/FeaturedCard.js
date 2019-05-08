@@ -4,10 +4,6 @@ import FeaturedDescription from '../components/FeaturedDescription'
 import Link from 'next/link'
 
 class FeaturedCard extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <div

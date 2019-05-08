@@ -2,15 +2,11 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
 
 class BasementDoc extends Document {
-  constructor(props) {
-    super(props)
-  }
-
-  static getInitialProps(ctx) {
+  static getInitialProps (ctx) {
     return Document.getInitialProps(ctx)
   }
 
-  render() {
+  render () {
     return (
       <html lang='en'>
         <Head>
