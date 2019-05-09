@@ -2,7 +2,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
 
 class BasementDoc extends Document {
-  constructor (props) {
+  constructor(props) {
     super(props)
   }
 
