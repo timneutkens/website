@@ -1,0 +1,178 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        150.8487091064453,
+        177.56971740722656,
+        100
+      ],
+      "min": [
+        -150.8487091064453,
+        42.4302864074707,
+        -100
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "generator": "Luxion KeyShot",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 148
+    }
+  ],
+  "buffers": [
+    {
+      "name": "modelTest",
+      "byteLength": 148,
+      "uri": "data:application/octet-stream;base64,RFJBQ08CAgEBAAAACAwBCwAAA2+1FAEBEFUE11P2RgL/AAAAAQABAAkDAAECAQEJAwAAAwEBAQAPAwEQLwEwAwBQlwgAqHIAAACYygEAAAAAKFkFgKncZAUAAICSFQIAADCyAgAAAAD/PwAARdkWw524KUIAAMjCRdmWQw4GAwEBAQEBQAEA/wMAAP8BAAD/AqFBCg=="
+    }
+  ],
+  "cameras": [
+    {
+      "name": "active",
+      "perspective": {
+        "aspectRatio": 1,
+        "yfov": 0.6911154697478635,
+        "zfar": 916.6307373046875,
+        "znear": 547.3216552734375
+      },
+      "type": "perspective"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0024999999441206455,
+          0.0024999999441206455,
+          0.0024999999441206455,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5750000029802322
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "/Users/ragojose/Desktop/test/box.obj-mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "camera": 0,
+      "matrix": [
+        0.7541449870653252,
+        -1.8250527045182707e-7,
+        0.6567079594801317,
+        0,
+        -0.13526769198705088,
+        0.9785565018161604,
+        0.15533789250309246,
+        0,
+        -0.6426258683204651,
+        -0.205978661775589,
+        0.7379734516143799,
+        0,
+        -470.3868408203125,
+        -83.2017593383789,
+        540.1790161132812,
+        1
+      ],
+      "name": "active"
+    },
+    {
+      "mesh": 0,
+      "name": "/Users/ragojose/Desktop/test/box.obj"
+    },
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -42.4302864074707,
+        0,
+        1
+      ],
+      "name": "box"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Default"
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        3
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
