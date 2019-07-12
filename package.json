@@ -11,10 +11,6 @@
     "dev": "next",
     "build": "next build && next export -o ./dist"
   },
-  "alias": [
-    "basement.studio",
-    "www.basement.studio"
-  ],
   "dependencies": {
     "aos": "^2.3.4",
     "formik": "^1.5.8",

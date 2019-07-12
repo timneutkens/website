@@ -5,6 +5,7 @@
     { "src": "next.config.js", "use": "@now/next" },
     { "src": "static/*", "use": "@now/static" }
   ],
+  "alias": ["basement.studio", "www.basement.studio"],
   "routes": [
     {
       "src": "^/service-worker.js$",
