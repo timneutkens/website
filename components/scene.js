@@ -47,12 +47,13 @@ class Scene extends React.PureComponent {
   }
 
   createCamera() {
-    const fov = 55;
+    const fov = 45;
     const aspect = this.container.clientWidth / this.container.clientHeight;
     const near = 0.1;
     const far = 500;
     this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this.camera.position.set(5.7, 1.5, 300);
+    this.camera.position.set(2, 1, 14);
+    this.camera.lookAt(this.scene.position);
   }
 
   createControls() {
@@ -60,16 +61,18 @@ class Scene extends React.PureComponent {
   }
 
   createLights() {
-    const ambientLight = new THREE.HemisphereLight(
-      0xffffff, // bright sky color
-      0x202020, // dim ground color
-      5 // intensity
-    );
-
-    const mainLight = new THREE.DirectionalLight(0xffffff, 5);
-    mainLight.position.set(10, 10, 10);
-
-    this.scene.add(ambientLight, mainLight);
+    const light1 = new THREE.PointLight(0xff0000);
+    light1.position.set(10, 0, 0);
+    this.scene.add(light1);
+    const light2 = new THREE.PointLight(0x00cc00);
+    light2.position.set(0, 10, 0);
+    this.scene.add(light2);
+    const light3 = new THREE.PointLight(0x0000ff);
+    light3.position.set(0, 0, 10);
+    this.scene.add(light3);
+    const light4 = new THREE.PointLight(0x333333);
+    light4.position.set(-10, -10, -10);
+    this.scene.add(light4);
   }
 
   loadModels() {
