@@ -14,7 +14,6 @@
         "Service-Worker-Allowed": "/"
       }
     },
-    { "src": "/blog/(?<slug>[^/]+)$", "dest": "/blog?slug=$slug" },
     { "src": "/sitemap.xml", "dest": "/static/sitemap.xml" },
     { "src": "/robots.txt", "dest": "/static/robots.txt" },
     { "src": "/favicon.ico", "dest": "/static/favicon.ico" }

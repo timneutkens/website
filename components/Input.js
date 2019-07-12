@@ -1,47 +1,47 @@
-import React from 'react'
+import React from "react"
 
-class Input extends React.Component {
-  constructor (props) {
+class Input extends React.PureComponent {
+  constructor(props) {
     super(props)
     this.changeValue = this.changeValue.bind(this)
   }
 
-  changeValue (event) {
+  changeValue(event) {
     this.props.setValue(event.currentTarget.value)
   }
 
-  render () {
+  render() {
     const errorMessage = this.props.getErrorMessage()
 
     return (
-      <span className={this.props.getValue() ? 'input input--filled' : 'input'}>
-        {this.props.type === 'textarea' ? (
+      <span className={this.props.getValue() ? "input input--filled" : "input"}>
+        {this.props.type === "textarea" ? (
           <textarea
-            className='input__field textarea'
+            className="input__field textarea"
             name={this.props.name}
             onChange={this.changeValue}
             type={this.props.type}
-            value={this.props.getValue() || ''}
+            value={this.props.getValue() || ""}
           />
         ) : (
           <input
-            className='input__field'
+            className="input__field"
             name={this.props.name}
             onChange={this.changeValue}
             type={this.props.type}
-            value={this.props.getValue() || ''}
+            value={this.props.getValue() || ""}
           />
         )}
 
-        <label className='input__label' htmlFor={this.props.name}>
+        <label className="input__label" htmlFor={this.props.name}>
           <span
-            className='input__label-content'
+            className="input__label-content"
             data-content={this.props.label}
           >
             {this.props.label}
           </span>
         </label>
-        {errorMessage && <span className='input__error'>{errorMessage}</span>}
+        {errorMessage && <span className="input__error">{errorMessage}</span>}
         <style jsx>{`
           .input {
             position: relative;

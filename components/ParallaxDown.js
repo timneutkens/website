@@ -1,30 +1,12 @@
-import React from 'react'
-import Plx from 'react-plx'
+import React from "react"
 
-// An array of parallax effects to be applied - see below for detail
-const parallaxData = [
-  {
-    start: 'self',
-    startOffset: 0,
-    duration: 1000,
-    easing: 'easeInOut',
-    properties: [
-      {
-        startValue: -100,
-        endValue: 0,
-        property: 'translateY'
-      }
-    ]
-  }
-]
-
-class ParallaxDown extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-  render () {
-    return <Plx parallaxData={parallaxData}>{this.props.children}</Plx>
-  }
+function ParallaxDown({ children }) {
+  return (
+    <div>
+      {children}
+      <style jsx>{``}</style>
+    </div>
+  )
 }
 
 export default ParallaxDown
