@@ -29,7 +29,11 @@ function LogoGlitched() {
           xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAYRpQ0NQSUNDIFByb2ZpbGUAACiRlZE/SMNAFMa/VKRL/TMUEV0CSqcqtYJUEKHtIEKHWjqo6JAm6R+oSUjOqugo6FhwEF0Uuzg461pw1UlRBHFwci+6aInvkmorouIH4f3y7t29e98BnmPJMIqebmBJY2ZqKibOzs2L3kd40Q9HkmwZ0WQywfkjftXLDQQer4b4Wd/Xf5VPUS0ZEPzETDZMRrxNPLDCDM4nxH6TLkVc5Zxz+ZpzxuUnpyadihO/EXeW5Bzt9fiIQ5pS0IgniCflvKQQbxAHMy31uRZ27+OoLy4VCxlTYqoicmvielE3LUOS1X8O+ZeYusp4jOvGmlnI5ZkYJSdVcVqTh4NiODQSAfi7uNW1GcdvoeeimdMPgcgz0FZu5jK7wNkW0HvXzA0eAF2bwOm5vGyWGu0FUHfXs8a/8En4iV1fHY0BlVsgvQ4kLoG9fSCQpT4LQLKD8uM04WLzc2VlR8PuWb4Y0P5g27UA4N0B6mXbfj2y7XqF5rkHqto7PMVvnmqUz74AAAAmSURBVBgZY2BgYPgPxLgAPjlcegiIg4xEMZaJgAYqSaPYiWbmfwAvDQX9S7RrNQAAAABJRU5ErkJggg=="
         />
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="g">
-          <stop stopColor="#FFF" stopOpacity=".5" offset="0%" />
+          <stop
+            stopColor="var(--color-secondary)"
+            stopOpacity=".5"
+            offset="0%"
+          />
           <stop stopOpacity=".5" offset="100%" />
         </linearGradient>
         <path
@@ -100,7 +104,7 @@ function LogoGlitched() {
       <g fill="none" fillRule="evenodd">
         <g transform="translate(.006 8.845)">
           <g opacity=".5">
-            <use fill="#FFF" xlinkHref="#e" />
+            <use fill="var(--color-secondary)" xlinkHref="#e" />
             <use fill="url(#f)" xlinkHref="#e" />
           </g>
           <use fill="url(#g)" xlinkHref="#h" />
@@ -121,8 +125,8 @@ function LogoGlitched() {
         />
         <path
           d="M32.958 31.382c0-5.435-2.829-8.925-7.342-8.925-5.119 0-7.88 4.295-7.88 7.986v2.08c0 3.96 2.896 8.053 7.813 8.053 4.378 0 7.41-3.624 7.41-9.194m9.362-.403c0 10.2-5.726 17.314-14.684 17.314-4.984 0-8.15-2.08-9.969-5.167l-.202 4.832H8.508V.311h9.228v19.394c1.953-2.885 5.32-4.965 10.238-4.965 8.352 0 14.347 5.838 14.347 16.24zm31.658-2.482v19.46h-8.554l-.202-4.495c-1.28 2.08-4.378 4.831-10.777 4.831-7.14 0-10.98-3.556-10.98-9.06 0-7.985 8.218-10.334 17.177-10.334h4.378v-1.14c0-3.691-2.088-6.04-6.197-6.04-3.503 0-5.793 1.677-6.13 4.563h-8.352c.607-7.314 6.332-11.543 14.752-11.543 9.9 0 14.885 5.302 14.885 13.758zm16.706 19.796c-9.296 0-14.01-3.758-14.078-10.603l7.88.068c.203 2.684 2.022 4.16 6.063 4.16 3.906 0 5.59-1.14 5.523-3.02 0-6.173-18.792-1.14-18.792-14.428 0-6.04 5.388-9.73 14.077-9.73 8.42 0 13.135 3.892 13.202 10.401h-8.015c-.202-2.684-2.021-4.026-5.254-4.026-3.503 0-5.052 1.208-5.052 3.087 0 6.04 18.793.738 18.793 14.428.067 6.107-5.524 9.663-14.347 9.663zm47.89-14.763h-23.237c.673 5.033 3.637 7.583 7.948 7.583 4.445 0 6.062-2.282 6.6-4.027h8.555c-1.078 5.704-5.658 11.207-15.627 11.207-10.036 0-16.368-6.912-16.368-16.71 0-9.931 6.938-16.843 16.503-16.843 10.036 0 15.627 6.979 15.627 17.045v1.745zm54.29-6.308v20.736h-9.295V29.235c0-4.161-2.087-6.51-5.455-6.51-3.705 0-6.264 2.752-6.264 6.845v18.388h-9.228V29.235c0-4.094-2.02-6.51-5.456-6.51-3.705 0-6.264 2.752-6.264 6.845v18.388h-9.228V15.075h8.89l.27 4.765c1.886-3.02 5.12-5.1 9.7-5.1 5.32 0 8.823 2.751 10.372 6.845 1.685-3.96 5.254-6.846 10.71-6.846 7.343 0 11.249 5.168 11.249 12.483zm34.893 6.308H204.52c.674 5.033 3.637 7.583 7.948 7.583 4.446 0 6.062-2.282 6.601-4.027h8.555c-1.078 5.704-5.659 11.207-15.627 11.207-10.036 0-16.368-6.912-16.368-16.71 0-9.931 6.938-16.843 16.502-16.843 10.036 0 15.627 6.979 15.627 17.045v1.745zm34.084-6.174v20.602h-9.228V29.436c0-4.16-1.954-6.71-5.86-6.71-4.042 0-6.668 2.751-6.668 6.844v18.388h-9.228V15.075h8.89l.27 4.832c1.953-3.087 5.254-5.167 10.306-5.167 7.476 0 11.518 5.234 11.518 12.616zm15.695-4.966v12.012c0 3.892 1.414 5.838 6.264 5.905h3.619v7.65h-5.034c-9.227-.066-14.078-4.83-14.078-13.22V22.39h-4.849v-7.315h5.388V5.747h8.69v9.328h9.834v7.315h-9.834zM65.02 36.013v-2.08h-4.782c-5.12 0-7.814 1.342-7.814 4.294 0 2.08 1.617 3.423 4.85 3.423 4.85 0 7.746-3.02 7.746-5.637zm50.451-7.785h14.482c-.606-4.697-3.166-6.643-6.938-6.643-3.705 0-6.668 2.08-7.544 6.643zm89.183 0h14.482c-.607-4.697-3.166-6.643-6.938-6.643-3.705 0-6.668 2.08-7.544 6.643zm86.393 12.05h7.66v7.632h-7.66v-7.631z"
-          fill="#FFF"
-          stroke="#FFF"
+          fill="var(--color-secondary)"
+          stroke="var(--color-secondary)"
           strokeWidth=".6"
         />
       </g>

@@ -142,7 +142,7 @@ export default class NewsletterForm extends React.Component {
             width: 100%;
             border-radius: 0;
             background: transparent;
-            color: #fff;
+            color: var(--color-secondary);
             font-weight: 300;
             font-family: var(--font-secondary);
             font-size: 0.9rem;

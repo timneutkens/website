@@ -159,7 +159,7 @@ class CssDesignAwards extends React.Component {
             width: 70px;
             height: 70px;
             border-radius: 90px;
-            background: #fff;
+            background: var(--color-secondary);
             -webkit-transition: all 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
             -moz-transition: all 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
             transition: all 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);

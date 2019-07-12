@@ -1,6 +1,6 @@
 import React from "react"
 
-function Logo({ color = "#fff" }) {
+function Logo({ color = "var(--color-secondary)" }) {
   return (
     <svg viewBox="0 0 200 33" xmlns="http://www.w3.org/2000/svg">
       <path

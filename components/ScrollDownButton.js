@@ -31,7 +31,7 @@ function ScrollDownButton() {
           data-aos-easing="ease-out-quad"
         >
           <path
-            fill="#fff"
+            fill="var(--color-secondary)"
             fillRule="evenodd"
             d="M24 19.8l-8.6 8.600001V.2h-4v28.200001L2.8 19.8 0 22.6 13.4 36l13.4-13.4z"
           />

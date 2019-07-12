@@ -62,7 +62,7 @@ class Input extends React.PureComponent {
             border: none;
             border-radius: 0;
             background: #f0f0f0;
-            color: #fff;
+            color: var(--color-secondary);
             font-weight: 300;
             font-family: var(--font-secondary);
             -webkit-appearance: none;
@@ -78,7 +78,7 @@ class Input extends React.PureComponent {
           .input--filled .input__field,
           .input__field:focus {
             outline: none;
-            border-color: #fff;
+            border-color: var(--color-secondary);
             border: 2px solid;
             font-weight: 300;
             font-family: var(--font-secondary);
@@ -126,7 +126,7 @@ class Input extends React.PureComponent {
           }
 
           .input__label-content {
-            color: #fff;
+            color: var(--color-secondary);
             padding: 0.25em 0;
             transition: transform 0.25s;
             transition-timing-function: ease-in-out;
@@ -150,7 +150,7 @@ class Input extends React.PureComponent {
             left: 0;
             height: 100%;
             width: 100%;
-            color: #fff;
+            color: var(--color-secondary);
             padding: 0.25em 0;
             text-transform: uppercase;
             letter-spacing: 1px;
