@@ -102,7 +102,7 @@ function Contact() {
           margin-bottom: 3.18em;
         }
 
-        @media all and (min-width: 600px) {
+        @media (min-width: 600px) {
           header {
             grid-column-gap: 4.5em;
             grid-template-columns: 1fr 1fr;

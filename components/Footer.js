@@ -113,7 +113,7 @@ function Footer() {
           grid-area: copyright;
         }
 
-        @media all and (min-width: 600px) {
+        @media (min-width: 600px) {
           footer {
             grid-template-columns: 2fr 1fr 1fr;
             grid-template-areas: "logo . ." "suffix navigation social" "copyright . .";

@@ -211,7 +211,7 @@ input:focus {
   outline: 1px solid var(--color-secondary);
 }
 
-@media all and (min-width: 600px) {
+@media (min-width: 600px) {
   main {
     max-width: 86.1vw;
   }

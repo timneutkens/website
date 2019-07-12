@@ -11,9 +11,9 @@ export default function Contact() {
             Tell us about it{" "}
             <svg width="20" height="16" version="1">
               <path
-                fill="#FFF"
+                fill="var(--color-secondary)"
                 fillRule="nonzero"
-                stroke="#000"
+                stroke="var(--color-primary)"
                 d="M16 7l-5-5 1-1 8 7-8 7-1-1 5-5H1V7h15z"
               />
             </svg>

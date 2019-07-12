@@ -169,16 +169,16 @@ class CssDesignAwards extends React.Component {
             -webkit-animation: bounce 0.75s linear both;
             -moz-animation: bounce 0.75s linear both;
             animation: bounce 0.75s linear both;
-            background: #000;
+            background: var(--color-primary);
           }
           .cssda-badge svg {
             position: absolute;
             width: 70px;
             height: 70px;
-            fill: #000000;
+            fill: var(--color-primary);
           }
           .cssda-badge:hover svg {
-            fill: #fff;
+            fill: var(--color-secondary);
           }
           .cssda-badge-content {
             position: absolute;
@@ -198,7 +198,7 @@ class CssDesignAwards extends React.Component {
             -moz-transform: scale(1.1);
             transform: scale(1.1);
           }
-          @media only screen and (max-width: 700px) {
+          @media (max-width: 700px) {
             .cssda-badge {
               bottom: 5vw;
               width: 60px;

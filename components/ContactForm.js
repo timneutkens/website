@@ -175,7 +175,7 @@ export default class NewsletterForm extends React.Component {
             display: inline-block;
             text-decoration: none;
             text-transform: uppercase;
-            border: 1px solid #000;
+            border: 1px solid var(--color-primary);
             box-shadow: -5px 5px 0 0 #313131;
             background: #313131;
             color: var(--color-secondary);

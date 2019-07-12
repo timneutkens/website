@@ -106,7 +106,7 @@ class Nav extends React.PureComponent {
             position: fixed;
             left: 50%;
             transform: translate(-50%);
-            background-color: #000;
+            background-color: var(--color-primary);
             z-index: 1000;
             transition: padding 600ms ease;
           }

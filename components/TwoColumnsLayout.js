@@ -25,7 +25,7 @@ class TwoColumnsLayout extends React.Component {
             margin: 10.694vw 0;
           }
 
-          @media all and (min-width: 600px) {
+          @media (min-width: 600px) {
             section {
               grid-template-columns: 1fr 1.6fr;
             }

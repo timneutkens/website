@@ -30,7 +30,7 @@ function Header({ shouldScroll, title, centered, characters, intro }) {
           ${intro && "margin: 0;"};
         }
 
-        @media all and (min-width: 600px) {
+        @media (min-width: 600px) {
           header {
             height: ${shouldScroll ? `calc(85vh)` : `auto`};
           }

@@ -84,12 +84,12 @@ function FeaturedImage({
           object-fit: contain;
           width: 100%;
         }
-        @media all and (max-width: 600px) {
+        @media (max-width: 600px) {
           .container {
             min-height: 120vw;
           }
         }
-        @media all and (min-width: 600px) {
+        @media (min-width: 600px) {
           a {
             grid-template-columns: 1fr 1fr;
           }
