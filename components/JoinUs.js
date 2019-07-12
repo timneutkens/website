@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 
-function JoinUs({ oreder, thumbnail, name }) {
+function JoinUs({ order, thumbnail, name }) {
   return (
     <React.Fragment>
       <Link href="/contact">

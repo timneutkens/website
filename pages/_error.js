@@ -11,32 +11,24 @@ class Error extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="hero-wrapper">
-          <div className="hero-content">
-            <Nav />
-            <div className="content-box">
-              <div className="window">
-                <h4 className="title">Basement 404 error</h4>
-                <span>x</span>
-              </div>
-              <div className="content">
-                <p>
-                  How did you find the basement, pal? <br /> go home!
-                </p>
-                <a className="button" href="/index">
-                  M'kay
-                </a>
-              </div>
+        <div className="hero-content">
+          <div className="content-box">
+            <div className="window">
+              <h4 className="title">Basement 404 error</h4>
+              <span>x</span>
+            </div>
+            <div className="content">
+              <p>
+                How did you find the basement, pal? <br /> go home!
+              </p>
+              <a className="button" href="/index">
+                M'kay
+              </a>
             </div>
           </div>
-        </section>
+        </div>
         <style jsx>{`
-          .hero-wrapper {
-            position: relative;
-            margin-left: calc(100vw - 100%);
-          }
-
-          .hero-wrapper:before {
+          .hero-content:before {
             content: "";
             display: block;
             position: absolute;
