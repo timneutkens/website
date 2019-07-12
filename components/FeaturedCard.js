@@ -1,7 +1,7 @@
 import React from "react"
 import FeaturedImage from "../components/FeaturedImage"
 import FeaturedDescription from "../components/FeaturedDescription"
-import Link from "next/link"
+import Link from "./Link"
 
 function FeaturedCard({
   inverted,
@@ -20,8 +20,8 @@ function FeaturedCard({
   return (
     <div
       data-aos="fade-up"
-      data-aos-offset="150"
-      data-aos-delay="200"
+      data-aos-offset="-150"
+      data-aos-delay="100"
       data-aos-duration="600"
       data-aos-easing="ease-in-out"
       className={inverted ? "featured__wrapper inverted" : "featured__wrapper"}

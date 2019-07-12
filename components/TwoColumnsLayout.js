@@ -9,8 +9,8 @@ class TwoColumnsLayout extends React.Component {
     return (
       <section
         data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-delay="200"
+        data-aos-offset="-100"
+        data-aos-delay="100"
         data-aos-duration="1000"
         data-aos-easing="ease-out-quad"
         data-aos-once="true"

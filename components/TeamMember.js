@@ -14,7 +14,7 @@ function TeamMember({
     <div
       className="wrapper"
       data-aos="fade-up"
-      data-aos-offset="0"
+      data-aos-offset="-100"
       data-aos-delay={`${order}00`}
       data-aos-duration="1000"
       data-aos-easing="ease-out-quad"

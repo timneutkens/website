@@ -23,7 +23,8 @@ function Index() {
       />
       <h2
         data-aos="fade-right"
-        data-aos-delay="200"
+        data-aos-offset="-100"
+        data-aos-delay="100"
         data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >

@@ -1,10 +1,10 @@
 import React from "react"
-import Link from "next/link"
+import Link from "./Link"
 
 function JoinUs({ order, thumbnail, name }) {
   return (
-    <React.Fragment>
-      <Link href="/contact">
+    <>
+      <Link scroll={false} href="/contact">
         <a
           className="wrapper"
           data-aos="fade-up"
@@ -43,7 +43,7 @@ function JoinUs({ order, thumbnail, name }) {
           margin-bottom: 0.8em;
         }
       `}</style>
-    </React.Fragment>
+    </>
   )
 }
 

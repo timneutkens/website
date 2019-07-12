@@ -7,7 +7,7 @@ import FeaturedCard from "../../components/FeaturedCard"
 
 function Toda() {
   useEffect(() => {
-    AOS.init({ once: false, offset: 70, delay: 500, duration: 400 })
+    AOS.init({ once: false, offset: -70, delay: 100, duration: 400 })
   }, [])
 
   return (
@@ -161,7 +161,7 @@ function Toda() {
           align-items: center;
           display: flex;
           flex-direction: column;
-          margin: 5em auto;
+          margin: 7em auto;
         }
         h1 {
           margin-top: 0.2em;

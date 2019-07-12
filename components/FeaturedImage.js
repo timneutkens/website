@@ -20,7 +20,7 @@ function FeaturedImage({
         <figure
           className="background"
           data-aos="fade-up"
-          data-aos-offset="0"
+          data-aos-offset="-100"
           data-aos-delay="100"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
@@ -32,7 +32,7 @@ function FeaturedImage({
         <figure
           className="foreground"
           data-aos="fade-up"
-          data-aos-offset="0"
+          data-aos-offset="-50"
           data-aos-delay="200"
           data-aos-duration="600"
           data-aos-easing="ease-in-out"

@@ -60,8 +60,8 @@ function Contact() {
       </header>
       <section
         data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-delay="600"
+        data-aos-offset="-200"
+        data-aos-delay="100"
         data-aos-duration="1000"
         data-aos-easing="ease-out-quad"
       >
