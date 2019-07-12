@@ -80,7 +80,6 @@ function Contact() {
           </div>
         </div>
       </section>
-      <Footer />
       <style jsx>{`
         header {
           display: grid;
