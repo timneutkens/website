@@ -18,6 +18,7 @@ function Index() {
     <Layout animate>
       <Header
         shouldScroll
+        intro
         title="A digital studio that builds profitable experiences with awesome people."
       />
       <h2

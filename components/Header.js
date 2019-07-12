@@ -2,12 +2,12 @@ import React from "react"
 import Nav from "./Nav"
 import ScrollDownButton from "./ScrollDownButton"
 
-function Header({ shouldScroll, title, centered, characters }) {
+function Header({ shouldScroll, title, centered, characters, intro }) {
   return (
     <header>
       <h1
         data-aos="fade-right"
-        data-aos-offset="-150"
+        data-aos-offset="0"
         data-aos-delay={shouldScroll ? 800 : 100}
         data-aos-duration="1000"
         data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
@@ -21,20 +21,18 @@ function Header({ shouldScroll, title, centered, characters }) {
           flex-direction: column;
           justify-content: center;
           position: relative;
-          height: calc(100vh - 20vw);
+          height: auto;
+          margin-top: 5em;
         }
 
         h1 {
-          margin: ${centered ? 0 : "initial"};
           max-width: ${characters};
+          ${intro && "margin: 0;"};
         }
 
         @media all and (min-width: 600px) {
           header {
-            height: ${shouldScroll ? `calc(100vh - 50px)` : `50vh`};
-          }
-          h1 {
-            margin-top: 0;
+            height: ${shouldScroll ? `calc(85vh)` : `auto`};
           }
         }
       `}</style>

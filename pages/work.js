@@ -13,7 +13,7 @@ function Work() {
 
   return (
     <Layout>
-      <Header title="Work hard. Be smart.Have fun." centered />
+      <Header title="Work hard. Be smart. Have fun." centered />
       <FeaturedCard
         backgroundimg="/static/images/device1.png"
         foregroundimg="/static/images/device2.png"

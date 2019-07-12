@@ -20,7 +20,7 @@ function About() {
       <Header characters="13ch" title="Our work is serious, we are not." />
       <figure
         data-aos="fade-up"
-        data-aos-offset="-150"
+        data-aos-offset="0"
         data-aos-delay="200"
         data-aos-duration="1000"
         data-aos-easing="ease-out-quad"

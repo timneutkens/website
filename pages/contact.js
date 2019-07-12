@@ -29,7 +29,7 @@ function Contact() {
       <header>
         <h1
           data-aos="fade-right"
-          data-aos-offset="-150"
+          data-aos-offset="0"
           data-aos-delay="100"
           data-aos-duration="1000"
           data-aos-easing="cubic-bezier(.05, .69, .14, 1)"
@@ -38,7 +38,7 @@ function Contact() {
         </h1>
         <h3
           data-aos="fade-up"
-          data-aos-offset="-150"
+          data-aos-offset="0"
           data-aos-delay="200"
           data-aos-duration="1000"
           data-aos-easing="ease-out-quad"
@@ -48,7 +48,7 @@ function Contact() {
         </h3>
         <p
           data-aos="fade-up"
-          data-aos-offset="-150"
+          data-aos-offset="0"
           data-aos-delay="400"
           data-aos-duration="1000"
           data-aos-easing="ease-out-quad"
@@ -60,7 +60,7 @@ function Contact() {
       </header>
       <section
         data-aos="fade-up"
-        data-aos-offset="-150"
+        data-aos-offset="0"
         data-aos-delay="600"
         data-aos-duration="1000"
         data-aos-easing="ease-out-quad"
@@ -86,7 +86,7 @@ function Contact() {
           grid-template-columns: 1fr;
           align-items: center;
           animation-delay: 400ms;
-          margin-top: 2.5em;
+          margin-top: 5em;
         }
 
         section {

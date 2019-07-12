@@ -83,7 +83,7 @@ class Layout extends React.Component {
     this.domNode.style.width = this.domNode.style.height = "100%"
     this.domNode.style.top = this.domNode.style.left = "50%"
     this.domNode.style.transform = "translate(-50%, -50%)"
-    this.domNode.style.overflow = "hidden"
+    // this.domNode.style.overflow = "hidden"
   }
 
   calcWinSize() {

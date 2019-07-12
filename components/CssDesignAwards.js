@@ -13,7 +13,7 @@ class CssDesignAwards extends React.Component {
         target="_blank"
         rel="noopener noreferrer"
         data-aos="fade-up"
-        data-aos-offset="-150"
+        data-aos-offset="0"
         data-aos-delay="850"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"

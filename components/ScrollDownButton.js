@@ -13,7 +13,7 @@ function ScrollDownButton() {
     <span className="scroll-down">
       <h4
         data-aos="fade-down"
-        data-aos-offset="-150"
+        data-aos-offset="-1000000"
         data-aos-delay="850"
         data-aos-duration="1000"
         data-aos-easing="ease-out-quad"
@@ -25,7 +25,7 @@ function ScrollDownButton() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 27 36"
           data-aos="fade-up"
-          data-aos-offset="-150"
+          data-aos-offset="0"
           data-aos-delay="850"
           data-aos-duration="1000"
           data-aos-easing="ease-out-quad"

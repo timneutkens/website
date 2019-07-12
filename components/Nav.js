@@ -7,7 +7,8 @@ class Nav extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
-      vpWidth: 1000
+      vpWidth: 1000,
+      docScroll: 0
     }
 
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
@@ -16,6 +17,7 @@ class Nav extends React.PureComponent {
   componentDidMount() {
     this.updateWindowDimensions()
     window.addEventListener("resize", this.updateWindowDimensions)
+    this.trackScroll()
   }
 
   updateWindowDimensions() {
@@ -25,6 +27,16 @@ class Nav extends React.PureComponent {
   componentWillUnmount() {
     this.state.vpWidth
     window.removeEventListener("resize", this.updateWindowDimensions)
+  }
+
+  getPageYScroll() {
+    this.setState({
+      docScroll: window.pageYOffset || document.documentElement.scrollTop
+    })
+  }
+
+  trackScroll() {
+    window.addEventListener("scroll", this.getPageYScroll.bind(this))
   }
 
   render() {
@@ -47,6 +59,8 @@ class Nav extends React.PureComponent {
           "data-aos-easing": "cubic-bezier(.05, .69, .14, 1)"
         }
       : {}
+
+    const { docScroll } = this.state
 
     return (
       <nav>
@@ -88,12 +102,13 @@ class Nav extends React.PureComponent {
             justify-content: space-between;
             align-items: center;
             width: 100vw;
-            padding: 1.5rem 7.17vw;
+            padding: ${docScroll > 0 ? "1vw 7vw 1vw 7vw" : "4vw 7vw 2vw 7vw"};
             position: fixed;
             left: 50%;
             transform: translate(-50%);
             background-color: #000;
             z-index: 1000;
+            transition: padding 600ms ease;
           }
 
           .home {
