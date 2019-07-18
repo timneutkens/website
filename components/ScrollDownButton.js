@@ -86,6 +86,12 @@ function ScrollDownButton() {
             transform: translate3d(0, -10px, 0);
           }
         }
+
+        @media (max-width: 768px) {
+          .scroll-down {
+            display: none;
+          }
+        }
       `}</style>
     </span>
   )
